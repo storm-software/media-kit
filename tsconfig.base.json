@@ -6,9 +6,11 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@monorepo-template/tools-scripts": ["tools/scripts/src/index.ts"],
-      "@monorepo-template/tools-scripts/*": ["tools/scripts/src/*"],
-      "@monorepo-template/tools-config/*": ["tools/config/*"]
+      "@storm-software/video-assets": ["packages/video-assets/src/index.ts"],
+      "@storm-software/video-assets/*": ["packages/video-assets/src/*"],
+      "@storm-software/tools-scripts": ["tools/scripts/src/index.ts"],
+      "@storm-software/tools-scripts/*": ["tools/scripts/src/*"],
+      "@storm-software/tools-config/*": ["tools/config/*"]
     }
   }
 }

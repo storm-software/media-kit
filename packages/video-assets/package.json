@@ -1,0 +1,89 @@
+{
+  "name": "@storm-software/video-assets",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Storm Software branded video assets to be used in other projects.",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/storm-software/media-kit.git",
+    "directory": "packages/video-assets"
+  },
+  "homepage": "https://stormsoftware.com",
+  "bugs": {
+    "url": "https://stormsoftware.com/support",
+    "email": "support@stormsoftware.com"
+  },
+  "author": {
+    "name": "Storm Software",
+    "email": "contact@stormsoftware.com",
+    "url": "https://stormsoftware.com"
+  },
+  "maintainers": [
+    {
+      "name": "Storm Software",
+      "email": "contact@stormsoftware.com",
+      "url": "https://stormsoftware.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Storm Software",
+      "email": "contact@stormsoftware.com",
+      "url": "https://stormsoftware.com"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/storm-software"
+  },
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "build": "npm run build-without-title && npm run build-with-title && npm run build-social-preview ",
+    "build-banner-1": "remotion render src/index.tsx Image1 banner-1 --sequence --image-format=png --overwrite",
+    "build-banner-2": "remotion render src/index.tsx Image2 banner-2 --sequence --image-format=png --overwrite",
+    "build-banner-3": "remotion render src/index.tsx Image3 banner-3 --sequence --image-format=png --overwrite",
+    "build-banners": "npm run build-banner-1 && npm run build-banner-2 && npm run build-banner-3",
+    "build-monochromatic-logo": "remotion render src/index.tsx Monochromatic monochromatic --sequence --image-format=png --overwrite",
+    "build-product-hunt": "remotion render src/index.tsx ProductHunt producthunt.mp4 --overwrite",
+    "build-recorder": "remotion render --codec=gif --number-of-gif-loops=0 LightModeBanner recorder/light.gif",
+    "build-recorder-dark": "remotion render --codec=gif --number-of-gif-loops=0 DarkModeBanner recorder/dark.gif",
+    "build-social-preview": "remotion render src/index.tsx SocialPreview socialpreview --sequence --image-format=png --overwrite",
+    "build-tutorial-graphics": "remotion render src/index.tsx TutorialGraphic tutorial-graphics --sequence --image-format=png --overwrite",
+    "build-white-logo": "remotion still src/index.tsx LogoWhite logowhite/element-0.png",
+    "build-with-title": "remotion render src/index.tsx LogoWithTitle withtitle --sequence --image-format=png --overwrite",
+    "build-without-title": "remotion render src/index.tsx Logo withouttitle --sequence --image-format=png --overwrite",
+    "start": "remotion preview src/index.tsx",
+    "upgrade": "npm upgrade @remotion/bundler @remotion/cli @remotion/eslint-config @remotion/renderer remotion"
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "catalog:",
+    "@remotion/media-utils": "catalog:",
+    "@remotion/noise": "catalog:",
+    "@remotion/paths": "catalog:",
+    "@remotion/shapes": "catalog:",
+    "@remotion/tailwind-v4": "catalog:",
+    "hack-font": "^3.3.0",
+    "polished": "^4.3.1",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "remotion": "catalog:",
+    "simplex-noise": "^2.4.0",
+    "styled-components": "^5.3.11",
+    "svg-path-properties": "^1.3.0",
+    "svg-path-reverse": "^1.7.0",
+    "tailwindcss": "catalog:",
+    "xns": "^2.0.7"
+  },
+  "devDependencies": {
+    "@remotion/cli": "catalog:",
+    "@remotion/eslint-config": "catalog:",
+    "@types/react": "catalog:",
+    "@types/styled-components": "^5.1.36",
+    "@types/web": "catalog:",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

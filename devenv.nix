@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }:
 {
-  name = "storm-software/monorepo-template";
+  name = "storm-software/media-kit";
 
   dotenv.enable = true;
   dotenv.filename = [".env" ".env.local"];

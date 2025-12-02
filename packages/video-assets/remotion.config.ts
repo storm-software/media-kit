@@ -16,11 +16,12 @@
 
  ------------------------------------------------------------------- */
 
-import { getStormConfig } from "@storm-software/eslint";
+import { Config } from "@remotion/cli/config";
+import { enableTailwind } from "@remotion/tailwind-v4";
 
-Error.stackTraceLimit = Number.POSITIVE_INFINITY;
+Config.setVideoImageFormat("png");
+Config.setCodec("prores");
 
-/** @type {import('eslint').Linter.Config[]} */
-export default getStormConfig({
-  name: "media-kit"
+Config.overrideWebpackConfig(currentConfiguration => {
+  return enableTailwind(currentConfiguration);
 });

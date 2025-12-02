@@ -1,11 +1,11 @@
 {
-  "name": "@monorepo-template/monorepo",
+  "name": "@storm-software/media-kit",
   "version": "0.0.1",
   "type": "module",
-  "description": "⚡ A monorepo containing TypeScript utility packages with shared functionality common to many Storm Software applications.",
+  "description": "A repository containing Storm Software media assets and brand guidelines.",
   "repository": {
     "type": "github",
-    "url": "https://github.com/storm-software/monorepo-template.git"
+    "url": "https://github.com/storm-software/media-kit.git"
   },
   "homepage": "https://stormsoftware.com",
   "bugs": {
@@ -31,10 +31,9 @@
   "keywords": [
     "storm-software",
     "storm",
-    "storm-ops",
-    "sullivanpj",
-    "typescript",
-    "monorepo"
+    "brand",
+    "media-kit",
+    "press-kit"
   ],
   "scripts": {
     "adr": "pnpm log4brains adr new",
@@ -50,7 +49,7 @@
     "graph": "nx graph",
     "help": "nx help",
     "lint": "pnpm exec zx tools/scripts/src/lint.mjs",
-    "local-registry": "nx local-registry @monorepo-template/monorepo",
+    "local-registry": "nx local-registry @storm-software/media-kit",
     "nuke": "pnpm exec zx tools/scripts/src/nuke.mjs",
     "nx": "nx",
     "postinstall": "pnpm bootstrap",
@@ -103,7 +102,7 @@
     "ts-jest": "catalog:",
     "ts-node": "catalog:",
     "tslib": "catalog:",
-    "typescript": "5.8.3",
+    "typescript": "^5.9.3",
     "verdaccio": "catalog:",
     "zx": "catalog:"
   },
@@ -111,7 +110,7 @@
     "defaultBranch": "main",
     "workspaceProtocol": "require"
   },
-  "namespace": "@monorepo-template",
+  "namespace": "@storm-software",
   "nx": {
     "includedScripts": [
       "lint-knip",
