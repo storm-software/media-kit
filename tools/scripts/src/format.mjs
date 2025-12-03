@@ -28,27 +28,13 @@ try {
   }
 
   let proc =
-    $`pnpm exec storm-git readme --templates="tools/readme-templates" --project="@storm-software/media-kit"`.timeout(
-      `${30 * 60}s`
-    );
-  proc.stdout.on("data", data => {
-    echo`${data}`;
-  });
-  let result = await proc;
-  if (result.exitCode !== 0) {
-    throw new Error(
-      `An error occurred while formatting the workspace's README file: \n\n${result.message}\n`
-    );
-  }
-
-  proc =
     $`pnpm nx run-many --target=format --all --exclude="@storm-software/media-kit" --outputStyle=dynamic-legacy --parallel=5`.timeout(
       `${30 * 60}s`
     );
   proc.stdout.on("data", data => {
     echo`${data}`;
   });
-  result = await proc;
+  let result = await proc;
   if (result.exitCode !== 0) {
     throw new Error(
       `An error occurred while formatting the monorepo: \n\n${result.message}\n`

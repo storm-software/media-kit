@@ -54,12 +54,12 @@
     "@remotion/eslint-config": "catalog:",
     "@types/react": "catalog:",
     "@types/web": "catalog:",
+    "chalk-template": "catalog:",
     "eslint-flat-config-utils": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
-    "typescript": "^5.9.3",
-    "chalk-template": "catalog:",
-    "tsx": "catalog:"
+    "tsx": "catalog:",
+    "typescript": "^5.9.3"
   },
   "sideEffects": ["*.css"]
 }

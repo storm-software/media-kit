@@ -42,6 +42,7 @@ keeping the codebase maintainable.
 
 <!-- START doctoc -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 ## Table of Contents
 
 - [Quick Features](#quick-features)
@@ -73,7 +74,8 @@ keeping the codebase maintainable.
 
 # Quick Features
 
-This section contains a quick overview of the features and functionality of the repository.
+This section contains a quick overview of the features and functionality of the
+repository.
 
 ## Visual Studio Code Extension
 
@@ -167,8 +169,8 @@ from `@storm-software/my-lib`.
 
 ## Code Scaffolding
 
-Run `nx g @nx/react:component my-component --project=media-kit` to generate a new
-component.
+Run `nx g @nx/react:component my-component --project=media-kit` to generate a
+new component.
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
@@ -269,8 +271,8 @@ Please try to create bug reports that are:
 Please adhere to this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
 You can use
-[markdownlint-cli](https://github.com/storm-software/media-kit/markdownlint-cli) to
-check for common markdown style inconsistency.
+[markdownlint-cli](https://github.com/storm-software/media-kit/markdownlint-cli)
+to check for common markdown style inconsistency.
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />

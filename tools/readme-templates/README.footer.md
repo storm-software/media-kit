@@ -12,8 +12,8 @@ maintainable.
 
 ## Roadmap
 
-See the [open issues](https://github.com/storm-software/media-kit/issues) for
-a list of proposed features (and known issues).
+See the [open issues](https://github.com/storm-software/media-kit/issues) for a
+list of proposed features (and known issues).
 
 - [Top Feature Requests](https://github.com/storm-software/media-kit/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc)
   (Add your votes using the 👍 reaction)

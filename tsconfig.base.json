@@ -6,11 +6,11 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@storm-software/video-assets": ["packages/video-assets/src/index.ts"],
-      "@storm-software/video-assets/*": ["packages/video-assets/src/*"],
+      "@storm-software/tools-config/*": ["tools/config/*"],
       "@storm-software/tools-scripts": ["tools/scripts/src/index.ts"],
       "@storm-software/tools-scripts/*": ["tools/scripts/src/*"],
-      "@storm-software/tools-config/*": ["tools/config/*"]
+      "@storm-software/video-assets": ["packages/video-assets/src/index.ts"],
+      "@storm-software/video-assets/*": ["packages/video-assets/src/*"]
     }
   }
 }
