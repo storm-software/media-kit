@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "types": ["node"],
-    "outDir": "../../dist/out-tsc"
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "strict": true,
+    "noEmit": true,
+    "lib": ["DOM"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "remotion.config.ts"],
+  "include": ["src/**/*.ts", "remotion.config.ts", "src/Video.tsx"],
   "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
 }
