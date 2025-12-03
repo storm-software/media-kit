@@ -23,18 +23,12 @@
   },
   "license": "Apache-2.0",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.24.0",
   "engines": {
-    "node": ">=22.14.0",
-    "pnpm": ">=10.10.0"
+    "node": ">=24.11.1",
+    "pnpm": ">=10.24.0"
   },
-  "keywords": [
-    "storm-software",
-    "storm",
-    "brand",
-    "media-kit",
-    "press-kit"
-  ],
+  "keywords": ["storm-software", "storm", "brand", "media-kit", "press-kit"],
   "scripts": {
     "adr": "pnpm log4brains adr new",
     "adr-preview": "pnpm log4brains preview",
@@ -79,6 +73,7 @@
     "@storm-software/prettier": "catalog:",
     "@storm-software/testing-tools": "catalog:",
     "@storm-software/tsconfig": "catalog:",
+    "@storm-software/tsdoc": "catalog:",
     "@storm-software/unbuild": "catalog:",
     "@storm-software/untyped": "catalog:",
     "@storm-software/workspace-tools": "catalog:",
@@ -93,6 +88,7 @@
     "jest": "catalog:",
     "jest-environment-jsdom": "catalog:",
     "jest-environment-node": "catalog:",
+    "jest-util": "30.2.0",
     "lefthook": "catalog:",
     "log4brains": "catalog:",
     "nx": "catalog:",
