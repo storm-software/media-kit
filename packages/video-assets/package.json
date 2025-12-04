@@ -39,6 +39,7 @@
   "license": "Apache-2.0",
   "private": false,
   "dependencies": {
+    "@remotion/fonts": "catalog:",
     "@remotion/google-fonts": "catalog:",
     "@remotion/media-utils": "catalog:",
     "@remotion/noise": "catalog:",
@@ -57,6 +58,7 @@
     "chalk-template": "catalog:",
     "eslint-flat-config-utils": "catalog:",
     "postcss": "catalog:",
+    "sharp": "catalog:",
     "tailwindcss": "catalog:",
     "tsx": "catalog:",
     "typescript": "^5.9.3"

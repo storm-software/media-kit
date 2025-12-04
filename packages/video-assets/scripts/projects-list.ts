@@ -16,20 +16,4 @@
 
  ------------------------------------------------------------------- */
 
-import React from "react";
-import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
-
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
-  return (
-    <>
-      <GlitchBackground />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
-      </AbsoluteFill>
-    </>
-  );
-};
+export const PROJECT_LIST = ["storm-software", "powerlines"] as const;

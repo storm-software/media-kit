@@ -13,12 +13,12 @@
     },
     "build-gifs": {
       "cache": true,
-      "inputs": ["{projectRoot}/dist"],
+      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
-        "command": "tsx scripts/render-gifs.ts",
+        "command": "tsx scripts/build-gifs.ts",
         "cwd": "{projectRoot}"
       }
     },
@@ -27,7 +27,7 @@
       "inputs": ["{projectRoot}/dist"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "dependsOn": ["typecheck", "build-gifs"],
-      "command": "pnpm copyfiles --up=3 \"./packages/video-assets/dist/**/*\" ./dist/packages/video-assets/dist"
+      "command": "pnpm copyfiles --up=3 \"./packages/video-assets/dist/**/*\" ./dist/packages/video-assets"
     },
     "nx-release-publish": {
       "executor": "@storm-software/workspace-tools:npm-publish"

@@ -17,19 +17,17 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { OffthreadVideo } from "remotion";
 
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
+export const GlitchBackground: React.FC = () => {
   return (
-    <>
-      <GlitchBackground />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
-      </AbsoluteFill>
-    </>
+    <OffthreadVideo
+      src="https://public.storm-cdn.com/video/backgrounds/glitch-2-optimized.mp4"
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      style={{
+        objectFit: "cover"
+      }}
+      muted={true}
+    />
   );
 };

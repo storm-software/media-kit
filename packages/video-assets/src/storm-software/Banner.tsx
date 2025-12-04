@@ -17,8 +17,9 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { AbsoluteFill, OffthreadVideo } from "remotion";
-import { Title } from "./Title";
+import { AbsoluteFill } from "remotion";
+import { GlitchBackground } from "../components/GlitchBackground";
+import { OrgTitle } from "../components/OrgTitle";
 
 export interface BannerProps {
   theme?: "light" | "dark";
@@ -27,15 +28,11 @@ export interface BannerProps {
 
 export const Banner: React.FC<BannerProps> = ({ type = "normal" }) => {
   return (
-    <AbsoluteFill className="absolute top-0 left-0 w-full h-full">
-      <OffthreadVideo
-        src="https://public.storm-cdn.com/video/backgrounds/glitch-2.mp4"
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        muted={true}
-      />
+    <>
+      <GlitchBackground />
       <AbsoluteFill className="flex flex-col justify-center items-center">
-        <Title size={type === "thin" ? "sm" : "md"} />
+        <OrgTitle size={type === "thin" ? "sm" : "md"} />
       </AbsoluteFill>
-    </AbsoluteFill>
+    </>
   );
 };

@@ -16,20 +16,13 @@
 
  ------------------------------------------------------------------- */
 
-import React from "react";
-import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
-
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
-  return (
-    <>
-      <GlitchBackground />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
-      </AbsoluteFill>
-    </>
-  );
-};
+/**
+ * Formats an ID by combining the project name and the given ID.
+ *
+ * @param project - The name of the project.
+ * @param id - The original ID to format.
+ * @returns The formatted ID string.
+ */
+export function formatId(project: string, id: string): string {
+  return `${project}-${id}`.toLowerCase();
+}

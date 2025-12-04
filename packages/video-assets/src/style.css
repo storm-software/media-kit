@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Orbitron", "sans-serif";
+  --font-orbitron: "Orbitron", "sans-serif";
+  --font-martian-grotesk: "Martian Grotesk", "sans-serif";
 }

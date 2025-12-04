@@ -16,20 +16,7 @@
 
  ------------------------------------------------------------------- */
 
-import React from "react";
-import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { registerRoot } from "remotion";
+import { RemotionVideo } from "./Video";
 
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
-  return (
-    <>
-      <GlitchBackground />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
-      </AbsoluteFill>
-    </>
-  );
-};
+registerRoot(RemotionVideo);

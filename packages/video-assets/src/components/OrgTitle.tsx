@@ -21,17 +21,27 @@ import { Img } from "remotion";
 
 const { fontFamily } = loadFont();
 
-export interface TitleProps {
-  size?: "lg" | "md" | "sm";
+export interface OrgTitleProps {
+  size?: "lg" | "md" | "sm" | "xs";
 }
 
-export const Title: React.FC<TitleProps> = ({ size = "md" }) => {
+export const OrgTitle: React.FC<OrgTitleProps> = ({ size = "md" }) => {
   return (
     <div
-      className={`flex justify-center flex-row ${size === "lg" ? "gap-6" : "gap-3"} `}>
+      className={`flex justify-center flex-row ${
+        size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"
+      } `}>
       <Img
         src="https://public.storm-cdn.com/storm-software/logo.svg"
-        className={size === "lg" ? "w-96" : size === "md" ? "w-72" : "w-40"}
+        className={
+          size === "lg"
+            ? "w-96"
+            : size === "md"
+              ? "w-72"
+              : size === "sm"
+                ? "w-40"
+                : "w-24"
+        }
       />
       <h1
         style={{ fontFamily }}
@@ -40,7 +50,9 @@ export const Title: React.FC<TitleProps> = ({ size = "md" }) => {
             ? "text-[20rem] mt-10"
             : size === "md"
               ? "text-[16rem]"
-              : "text-[10rem]"
+              : size === "sm"
+                ? "text-[10rem]"
+                : "text-[6rem]"
         }`}>
         Storm
       </h1>

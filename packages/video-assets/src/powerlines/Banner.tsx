@@ -17,18 +17,25 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Img } from "remotion";
 import { GlitchBackground } from "../components/GlitchBackground";
 import { OrgTitle } from "../components/OrgTitle";
 
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
+export interface BannerProps {
+  theme?: "light" | "dark";
+  type?: "thin" | "normal";
+}
+
+export const Banner: React.FC<BannerProps> = ({ type = "normal" }) => {
   return (
     <>
       <GlitchBackground />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
+      <AbsoluteFill className="flex flex-col justify-center items-center gap-18">
+        <Img
+          src="https://public.storm-cdn.com/powerlines/logo.webp"
+          className="w-[80%]"
+        />
+        {type !== "thin" && <OrgTitle size="xs" />}
       </AbsoluteFill>
     </>
   );

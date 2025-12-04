@@ -16,51 +16,18 @@
 
  ------------------------------------------------------------------- */
 
-import { Composition, Folder } from "remotion";
-import { Banner } from "./storm-software/Banner";
-import { Logo } from "./storm-software/Logo";
-import "./style.css";
+import { Folder } from "remotion";
+import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
+import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
 
 export const RemotionVideo: React.FC = () => {
   return (
     <>
-      <Folder name="logos">
-        <Composition
-          id="logo-1920x1080"
-          component={Logo}
-          durationInFrames={240}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
+      <Folder name="storm-software">
+        <StormSoftwareVideo />
       </Folder>
-      <Folder name="banners">
-        <Composition
-          id="banner-1280x640"
-          component={Banner}
-          durationInFrames={240}
-          fps={30}
-          width={1280}
-          height={640}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
-        <Composition
-          id="banner-1280x320"
-          component={Banner}
-          durationInFrames={240}
-          fps={30}
-          width={1280}
-          height={320}
-          defaultProps={{
-            theme: "dark",
-            type: "thin"
-          }}
-        />
+      <Folder name="powerlines">
+        <PowerlinesVideo />
       </Folder>
     </>
   );
