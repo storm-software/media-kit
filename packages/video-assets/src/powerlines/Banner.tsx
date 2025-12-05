@@ -20,22 +20,24 @@ import React from "react";
 import { AbsoluteFill, Img } from "remotion";
 import { GlitchBackground } from "../components/GlitchBackground";
 import { OrgTitle } from "../components/OrgTitle";
+import type { ThemeProps } from "../types/themes";
 
-export interface BannerProps {
-  theme?: "light" | "dark";
+export interface BannerProps extends ThemeProps {
   type?: "thin" | "normal";
 }
 
-export const Banner: React.FC<BannerProps> = ({ type = "normal" }) => {
+export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
   return (
     <>
-      <GlitchBackground />
+      <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center gap-18">
         <Img
-          src="https://public.storm-cdn.com/powerlines/logo.webp"
+          src={`https://public.storm-cdn.com/powerlines/logo-${theme}.webp`}
           className="w-[80%]"
         />
-        {type !== "thin" && <OrgTitle size="xs" />}
+        {type !== "thin" && (
+          <OrgTitle className="mr-8" size="xs" theme={theme} />
+        )}
       </AbsoluteFill>
     </>
   );

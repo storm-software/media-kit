@@ -16,23 +16,8 @@
 
  ------------------------------------------------------------------- */
 
-import React from "react";
-import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
-import type { ThemeProps } from "../types/themes";
+export type Theme = "light" | "dark";
 
-export interface BannerProps extends ThemeProps {
-  type?: "thin" | "normal";
+export interface ThemeProps {
+  theme?: Theme;
 }
-
-export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
-  return (
-    <>
-      <GlitchBackground theme={theme} />
-      <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size={type === "thin" ? "sm" : "md"} theme={theme} />
-      </AbsoluteFill>
-    </>
-  );
-};

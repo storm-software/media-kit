@@ -18,19 +18,30 @@
 
 import { loadFont } from "@remotion/google-fonts/Orbitron";
 import { Img } from "remotion";
+import { twMerge } from "tailwind-merge";
+import type { ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
 
-export interface OrgTitleProps {
+export interface OrgTitleProps extends ThemeProps {
+  className?: string;
   size?: "lg" | "md" | "sm" | "xs";
 }
 
-export const OrgTitle: React.FC<OrgTitleProps> = ({ size = "md" }) => {
+export const OrgTitle: React.FC<OrgTitleProps> = ({
+  size = "md",
+  theme,
+  className
+}) => {
   return (
     <div
-      className={`flex justify-center flex-row ${
-        size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"
-      } `}>
+      // eslint-disable-next-line ts/no-unsafe-call
+      className={twMerge(
+        `flex justify-center flex-row ${
+          size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"
+        } `,
+        className
+      )}>
       <Img
         src="https://public.storm-cdn.com/storm-software/logo.svg"
         className={
@@ -44,8 +55,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({ size = "md" }) => {
         }
       />
       <h1
-        style={{ fontFamily }}
-        className={`text-white font-black font-orbitron ${
+        style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
+        className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-black font-orbitron ${
           size === "lg"
             ? "text-[20rem] mt-10"
             : size === "md"

@@ -18,11 +18,14 @@
 
 import React from "react";
 import { OffthreadVideo } from "remotion";
+import type { ThemeProps } from "../types/themes";
 
-export const GlitchBackground: React.FC = () => {
+export const GlitchBackground: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <OffthreadVideo
-      src="https://public.storm-cdn.com/video/backgrounds/glitch-2-optimized.mp4"
+      src={`https://public.storm-cdn.com/video/backgrounds/glitch-2-optimized-${
+        theme
+      }.mp4`}
       className="absolute top-0 left-0 w-full h-full object-cover"
       style={{
         objectFit: "cover"

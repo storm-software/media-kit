@@ -60,6 +60,7 @@
     "postcss": "catalog:",
     "sharp": "catalog:",
     "tailwindcss": "catalog:",
+    "tailwind-merge": "catalog:",
     "tsx": "catalog:",
     "typescript": "^5.9.3"
   },

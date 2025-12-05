@@ -37,6 +37,28 @@ export const RemotionVideo: React.FC = () => {
             theme: "dark"
           }}
         />
+        <Composition
+          id={formatId("storm-software", "logo-1920x1080-dark")}
+          component={Logo}
+          durationInFrames={105}
+          fps={30}
+          width={1920}
+          height={1080}
+          defaultProps={{
+            theme: "dark"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "logo-1920x1080-light")}
+          component={Logo}
+          durationInFrames={105}
+          fps={30}
+          width={1920}
+          height={1080}
+          defaultProps={{
+            theme: "light"
+          }}
+        />
       </Folder>
       <Folder name="banners">
         <Composition
@@ -51,6 +73,28 @@ export const RemotionVideo: React.FC = () => {
           }}
         />
         <Composition
+          id={formatId("storm-software", "banner-1280x640-dark")}
+          component={Banner}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={640}
+          defaultProps={{
+            theme: "dark"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "banner-1280x640-light")}
+          component={Banner}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={640}
+          defaultProps={{
+            theme: "light"
+          }}
+        />
+        <Composition
           id={formatId("storm-software", "banner-1280x320")}
           component={Banner}
           durationInFrames={105}
@@ -59,6 +103,30 @@ export const RemotionVideo: React.FC = () => {
           height={320}
           defaultProps={{
             theme: "dark",
+            type: "thin"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "banner-1280x320-dark")}
+          component={Banner}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={320}
+          defaultProps={{
+            theme: "dark",
+            type: "thin"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "banner-1280x320-light")}
+          component={Banner}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={320}
+          defaultProps={{
+            theme: "light",
             type: "thin"
           }}
         />

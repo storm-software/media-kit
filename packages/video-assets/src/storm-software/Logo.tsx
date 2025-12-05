@@ -20,15 +20,14 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { GlitchBackground } from "../components/GlitchBackground";
 import { OrgTitle } from "../components/OrgTitle";
+import type { ThemeProps } from "../types/themes";
 
-export const Logo: React.FC<{
-  theme: "light" | "dark";
-}> = () => {
+export const Logo: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <>
-      <GlitchBackground />
+      <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" />
+        <OrgTitle size="lg" theme={theme} />
       </AbsoluteFill>
     </>
   );

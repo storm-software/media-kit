@@ -52,7 +52,7 @@ async function renderAssets(project: string) {
 
     await sharp(outputLocation, { animated: true })
       .gif({ interFrameMaxError: 8 })
-      .toFile(outputLocation.replace(".gif", "-min.gif"));
+      .toFile(outputLocation.replace(".gif", "-optimized.gif"));
   }
 
   console.log(
