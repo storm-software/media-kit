@@ -59,8 +59,8 @@
     "eslint-flat-config-utils": "catalog:",
     "postcss": "catalog:",
     "sharp": "catalog:",
-    "tailwindcss": "catalog:",
     "tailwind-merge": "catalog:",
+    "tailwindcss": "catalog:",
     "tsx": "catalog:",
     "typescript": "^5.9.3"
   },

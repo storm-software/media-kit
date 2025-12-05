@@ -17,7 +17,7 @@
  ------------------------------------------------------------------- */
 
 import { bundle } from "@remotion/bundler";
-import { getCompositions, renderMedia } from "@remotion/renderer";
+import { getCompositions, renderMedia, renderStill } from "@remotion/renderer";
 import { enableTailwind } from "@remotion/tailwind-v4";
 import chalkTemplate from "chalk-template";
 import { createRequire } from "node:module";
@@ -53,6 +53,75 @@ async function renderAssets(project: string) {
     await sharp(outputLocation, { animated: true })
       .gif({ interFrameMaxError: 8 })
       .toFile(outputLocation.replace(".gif", "-optimized.gif"));
+
+    await Promise.all([
+      (async () => {
+        const output = `dist/${project}/${composition.id.replace(
+          `${project}-`,
+          ""
+        )}.png`;
+        console.log(chalkTemplate`{blueBright  Rendering still ${output}... }`);
+
+        await renderStill({
+          composition,
+          serveUrl: bundled,
+          output,
+          frame: 86, // 4
+          imageFormat: "png"
+        });
+        await sharp(output)
+          .png({ palette: true })
+          .toFile(output.replace(".png", "-optimized.png"));
+
+        console.log(
+          chalkTemplate`{green  ✔ Completed rendering ${output} still! }`
+        );
+      })(),
+      (async () => {
+        const output = `dist/${project}/${composition.id.replace(
+          `${project}-`,
+          ""
+        )}.jpeg`;
+        console.log(chalkTemplate`{blueBright  Rendering still ${output}... }`);
+
+        await renderStill({
+          composition,
+          serveUrl: bundled,
+          output,
+          frame: 86, // 4
+          imageFormat: "jpeg"
+        });
+        await sharp(output)
+          .jpeg({ mozjpeg: true })
+          .toFile(output.replace(".jpeg", "-optimized.jpeg"));
+
+        console.log(
+          chalkTemplate`{green  ✔ Completed rendering ${output} still! }`
+        );
+      })(),
+      (async () => {
+        const output = `dist/${project}/${composition.id.replace(
+          `${project}-`,
+          ""
+        )}.webp`;
+        console.log(chalkTemplate`{blueBright  Rendering still ${output}... }`);
+
+        await renderStill({
+          composition,
+          serveUrl: bundled,
+          output,
+          frame: 86, // 4
+          imageFormat: "webp"
+        });
+        await sharp(output)
+          .webp({ quality: 95 })
+          .toFile(output.replace(".webp", "-optimized.webp"));
+
+        console.log(
+          chalkTemplate`{green  ✔ Completed rendering ${output} still! }`
+        );
+      })()
+    ]);
   }
 
   console.log(
