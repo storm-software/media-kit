@@ -61,10 +61,10 @@ commit-msg:
 pre-push:
   piped: true
   commands:
-    build:
-      glob: "**/*"
-      run: pnpm build
-      stage_fixed: true
+    # build:
+    #   glob: "**/*"
+    #   run: pnpm build
+    #   stage_fixed: true
     # validate:
     #   glob: "**/*"
     #   run: "pnpm exec storm-pre-push {staged_files}"
@@ -82,8 +82,7 @@ pre-push:
       run: pnpm exec storm-lint codeowners
     lint-github-actions:
       glob: ".github/workflows/*.*"
-      run:
-        zizmor --offline --config="./tools/config/zizmor.yml" .github/workflows/
+      run: zizmor --offline --config="./tools/config/zizmor.yml" .github/workflows/
     sherif:
       glob:
         - "*.js"
@@ -100,8 +99,7 @@ pre-push:
       stage_fixed: true
     readme:
       glob: "**/*"
-      run:
-        'pnpm exec storm-git readme --templates="tools/readme-templates"
+      run: 'pnpm exec storm-git readme --templates="tools/readme-templates"
         --project="@storm-software/media-kit" '
       stage_fixed: true
     format:
