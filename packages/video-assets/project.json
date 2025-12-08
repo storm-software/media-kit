@@ -33,7 +33,8 @@
       "executor": "@storm-software/cloudflare-tools:r2-upload-publish",
       "options": {
         "bucketId": "storm-file-store",
-        "tag": "media-kit"
+        "tag": "media-kit",
+        "path": "dist/packages/video-assets"
       }
     }
   },
