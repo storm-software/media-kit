@@ -22,21 +22,21 @@ catalog:
   '@remotion/shapes': ^4.0.382
   '@remotion/tailwind-v4': ^4.0.382
   '@storm-software/build-tools': 0.151.19
-  '@storm-software/cloudflare-tools': ^0.71.10
-  '@storm-software/config': ^1.134.60
-  '@storm-software/config-tools': ^1.188.60
-  '@storm-software/cspell': ^0.45.60
-  '@storm-software/esbuild': ^0.53.60
-  '@storm-software/eslint': ^0.169.61
-  '@storm-software/git-tools': ^2.124.43
-  '@storm-software/linting-tools': ^1.132.60
-  '@storm-software/markdownlint': ^0.30.60
-  '@storm-software/prettier': ^0.57.60
-  '@storm-software/testing-tools': ^1.119.60
-  '@storm-software/tsconfig': ^0.47.60
-  '@storm-software/tsdoc': ^0.13.60
-  '@storm-software/untyped': ^0.24.41
-  '@storm-software/workspace-tools': ^1.294.4
+  '@storm-software/cloudflare-tools': ^0.71.13
+  '@storm-software/config': ^1.134.62
+  '@storm-software/config-tools': ^1.188.62
+  '@storm-software/cspell': ^0.45.61
+  '@storm-software/esbuild': ^0.53.62
+  '@storm-software/eslint': ^0.169.63
+  '@storm-software/git-tools': ^2.124.45
+  '@storm-software/linting-tools': ^1.132.62
+  '@storm-software/markdownlint': ^0.30.61
+  '@storm-software/prettier': ^0.57.61
+  '@storm-software/testing-tools': ^1.119.61
+  '@storm-software/tsconfig': ^0.47.61
+  '@storm-software/tsdoc': ^0.13.61
+  '@storm-software/untyped': ^0.24.43
+  '@storm-software/workspace-tools': ^1.294.6
   '@swc-node/register': ^1.11.1
   '@swc/core': ^1.15.3
   '@swc/helpers': ^0.5.17
