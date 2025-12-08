@@ -44,7 +44,7 @@ brand guidelines you need to represent Storm Software in your projects.
 
 - [Badges](#badges)
 - [Brand](#brand)
-- [Logo](#logo)
+  - [Logo](#logo)
     - [Dark Version](#dark-version)
     - [Light Version](#light-version)
   - [Typography](#typography)
@@ -55,70 +55,85 @@ brand guidelines you need to represent Storm Software in your projects.
 
 # Badges
 
-Custom **Storm Software badges** were created for use in your projects, perfect for your readme or website.
+Custom **Storm Software badges** were created for use in your projects, perfect
+for your readme or website.
 
 [![Made by Storm](https://public.storm-cdn.com/storm-software/badge-dark.svg)](https://stormsoftware.com)
 
-``` md
+```md
 [![Made by Storm](https://public.storm-cdn.com/storm-software/badge-dark.svg)](https://stormsoftware.com)
 ```
 
-``` html
+```html
 <a href="https://stormsoftware.com">
-  <img width="122" height="20" src="https://public.storm-cdn.com/storm-software/badge-dark.svg" alt="Made by Storm" />
+  <img
+    width="122"
+    height="20"
+    src="https://public.storm-cdn.com/storm-software/badge-dark.svg"
+    alt="Made by Storm" />
 </a>
 ```
 
 [![Made by Storm](https://public.storm-cdn.com/storm-software/badge-light.svg)](https://stormsoftware.com)
 
-``` md
+```md
 [![Made by Storm](https://public.storm-cdn.com/storm-software/badge-light.svg)](https://stormsoftware.com)
 ```
 
-``` html
+```html
 <a href="https://stormsoftware.com">
-  <img width="122" height="20" src="https://public.storm-cdn.com/storm-software/badge-light.svg" alt="Made by Storm" />
+  <img
+    width="122"
+    height="20"
+    src="https://public.storm-cdn.com/storm-software/badge-light.svg"
+    alt="Made by Storm" />
 </a>
 ```
 
-<br> <br> 
+<br> <br>
 
 # Brand
 
-ℹ️ These *guidelines* will help you to make a **correct use** of the **Storm Software brand**.<br>
-👉 The **Storm Software symbol** should only be used in places where there is *not enough room to display the full logo*,<br> 
-or in cases where *only symbols of multiple brands are displayed*.<br> <br> 
+ℹ️ These _guidelines_ will help you to correctly use the **Storm
+Software brand**.
 
-# Logo 
+## Logo
 
-<br> 
+<br>
 
 ### Dark Version
 
-| Glitched (Normal) | Un-glitched |
-|-|-|
-| ![](https://public.storm-cdn.com/storm-software/icon-dark.svg) | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.svg) |
+| Glitched (Normal)                                                                                                                                 | Un-glitched                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icon-dark.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.svg)                                                                                               |
 | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-dark.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-dark.svg) | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.svg) |
 
 ### Light Version
-| Glitched (Normal) | Un-glitched |
-|-|-|
-| ![](https://public.storm-cdn.com/storm-software/icon-light.svg) | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-light.svg) |
+
+| Glitched (Normal)                                                                                                                                   | Un-glitched                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icon-light.svg)                                                                                     | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-light.svg)                                                                                                |
 | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-light.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-light.svg) | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-unglitched-light.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-unglitched-light.svg) |
 
 <br><br>
 
-✉️ If you have any **questions** or want to use these assets for your *project* or *website*, please [**reach out to us**](contact@stormsoftware.com).<br>
-👉 Please **do not alter the Storm Software logo** or use it to *imply sponsorship* or *association with Storm Software* without our explicit permission.
+✉️ If you have any **questions** or want to use these assets for your *project*
+or *website*, please [**reach out to us**](contact@stormsoftware.com).
 
-<br><br> 
+<br>
+
+Please **do not alter the Storm Software logo** or use it to _imply sponsorship_
+or *association with Storm Software* without our explicit permission.
+
+<br><br>
 
 ## Typography
 
-- **Headings** - [Barlow](https://fonts.google.com/specimen/Barlow)
+- **Title** - [Orbitron](https://fonts.google.com/specimen/Orbitron)
+- **Headings** - [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 - **Body** - [Inter](https://fonts.google.com/specimen/Inter)
-- **Code** - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-<br> <br> 
+- **Code** - [Space Mono](https://fonts.google.com/specimen/Space+Mono) <br>
+  <br>
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
