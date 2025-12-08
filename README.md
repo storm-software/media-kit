@@ -94,8 +94,8 @@ for your readme or website.
 
 # Brand
 
-ℹ️ These _guidelines_ will help you to correctly use the **Storm
-Software brand**.
+ℹ️ These _guidelines_ will help you to correctly use the **Storm Software
+brand**.
 
 ## Logo
 
@@ -130,7 +130,8 @@ or *association with Storm Software* without our explicit permission.
 ## Typography
 
 - **Title** - [Orbitron](https://fonts.google.com/specimen/Orbitron)
-- **Headings** - [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+- **Headings** -
+  [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 - **Body** - [Inter](https://fonts.google.com/specimen/Inter)
 - **Code** - [Space Mono](https://fonts.google.com/specimen/Space+Mono) <br>
   <br>

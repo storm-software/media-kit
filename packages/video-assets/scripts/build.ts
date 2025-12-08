@@ -146,11 +146,37 @@ async function renderAssets(project: string) {
 }
 
 try {
-  console.log(
-    chalkTemplate`{whiteBright  📼 Rendering branded gif assets... }`
-  );
+  const args = process.argv.slice(2);
+  if (args.length > 0) {
+    const project = args[0];
+    if (!project) {
+      console.error(
+        chalkTemplate`{redBright  ❌ No project specified. Available projects are: }${PROJECT_LIST.join(
+          ", "
+        )}`
+      );
+      process.exit(1);
+    }
 
-  await Promise.all(PROJECT_LIST.map(async project => renderAssets(project)));
+    if (!PROJECT_LIST.includes(project as (typeof PROJECT_LIST)[number])) {
+      console.error(
+        chalkTemplate`{redBright  ❌ Project "${project}" is not recognized. Available projects are: }${PROJECT_LIST.join(
+          ", "
+        )}`
+      );
+      process.exit(1);
+    }
+
+    console.log(
+      chalkTemplate`{whiteBright  📼 Rendering branded gif assets for project "${project}"... }`
+    );
+    await renderAssets(project);
+  } else {
+    console.log(
+      chalkTemplate`{whiteBright  📼 Rendering branded gif assets... }`
+    );
+    await Promise.all(PROJECT_LIST.map(async project => renderAssets(project)));
+  }
 
   console.log(
     chalkTemplate`{greenBright  ✔ All videos have been rendered successfully! }`

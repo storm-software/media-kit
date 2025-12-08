@@ -11,14 +11,36 @@
         "cwd": "{projectRoot}"
       }
     },
-    "build-gifs": {
+    "build-storm-software": {
       "cache": true,
       "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
-        "command": "tsx scripts/build-gifs.ts",
+        "command": "tsx scripts/build.ts storm-software",
+        "cwd": "{projectRoot}"
+      }
+    },
+    "build-powerlines": {
+      "cache": true,
+      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "executor": "nx:run-commands",
+      "dependsOn": ["clean", "^build"],
+      "options": {
+        "command": "tsx scripts/build.ts powerlines",
+        "cwd": "{projectRoot}"
+      }
+    },
+    "build-acidic": {
+      "cache": true,
+      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "executor": "nx:run-commands",
+      "dependsOn": ["clean", "^build"],
+      "options": {
+        "command": "tsx scripts/build.ts acidic",
         "cwd": "{projectRoot}"
       }
     },
@@ -26,7 +48,12 @@
       "cache": true,
       "inputs": ["{projectRoot}/dist"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
-      "dependsOn": ["typecheck", "build-gifs"],
+      "dependsOn": [
+        "typecheck",
+        "build-storm-software",
+        "build-powerlines",
+        "build-acidic"
+      ],
       "command": "pnpm copyfiles --up=3 \"./packages/video-assets/dist/**/*\" ./dist/packages/video-assets"
     },
     "nx-release-publish": {
