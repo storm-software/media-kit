@@ -35,7 +35,6 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 }) => {
   return (
     <div
-      // eslint-disable-next-line ts/no-unsafe-call
       className={twMerge(
         `flex justify-center flex-row ${
           size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"

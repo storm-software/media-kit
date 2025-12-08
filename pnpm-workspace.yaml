@@ -22,21 +22,21 @@ catalog:
   '@remotion/shapes': ^4.0.382
   '@remotion/tailwind-v4': ^4.0.382
   '@storm-software/build-tools': 0.151.19
-  '@storm-software/config': ^1.134.50
-  '@storm-software/config-tools': ^1.188.50
-  '@storm-software/cspell': ^0.45.50
-  '@storm-software/esbuild': ^0.53.50
-  '@storm-software/eslint': ^0.169.50
-  '@storm-software/git-tools': ^2.124.33
-  '@storm-software/linting-tools': ^1.132.50
-  '@storm-software/markdownlint': ^0.30.50
-  '@storm-software/prettier': ^0.57.50
-  '@storm-software/testing-tools': ^1.119.50
-  '@storm-software/tsconfig': ^0.47.50
-  '@storm-software/tsdoc': ^0.13.50
-  '@storm-software/unbuild': ^0.57.50
-  '@storm-software/untyped': ^0.24.31
-  '@storm-software/workspace-tools': ^1.293.20
+  '@storm-software/cloudflare-tools': ^0.71.10
+  '@storm-software/config': ^1.134.60
+  '@storm-software/config-tools': ^1.188.60
+  '@storm-software/cspell': ^0.45.60
+  '@storm-software/esbuild': ^0.53.60
+  '@storm-software/eslint': ^0.169.61
+  '@storm-software/git-tools': ^2.124.43
+  '@storm-software/linting-tools': ^1.132.60
+  '@storm-software/markdownlint': ^0.30.60
+  '@storm-software/prettier': ^0.57.60
+  '@storm-software/testing-tools': ^1.119.60
+  '@storm-software/tsconfig': ^0.47.60
+  '@storm-software/tsdoc': ^0.13.60
+  '@storm-software/untyped': ^0.24.41
+  '@storm-software/workspace-tools': ^1.294.4
   '@swc-node/register': ^1.11.1
   '@swc/core': ^1.15.3
   '@swc/helpers': ^0.5.17
@@ -47,7 +47,7 @@ catalog:
   '@types/pluralize': ^0.0.33
   '@types/react': ^19.2.7
   '@types/react-dom': ^19.2.3
-  '@types/web': ^0.0.295
+  '@types/web': ^0.0.298
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
   defu: ^6.1.4
@@ -60,7 +60,7 @@ catalog:
   jest-environment-jsdom: 30.2.0
   jest-environment-node: ^30.2.0
   jiti: ^2.4.2
-  lefthook: ^2.0.7
+  lefthook: ^2.0.8
   loader-utils: ^3.3.1
   log4brains: ^1.1.0
   nx: 22.1.3
@@ -99,6 +99,7 @@ minimumReleaseAgeExclude:
 
 onlyBuiltDependencies:
   - '@swc/core'
+  - aws-crt
   - core-js
   - esbuild
   - gifsicle
@@ -108,6 +109,7 @@ onlyBuiltDependencies:
   - optipng-bin
   - sharp
   - unrs-resolver
+  - workerd
 
 overrides:
   '@storm-software/tools-config': workspace:*

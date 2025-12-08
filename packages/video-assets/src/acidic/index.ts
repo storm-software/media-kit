@@ -16,23 +16,7 @@
 
  ------------------------------------------------------------------- */
 
-import { Folder } from "remotion";
-import { RemotionVideo as AcidicVideo } from "./acidic/Video";
-import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
-import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
+import { registerRoot } from "remotion";
+import { RemotionVideo } from "./Video";
 
-export const RemotionVideo: React.FC = () => {
-  return (
-    <>
-      <Folder name="storm-software">
-        <StormSoftwareVideo />
-      </Folder>
-      <Folder name="powerlines">
-        <PowerlinesVideo />
-      </Folder>
-      <Folder name="acidic">
-        <AcidicVideo />
-      </Folder>
-    </>
-  );
-};
+registerRoot(RemotionVideo);

@@ -16,4 +16,4 @@
 
  ------------------------------------------------------------------- */
 
-export const PROJECT_LIST = ["storm-software", "powerlines"] as const;
+export const PROJECT_LIST = ["storm-software", "powerlines", "acidic"] as const;
