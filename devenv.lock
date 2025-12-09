@@ -117,10 +117,10 @@
     "storm-ops": {
       "flake": false,
       "locked": {
-        "lastModified": 1765223283,
+        "lastModified": 1765237620,
         "owner": "storm-software",
         "repo": "storm-ops",
-        "rev": "ecf92fdae5fd9ab519c263e6289345824e7dd61a",
+        "rev": "e5afccfa607b8bf8396ec9af7e7cb78313508956",
         "type": "github"
       },
       "original": {

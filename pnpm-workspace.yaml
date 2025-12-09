@@ -12,15 +12,15 @@ catalog:
   '@nx/js': 22.2.0
   '@nx/plugin': 22.2.0
   '@nx/workspace': 22.2.0
-  '@remotion/cli': ^4.0.382
-  '@remotion/eslint-config': ^4.0.382
-  '@remotion/fonts': ^4.0.382
-  '@remotion/google-fonts': ^4.0.382
-  '@remotion/media-utils': ^4.0.382
-  '@remotion/noise': ^4.0.382
-  '@remotion/paths': ^4.0.382
-  '@remotion/shapes': ^4.0.382
-  '@remotion/tailwind-v4': ^4.0.382
+  '@remotion/cli': ^4.0.383
+  '@remotion/eslint-config': ^4.0.383
+  '@remotion/fonts': ^4.0.383
+  '@remotion/google-fonts': ^4.0.383
+  '@remotion/media-utils': ^4.0.383
+  '@remotion/noise': ^4.0.383
+  '@remotion/paths': ^4.0.383
+  '@remotion/shapes': ^4.0.383
+  '@remotion/tailwind-v4': ^4.0.383
   '@storm-software/build-tools': 0.151.19
   '@storm-software/cloudflare-tools': ^0.71.16
   '@storm-software/config': ^1.134.65
@@ -69,7 +69,7 @@ catalog:
   react: ^19.2.1
   react-dom: ^19.2.1
   react-native: ^0.77.0
-  remotion: ^4.0.382
+  remotion: ^4.0.383
   rimraf: ^6.1.2
   sharp: ^0.34.5
   sherif: ^1.9.0
