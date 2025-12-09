@@ -20,6 +20,8 @@ import { bundle } from "@remotion/bundler";
 import { getCompositions, renderMedia, renderStill } from "@remotion/renderer";
 import { enableTailwind } from "@remotion/tailwind-v4";
 import chalkTemplate from "chalk-template";
+import { existsSync } from "node:fs";
+import { mkdir } from "node:fs/promises";
 import { createRequire } from "node:module";
 import sharp from "sharp";
 import { PROJECT_LIST } from "./projects-list";
@@ -40,7 +42,15 @@ async function renderAssets(project: string) {
         )}... }`
       );
 
-      const outputLocation = `dist/${project}/${composition.id.replace(
+      if (!existsSync(`dist/${project}/originals`)) {
+        await mkdir(`dist/${project}/originals`, { recursive: true });
+      }
+
+      if (!existsSync(`dist/${project}/optimized`)) {
+        await mkdir(`dist/${project}/optimized`, { recursive: true });
+      }
+
+      const outputLocation = `dist/${project}/originals/${composition.id.replace(
         `${project}-`,
         ""
       )}.gif`;
@@ -57,11 +67,16 @@ async function renderAssets(project: string) {
 
       await sharp(outputLocation, { animated: true })
         .gif({ interFrameMaxError: 8 })
-        .toFile(outputLocation);
+        .toFile(
+          outputLocation.replace(
+            `dist/${project}/originals/`,
+            `dist/${project}/optimized/`
+          )
+        );
 
       await Promise.allSettled([
         (async () => {
-          const output = `dist/${project}/${composition.id.replace(
+          const output = `dist/${project}/originals/${composition.id.replace(
             `${project}-`,
             ""
           )}.png`;
@@ -76,14 +91,21 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "png"
           });
-          await sharp(output).png({ palette: true }).toFile(output);
+          await sharp(output)
+            .png({ palette: true })
+            .toFile(
+              output.replace(
+                `dist/${project}/originals/`,
+                `dist/${project}/optimized/`
+              )
+            );
 
           console.log(
             chalkTemplate`green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
           );
         })(),
         (async () => {
-          const output = `dist/${project}/${composition.id.replace(
+          const output = `dist/${project}/originals/${composition.id.replace(
             `${project}-`,
             ""
           )}.jpeg`;
@@ -98,14 +120,21 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "jpeg"
           });
-          await sharp(output).jpeg({ mozjpeg: true }).toFile(output);
+          await sharp(output)
+            .jpeg({ mozjpeg: true })
+            .toFile(
+              output.replace(
+                `dist/${project}/originals/`,
+                `dist/${project}/optimized/`
+              )
+            );
 
           console.log(
             chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
           );
         })(),
         (async () => {
-          const output = `dist/${project}/${composition.id.replace(
+          const output = `dist/${project}/originals/${composition.id.replace(
             `${project}-`,
             ""
           )}.webp`;
@@ -120,7 +149,14 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "webp"
           });
-          await sharp(output).webp({ quality: 95 }).toFile(output);
+          await sharp(output)
+            .webp({ quality: 95 })
+            .toFile(
+              output.replace(
+                `dist/${project}/originals/`,
+                `dist/${project}/optimized/`
+              )
+            );
 
           console.log(
             chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
