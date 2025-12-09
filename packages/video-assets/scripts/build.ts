@@ -18,8 +18,8 @@
 
 import { bundle } from "@remotion/bundler";
 import {
-  ensureBrowser,
   getCompositions,
+  openBrowser,
   renderMedia,
   renderStill
 } from "@remotion/renderer";
@@ -35,7 +35,7 @@ const require = createRequire(import.meta.url);
 
 async function renderAssets(project: string) {
   try {
-    await ensureBrowser();
+    const browser = await openBrowser("chrome");
 
     const bundled = await bundle({
       entryPoint: require.resolve(`../src/${project}/index.ts`),
@@ -62,6 +62,7 @@ async function renderAssets(project: string) {
         ""
       )}.gif`;
       await renderMedia({
+        puppeteerInstance: browser,
         codec: "gif",
         composition,
         serveUrl: bundled,
@@ -92,6 +93,7 @@ async function renderAssets(project: string) {
           );
 
           await renderStill({
+            puppeteerInstance: browser,
             composition,
             serveUrl: bundled,
             output,
@@ -121,6 +123,7 @@ async function renderAssets(project: string) {
           );
 
           await renderStill({
+            puppeteerInstance: browser,
             composition,
             serveUrl: bundled,
             output,
@@ -150,6 +153,7 @@ async function renderAssets(project: string) {
           );
 
           await renderStill({
+            puppeteerInstance: browser,
             composition,
             serveUrl: bundled,
             output,
