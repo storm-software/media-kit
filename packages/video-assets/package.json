@@ -1,6 +1,6 @@
 {
   "name": "@storm-software/video-assets",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "description": "Storm Software branded video assets to be used in other projects.",
   "repository": {

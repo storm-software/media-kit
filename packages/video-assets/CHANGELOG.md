@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.7) (12/08/2025)
+
+### Bug Fixes
+
+- **video-assets:** Added `ensureBrowser` call to build script to prevent errors
+  ([245dac2](https://github.com/storm-software/media-kit/commit/245dac2))
+
 ## [0.1.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.6) (12/08/2025)
 
 ### Miscellaneous
