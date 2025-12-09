@@ -57,7 +57,7 @@ async function renderAssets(project: string) {
 
       await sharp(outputLocation, { animated: true })
         .gif({ interFrameMaxError: 8 })
-        .toFile(outputLocation.replace(".gif", "-optimized.gif"));
+        .toFile(outputLocation);
 
       await Promise.allSettled([
         (async () => {
@@ -76,9 +76,7 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "png"
           });
-          await sharp(output)
-            .png({ palette: true })
-            .toFile(output.replace(".png", "-optimized.png"));
+          await sharp(output).png({ palette: true }).toFile(output);
 
           console.log(
             chalkTemplate`green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
@@ -100,9 +98,7 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "jpeg"
           });
-          await sharp(output)
-            .jpeg({ mozjpeg: true })
-            .toFile(output.replace(".jpeg", "-optimized.jpeg"));
+          await sharp(output).jpeg({ mozjpeg: true }).toFile(output);
 
           console.log(
             chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
@@ -124,9 +120,7 @@ async function renderAssets(project: string) {
             frame: 86, // 4
             imageFormat: "webp"
           });
-          await sharp(output)
-            .webp({ quality: 95 })
-            .toFile(output.replace(".webp", "-optimized.webp"));
+          await sharp(output).webp({ quality: 95 }).toFile(output);
 
           console.log(
             chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
