@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ ... }:
 {
   name = "storm-software/media-kit";
 

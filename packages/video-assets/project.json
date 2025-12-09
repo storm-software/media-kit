@@ -4,6 +4,15 @@
   "projectType": "library",
   "sourceRoot": "packages/video-assets/src",
   "targets": {
+    "clean": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "pnpm exec rimraf dist/packages/video-assets",
+          "pnpm exec rimraf packages/video-assets/dist"
+        ]
+      }
+    },
     "start": {
       "executor": "nx:run-commands",
       "options": {
@@ -49,6 +58,7 @@
       "inputs": ["{projectRoot}/dist"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "dependsOn": [
+        "clean",
         "typecheck",
         "build-storm-software",
         "build-powerlines",
