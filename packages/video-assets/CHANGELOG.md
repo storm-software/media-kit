@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.5) (12/08/2025)
+
+### Miscellaneous
+
+- **monorepo:** Update nix and npm package dependencies
+  ([3c859c0](https://github.com/storm-software/media-kit/commit/3c859c0))
+
 ## [0.1.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.2) (12/08/2025)
 
 ### Miscellaneous
