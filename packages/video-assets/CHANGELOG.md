@@ -2,6 +2,20 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.6) (12/08/2025)
+
+### Miscellaneous
+
+- **video-assets:** Improved the cache `inputs` and `outputs` for builds
+  ([830e944](https://github.com/storm-software/media-kit/commit/830e944))
+- **video-assets:** Remove unoptimized files from upload
+  ([8995b98](https://github.com/storm-software/media-kit/commit/8995b98))
+
+### Bug Fixes
+
+- **video-assets:** Added separate output paths for `originals` and `optimized`
+  files ([3590632](https://github.com/storm-software/media-kit/commit/3590632))
+
 ## [0.1.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.5) (12/08/2025)
 
 ### Miscellaneous
