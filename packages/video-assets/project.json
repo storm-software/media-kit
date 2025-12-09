@@ -22,8 +22,15 @@
     },
     "build-storm-software": {
       "cache": true,
-      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "inputs": [
+        "{projectRoot}/src/storm-software",
+        "{projectRoot}/src/components",
+        "{projectRoot}/src/types",
+        "{projectRoot}/src/utilities",
+        "{projectRoot}/src/style.css",
+        "{projectRoot}/scripts"
+      ],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}/storm-software"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -33,8 +40,15 @@
     },
     "build-powerlines": {
       "cache": true,
-      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "inputs": [
+        "{projectRoot}/src/powerlines",
+        "{projectRoot}/src/components",
+        "{projectRoot}/src/types",
+        "{projectRoot}/src/utilities",
+        "{projectRoot}/src/style.css",
+        "{projectRoot}/scripts"
+      ],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}/powerlines"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -44,8 +58,15 @@
     },
     "build-acidic": {
       "cache": true,
-      "inputs": ["{projectRoot}/src", "{projectRoot}/scripts"],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "inputs": [
+        "{projectRoot}/src/acidic",
+        "{projectRoot}/src/components",
+        "{projectRoot}/src/types",
+        "{projectRoot}/src/utilities",
+        "{projectRoot}/src/style.css",
+        "{projectRoot}/scripts"
+      ],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}/acidic"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
