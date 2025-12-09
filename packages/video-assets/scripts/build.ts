@@ -17,7 +17,12 @@
  ------------------------------------------------------------------- */
 
 import { bundle } from "@remotion/bundler";
-import { getCompositions, renderMedia, renderStill } from "@remotion/renderer";
+import {
+  ensureBrowser,
+  getCompositions,
+  renderMedia,
+  renderStill
+} from "@remotion/renderer";
 import { enableTailwind } from "@remotion/tailwind-v4";
 import chalkTemplate from "chalk-template";
 import { existsSync } from "node:fs";
@@ -30,6 +35,8 @@ const require = createRequire(import.meta.url);
 
 async function renderAssets(project: string) {
   try {
+    await ensureBrowser();
+
     const bundled = await bundle({
       entryPoint: require.resolve(`../src/${project}/index.ts`),
       webpackOverride: config => enableTailwind(config)
