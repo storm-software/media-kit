@@ -12,15 +12,15 @@ catalog:
   '@nx/js': 22.2.0
   '@nx/plugin': 22.2.0
   '@nx/workspace': 22.2.0
-  '@remotion/cli': ^4.0.383
-  '@remotion/eslint-config': ^4.0.383
-  '@remotion/fonts': ^4.0.383
-  '@remotion/google-fonts': ^4.0.383
-  '@remotion/media-utils': ^4.0.383
-  '@remotion/noise': ^4.0.383
-  '@remotion/paths': ^4.0.383
-  '@remotion/shapes': ^4.0.383
-  '@remotion/tailwind-v4': ^4.0.383
+  '@remotion/cli': ^4.0.386
+  '@remotion/eslint-config': ^4.0.386
+  '@remotion/fonts': ^4.0.386
+  '@remotion/google-fonts': ^4.0.386
+  '@remotion/media-utils': ^4.0.386
+  '@remotion/noise': ^4.0.386
+  '@remotion/paths': ^4.0.386
+  '@remotion/shapes': ^4.0.386
+  '@remotion/tailwind-v4': ^4.0.386
   '@storm-software/build-tools': 0.151.19
   '@storm-software/cloudflare-tools': ^0.71.16
   '@storm-software/config': ^1.134.65
@@ -43,7 +43,7 @@ catalog:
   '@swc/wasm': ^1.11.24
   '@taplo/cli': ^0.7.0
   '@types/jest': 30.0.0
-  '@types/node': ^24.10.2
+  '@types/node': ^24.10.3
   '@types/pluralize': ^0.0.33
   '@types/react': ^19.2.7
   '@types/react-dom': ^19.2.3
@@ -66,15 +66,15 @@ catalog:
   nx: 22.2.0
   postcss: ^8.5.6
   prettier: ^3.7.4
-  react: ^19.2.1
-  react-dom: ^19.2.1
+  react: ^19.2.2
+  react-dom: ^19.2.2
   react-native: ^0.77.0
-  remotion: ^4.0.383
+  remotion: ^4.0.386
   rimraf: ^6.1.2
   sharp: ^0.34.5
   sherif: ^1.9.0
   tailwind-merge: ^3.4.0
-  tailwindcss: ^4.1.17
+  tailwindcss: ^4.1.18
   ts-jest: 29.4.6
   ts-node: ^10.9.2
   tslib: ^2.8.1
