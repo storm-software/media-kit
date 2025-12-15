@@ -30,17 +30,17 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
     <>
       <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col gap-10 justify-center items-center w-full py-10">
-        <div className="flex flex-1 flex-row justify-center items-center mx-4 max-h-[500px]">
+        <div className="flex flex-1 flex-row justify-center items-center mx-4 max-h-125">
           <Img
             src={`https://public.storm-cdn.com/acidic/logo-transparent-${theme}.svg`}
-            className="max-w-[400px]"
+            className="max-w-99"
           />
           <h1
             style={{
               fontFamily,
               color: theme === "light" ? "#1d1e22" : "white"
             }}
-            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-extrabold font-space-grotesk text-[300px]`}>
+            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-extrabold font-space-grotesk text-[300px] mt-14`}>
             Acidic
           </h1>
         </div>

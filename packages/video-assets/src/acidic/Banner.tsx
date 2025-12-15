@@ -35,10 +35,10 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
     <>
       <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col gap-10 justify-center items-center w-full py-10">
-        <div className="flex flex-1 flex-row justify-center items-center mx-4 w-[4/5] max-h-[500px]">
+        <div className="flex flex-1 flex-row justify-center items-center mx-4 w-[4/5] max-h-125">
           <Img
             src={`https://public.storm-cdn.com/acidic/logo-transparent-${theme}.svg`}
-            className={type === "thin" ? "max-w-[260px]" : "max-w-[300px]"}
+            className={type === "thin" ? "max-w-65" : "max-w-72"}
           />
           <h1
             style={{
@@ -46,7 +46,7 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
               color: theme === "light" ? "#1d1e22" : "white"
             }}
             className={twMerge(
-              `text-${theme === "light" ? "[#1d1e22]" : "white"} font-extrabold font-space-grotesk`,
+              `text-${theme === "light" ? "[#1d1e22]" : "white"} font-extrabold font-space-grotesk mt-16`,
               type === "thin" ? "text-[175px]" : "text-[220px]"
             )}>
             Acidic
