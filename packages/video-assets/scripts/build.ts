@@ -33,39 +33,14 @@ import { PROJECT_LIST } from "./projects-list";
 
 const require = createRequire(import.meta.url);
 
-try {
-  const args = process.argv.slice(2);
-  if (args.length > 0) {
-    const project = args[0];
-    if (!project) {
-      console.error(
-        chalkTemplate`{redBright  ❌ No project specified. Available projects are: }${PROJECT_LIST.join(
-          ", "
-        )}`
-      );
-      throw new Error("No project specified.");
-    }
-
-    if (!PROJECT_LIST.includes(project as (typeof PROJECT_LIST)[number])) {
-      console.error(
-        chalkTemplate`{redBright  ❌ Project "${project}" is not recognized. Available projects are: }${PROJECT_LIST.join(
-          ", "
-        )}`
-      );
-      throw new Error(`Project "${project}" is not recognized.`);
-    }
-
-    console.log(
-      chalkTemplate`{whiteBright  📼 Rendering branded gif assets for project "${project}"... }`
-    );
-
+async function renderAssets(project: string) {
+  try {
     const browser = await openBrowser("chrome");
 
     const bundled = await bundle({
       entryPoint: require.resolve(`../src/${project}/index.ts`),
       webpackOverride: config => enableTailwind(config)
     });
-
     for (const composition of await getCompositions(bundled)) {
       console.log(
         chalkTemplate`{blue  ${project}: }{blueBright  Rendering ${project} ${composition.id.replace(
@@ -202,20 +177,56 @@ try {
     }
 
     console.log(
-      chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering all ${project} video assets successfully! }`
+      chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${project} assets! }`
     );
-  } else {
+  } catch (err) {
     console.error(
-      chalkTemplate`{redBright  ❌ No project specified. Available projects are: }${PROJECT_LIST.join(
-        ", "
-      )}`
+      chalkTemplate`{red  ${project}: }{redBright  An error occurred while rendering ${project} assets: }${err}`
     );
-    throw new Error("No project specified.");
   }
+}
+
+try {
+  const args = process.argv.slice(2);
+  if (args.length > 0) {
+    const project = args[0];
+    if (!project) {
+      console.error(
+        chalkTemplate`{redBright  ❌ No project specified. Available projects are: }${PROJECT_LIST.join(
+          ", "
+        )}`
+      );
+      process.exit(1);
+    }
+
+    if (!PROJECT_LIST.includes(project as (typeof PROJECT_LIST)[number])) {
+      console.error(
+        chalkTemplate`{redBright  ❌ Project "${project}" is not recognized. Available projects are: }${PROJECT_LIST.join(
+          ", "
+        )}`
+      );
+      process.exit(1);
+    }
+
+    console.log(
+      chalkTemplate`{whiteBright  📼 Rendering branded gif assets for project "${project}"... }`
+    );
+    await renderAssets(project);
+  } else {
+    console.log(
+      chalkTemplate`{whiteBright  📼 Rendering branded gif assets... }`
+    );
+    await Promise.all(PROJECT_LIST.map(async project => renderAssets(project)));
+  }
+
+  console.log(
+    chalkTemplate`{greenBright  ✔ All videos have been rendered successfully! }`
+  );
+
+  process.exit(0);
 } catch (err) {
   console.error(
     chalkTemplate`{redBright  An error occurred while rendering videos: }${err}`
   );
-
-  throw err;
+  process.exit(1);
 }
