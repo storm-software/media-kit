@@ -20182,7 +20182,7 @@ snapshots:
 
   '@types/merge-stream@1.1.5':
     dependencies:
-      '@types/node': 25.0.2
+      '@types/node': 24.10.4
 
   '@types/merge-stream@2.0.0':
     dependencies:
