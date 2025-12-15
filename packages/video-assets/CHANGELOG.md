@@ -2,6 +2,25 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.8](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.8) (12/15/2025)
+
+### Miscellaneous
+
+- **video-assets:** Clean up `build` script logic
+  ([e362363](https://github.com/storm-software/media-kit/commit/e362363))
+- **video-assets:** Clean up video asset styling
+  ([8363d48](https://github.com/storm-software/media-kit/commit/8363d48))
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue preventing errors from being written to logs
+  ([6e16926](https://github.com/storm-software/media-kit/commit/6e16926))
+- **video-assets:** Ensure `build` script ends with 0 code
+  ([8afd642](https://github.com/storm-software/media-kit/commit/8afd642))
+- **video-assets:** Resolve issue where a new browser instance was created for
+  each render
+  ([2b78822](https://github.com/storm-software/media-kit/commit/2b78822))
+
 ## [0.1.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.7) (12/08/2025)
 
 ### Bug Fixes
