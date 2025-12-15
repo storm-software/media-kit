@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.9](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.9) (12/15/2025)
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue copying output files to dist folder
+  ([ec19cab](https://github.com/storm-software/media-kit/commit/ec19cab))
+
 ## [0.1.8](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.8) (12/15/2025)
 
 ### Miscellaneous
