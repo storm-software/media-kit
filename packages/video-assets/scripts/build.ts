@@ -222,6 +222,8 @@ try {
   console.log(
     chalkTemplate`{greenBright  ✔ All videos have been rendered successfully! }`
   );
+
+  process.exit(0);
 } catch (err) {
   console.error(
     chalkTemplate`{redBright  An error occurred while rendering videos: }${err}`
