@@ -80,7 +80,6 @@
     "@swc-node/register": "catalog:",
     "@swc/core": "catalog:",
     "@swc/helpers": "catalog:",
-    "@taplo/cli": "catalog:",
     "@types/jest": "catalog:",
     "@types/node": "catalog:",
     "copyfiles": "catalog:",
@@ -115,7 +114,6 @@
       "lint",
       "format-readme",
       "format-prettier",
-      "format-toml",
       "format-sherif",
       "commit",
       "release"
