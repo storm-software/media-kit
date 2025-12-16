@@ -90,10 +90,6 @@ pre-push:
       run: 'pnpm exec storm-git readme --templates="tools/readme-templates"
         --project="@storm-software/media-kit" '
       stage_fixed: true
-    format:
-      glob: "**/*"
-      run: "pnpm format {staged_files}"
-      stage_fixed: true
 
 post-merge:
   commands:
