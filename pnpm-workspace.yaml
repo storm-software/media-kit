@@ -132,4 +132,6 @@ overrides:
   simple-git: '>=3.27.0'
   zod: '>=4.0.5'
 
+shamefullyHoist: true
+
 trustPolicy: off
