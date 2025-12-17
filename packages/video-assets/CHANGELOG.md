@@ -2,6 +2,20 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.4) (12/17/2025)
+
+### Miscellaneous
+
+- **video-assets:** Update upload to use `assets` path for `bucketPath`
+  parameter
+  ([688c3cb](https://github.com/storm-software/media-kit/commit/688c3cb))
+
+### Bug Fixes
+
+- **video-assets:** Update the output to only include `banner` assets and
+  `optimized` files
+  ([ccb4029](https://github.com/storm-software/media-kit/commit/ccb4029))
+
 ## [0.3.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.3) (12/17/2025)
 
 ### Miscellaneous
