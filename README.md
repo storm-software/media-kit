@@ -67,7 +67,6 @@ for your readme or website.
 ```html
 <a href="https://stormsoftware.com">
   <img
-    width="122"
     height="20"
     src="https://public.storm-cdn.com/storm-software/badge-dark.svg"
     alt="Made by Storm" />
@@ -83,7 +82,6 @@ for your readme or website.
 ```html
 <a href="https://stormsoftware.com">
   <img
-    width="122"
     height="20"
     src="https://public.storm-cdn.com/storm-software/badge-light.svg"
     alt="Made by Storm" />
