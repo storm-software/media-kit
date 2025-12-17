@@ -30,9 +30,7 @@
         "{projectRoot}/src/style.css",
         "{projectRoot}/scripts"
       ],
-      "outputs": [
-        "{workspaceRoot}/dist/{projectRoot}/storm-software/optimized"
-      ],
+      "outputs": ["{projectRoot}/dist/optimized/storm-software"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -50,7 +48,7 @@
         "{projectRoot}/src/style.css",
         "{projectRoot}/scripts"
       ],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}/powerlines/optimized"],
+      "outputs": ["{projectRoot}/dist/optimized/powerlines"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -68,7 +66,7 @@
         "{projectRoot}/src/style.css",
         "{projectRoot}/scripts"
       ],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}/acidic/optimized"],
+      "outputs": ["{projectRoot}/dist/optimized/acidic"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -76,7 +74,6 @@
         "cwd": "{projectRoot}"
       }
     },
-
     "build-shell-shock": {
       "cache": true,
       "inputs": [
@@ -87,7 +84,7 @@
         "{projectRoot}/src/style.css",
         "{projectRoot}/scripts"
       ],
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}/shell-shock/optimized"],
+      "outputs": ["{projectRoot}/dist/optimized/shell-shock"],
       "executor": "nx:run-commands",
       "dependsOn": ["clean", "^build"],
       "options": {
@@ -107,13 +104,12 @@
         "build-acidic",
         "build-shell-shock"
       ],
-      "command": "pnpm copyfiles --up=3 \"./packages/video-assets/dist/*/optimized/*\" ./dist/packages/video-assets"
+      "command": "pnpm copyfiles --up=4 \"./packages/video-assets/dist/optimized/*/*\" ./dist/packages/video-assets"
     },
     "nx-release-publish": {
       "executor": "@storm-software/cloudflare-tools:r2-upload-publish",
       "options": {
         "bucketId": "storm-public",
-        "bucketPath": "assets",
         "tag": "media-kit",
         "path": "dist/packages/video-assets"
       }

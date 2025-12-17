@@ -55,15 +55,15 @@ async function renderAssets(project: string) {
         )}... }`
       );
 
-      if (!existsSync(`dist/${project}/assets`)) {
-        await mkdir(`dist/${project}/assets`, { recursive: true });
+      if (!existsSync(`dist/generated/${project}`)) {
+        await mkdir(`dist/generated/${project}`, { recursive: true });
       }
 
-      if (!existsSync(`dist/${project}/optimized`)) {
-        await mkdir(`dist/${project}/optimized`, { recursive: true });
+      if (!existsSync(`dist/optimized/${project}`)) {
+        await mkdir(`dist/optimized/${project}`, { recursive: true });
       }
 
-      const outputLocation = `dist/${project}/assets/${composition.id.replace(
+      const outputLocation = `dist/generated/${project}/${composition.id.replace(
         `${project}-`,
         ""
       )}.gif`;
@@ -83,14 +83,14 @@ async function renderAssets(project: string) {
         .gif({ interFrameMaxError: 8 })
         .toFile(
           outputLocation.replace(
-            `dist/${project}/assets/`,
-            `dist/${project}/optimized/`
+            `dist/generated/${project}/`,
+            `dist/optimized/${project}/`
           )
         );
 
       await Promise.allSettled([
         (async () => {
-          const output = `dist/${project}/assets/${composition.id.replace(
+          const output = `dist/generated/${project}/${composition.id.replace(
             `${project}-`,
             ""
           )}.png`;
@@ -110,8 +110,8 @@ async function renderAssets(project: string) {
             .png({ palette: true })
             .toFile(
               output.replace(
-                `dist/${project}/assets/`,
-                `dist/${project}/optimized/`
+                `dist/generated/${project}/`,
+                `dist/optimized/${project}/`
               )
             );
 
@@ -120,7 +120,7 @@ async function renderAssets(project: string) {
           );
         })(),
         (async () => {
-          const output = `dist/${project}/assets/${composition.id.replace(
+          const output = `dist/generated/${project}/${composition.id.replace(
             `${project}-`,
             ""
           )}.jpeg`;
@@ -140,8 +140,8 @@ async function renderAssets(project: string) {
             .jpeg({ mozjpeg: true })
             .toFile(
               output.replace(
-                `dist/${project}/assets/`,
-                `dist/${project}/optimized/`
+                `dist/generated/${project}/`,
+                `dist/optimized/${project}/`
               )
             );
 
@@ -150,7 +150,7 @@ async function renderAssets(project: string) {
           );
         })(),
         (async () => {
-          const output = `dist/${project}/assets/${composition.id.replace(
+          const output = `dist/generated/${project}/${composition.id.replace(
             `${project}-`,
             ""
           )}.webp`;
@@ -170,8 +170,8 @@ async function renderAssets(project: string) {
             .webp({ quality: 95 })
             .toFile(
               output.replace(
-                `dist/${project}/assets/`,
-                `dist/${project}/optimized/`
+                `dist/generated/${project}/`,
+                `dist/optimized/${project}/`
               )
             );
 

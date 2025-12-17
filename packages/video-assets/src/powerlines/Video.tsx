@@ -20,12 +20,11 @@ import { Composition, Folder } from "remotion";
 import "../style.css";
 import { formatId } from "../utilities/id-helpers";
 import { Banner } from "./Banner";
-import { Logo } from "./Logo";
 
 export const RemotionVideo: React.FC = () => {
   return (
     <>
-      <Folder name="logos">
+      {/* <Folder name="logos">
         <Composition
           id={formatId("powerlines", "logo-1920x1080")}
           component={Logo}
@@ -59,7 +58,7 @@ export const RemotionVideo: React.FC = () => {
             theme: "light"
           }}
         />
-      </Folder>
+      </Folder> */}
       <Folder name="banners">
         <Composition
           id={formatId("powerlines", "banner-1280x640")}
