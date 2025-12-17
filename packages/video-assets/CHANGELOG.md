@@ -2,6 +2,20 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.1.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.11) (12/16/2025)
+
+### Miscellaneous
+
+- **monorepo:** Upgrade workspace packages' dependencies
+  ([f1fd26e](https://github.com/storm-software/media-kit/commit/f1fd26e))
+- **video-assets:** Resolve issue with copy to dist folder during build task
+  ([077f4f6](https://github.com/storm-software/media-kit/commit/077f4f6))
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue with copy to dist folder during build task
+  ([d74ee6a](https://github.com/storm-software/media-kit/commit/d74ee6a))
+
 ## [0.1.9](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.9) (12/15/2025)
 
 ### Bug Fixes
