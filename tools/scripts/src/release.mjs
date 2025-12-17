@@ -36,7 +36,7 @@ try {
 
   await echo`${chalk.whiteBright(`📦  Releasing workspace packages (Base tag: "${base}", Head tag: "${head}")`)}`;
 
-  let proc = $`pnpm build`.timeout(`${30 * 60}s`);
+  let proc = $`pnpm build`.timeout(`${60 * 60}s`);
   proc.stdout.on("data", data => {
     echo`${data}`;
   });
@@ -48,7 +48,7 @@ try {
   }
 
   proc = $`pnpm exec storm-git release --base=${base} --head=${head}`.timeout(
-    `${30 * 60}s`
+    `${60 * 60}s`
   );
   proc.stdout.on("data", data => {
     echo`${data}`;
