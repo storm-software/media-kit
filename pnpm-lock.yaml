@@ -55,8 +55,8 @@ catalogs:
       specifier: ^4.0.392
       version: 4.0.392
     '@storm-software/cloudflare-tools':
-      specifier: ^0.71.20
-      version: 0.71.20
+      specifier: ^0.71.21
+      version: 0.71.21
     '@storm-software/config':
       specifier: ^1.134.68
       version: 1.134.68
@@ -254,7 +254,7 @@ importers:
         version: 22.2.7(@swc-node/register@1.11.1(@swc/core@1.15.5(@swc/helpers@0.5.17))(@swc/types@0.1.25)(typescript@5.9.3))(@swc/core@1.15.5(@swc/helpers@0.5.17))
       '@storm-software/cloudflare-tools':
         specifier: 'catalog:'
-        version: 0.71.20(0340ada6a5937a06452a01f353706b15)
+        version: 0.71.21(0340ada6a5937a06452a01f353706b15)
       '@storm-software/config':
         specifier: 'catalog:'
         version: 1.134.68
@@ -4977,16 +4977,16 @@ packages:
       nx: ^22.2.3
       typescript: ^5.9.2
 
-  '@storm-software/cloudflare-tools@0.71.20':
-    resolution: {integrity: sha512-lBi2rbJ3OcZFHw3abFyYYww7HzdZKjstUH3g/hSQSgM/jw32MPeZBGuPbAi+M9onlcq+yRNBl4/G7A6U/zYH+w==}
+  '@storm-software/cloudflare-tools@0.71.21':
+    resolution: {integrity: sha512-l3ok2bxQdwaXNjjoQSNSDyDdp+VZb98H9ebXwXk+D1b9T26LOPCrYd+jOXchhbjewTl0VfhY9xU85WCHnS+WAQ==}
     peerDependencies:
       '@nx/devkit': ^22.2.3
       '@nx/js': ^22.2.3
       '@nx/node': ^22.2.3
       '@nx/web': ^22.2.3
-      '@storm-software/config': 1.134.67
-      '@storm-software/config-tools': 1.188.67
-      '@storm-software/workspace-tools': 1.294.11
+      '@storm-software/config': 1.134.68
+      '@storm-software/config-tools': 1.188.68
+      '@storm-software/workspace-tools': 1.294.12
       nx: ^22.2.3
       tsup: 8.4.0
       wrangler: '>=3.58.0'
@@ -19111,7 +19111,7 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@storm-software/cloudflare-tools@0.71.20(0340ada6a5937a06452a01f353706b15)':
+  '@storm-software/cloudflare-tools@0.71.21(0340ada6a5937a06452a01f353706b15)':
     dependencies:
       '@aws-sdk/client-s3': 3.953.0(aws-crt@1.27.5)
       '@nx/devkit': 22.2.7(nx@22.2.7(@swc-node/register@1.11.1(@swc/core@1.15.5(@swc/helpers@0.5.17))(@swc/types@0.1.25)(typescript@5.9.3))(@swc/core@1.15.5(@swc/helpers@0.5.17)))
