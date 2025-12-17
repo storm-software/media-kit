@@ -23,7 +23,7 @@
   },
   "license": "Apache-2.0",
   "private": true,
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.26.0",
   "engines": {
     "node": ">=24.11.1",
     "pnpm": ">=10.24.0"
@@ -73,6 +73,7 @@
     "@storm-software/markdownlint": "catalog:",
     "@storm-software/prettier": "catalog:",
     "@storm-software/testing-tools": "catalog:",
+    "@storm-software/pnpm-tools": "catalog:",
     "@storm-software/tsconfig": "catalog:",
     "@storm-software/tsdoc": "catalog:",
     "@storm-software/untyped": "catalog:",

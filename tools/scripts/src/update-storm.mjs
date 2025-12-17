@@ -25,7 +25,7 @@ try {
   // 1) Update @storm-software/* packages to the latest version
   await echo`${chalk.whiteBright("Checking for @storm-software/* updates...")}`;
   let proc =
-    $`pnpm update --filter "@storm-software/*" --recursive --latest`.timeout(
+    $`pnpm exec storm-pnpm update @storm-software/ @stryke/ --install`.timeout(
       `${8 * 60}s`
     );
   proc.stdout.on("data", data => echo`${data}`);
@@ -36,20 +36,7 @@ try {
     );
   }
 
-  // 2) Update @stryke/* packages to the latest version
-  await echo`${chalk.whiteBright("Checking for @stryke/* updates...")}`;
-  proc = $`pnpm update --filter "@stryke/*" --recursive --latest`.timeout(
-    `${8 * 60}s`
-  );
-  proc.stdout.on("data", data => echo`${data}`);
-  result = await proc;
-  if (result.exitCode !== 0) {
-    throw new Error(
-      `An error occurred while updating "@stryke/*" packages:\n\n${result.message}\n`
-    );
-  }
-
-  // 3) Dedupe all workspace dependencies
+  // 2) Dedupe all workspace dependencies
   proc = $`pnpm dedupe`.timeout(`${8 * 60}s`);
   proc.stdout.on("data", data => echo`${data}`);
   result = await proc;
@@ -59,7 +46,7 @@ try {
     );
   }
 
-  // 4) Ensure workspace:* links are up to date
+  // 3) Ensure workspace:* links are up to date
   proc = $`pnpm update --recursive --workspace`.timeout(`${8 * 60}s`);
   proc.stdout.on("data", data => echo`${data}`);
   result = await proc;

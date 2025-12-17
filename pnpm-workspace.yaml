@@ -2,52 +2,51 @@ packages:
   - tools/*
   - packages/*
   - docs/*
-
 catalog:
-  '@ls-lint/ls-lint': ^2.3.1
-  '@microsoft/api-extractor': ^7.49.2
-  '@nx/devkit': 22.2.7
-  '@nx/eslint-plugin': 22.2.7
-  '@nx/jest': 22.2.7
-  '@nx/js': 22.2.7
-  '@nx/plugin': 22.2.7
-  '@nx/workspace': 22.2.7
-  '@remotion/cli': ^4.0.392
-  '@remotion/eslint-config': ^4.0.392
-  '@remotion/fonts': ^4.0.392
-  '@remotion/google-fonts': ^4.0.392
-  '@remotion/media-utils': ^4.0.392
-  '@remotion/noise': ^4.0.392
-  '@remotion/paths': ^4.0.392
-  '@remotion/shapes': ^4.0.392
-  '@remotion/tailwind-v4': ^4.0.392
-  '@storm-software/build-tools': 0.151.19
-  '@storm-software/cloudflare-tools': ^0.71.21
-  '@storm-software/config': ^1.134.68
-  '@storm-software/config-tools': ^1.188.68
-  '@storm-software/cspell': ^0.45.67
-  '@storm-software/esbuild': ^0.53.68
-  '@storm-software/eslint': ^0.169.69
-  '@storm-software/git-tools': ^2.124.51
-  '@storm-software/linting-tools': ^1.132.68
-  '@storm-software/markdownlint': ^0.30.67
-  '@storm-software/prettier': ^0.57.67
-  '@storm-software/testing-tools': ^1.119.67
-  '@storm-software/tsconfig': ^0.47.67
-  '@storm-software/tsdoc': ^0.13.67
-  '@storm-software/untyped': ^0.24.49
-  '@storm-software/workspace-tools': ^1.294.12
-  '@swc-node/register': ^1.11.1
-  '@swc/core': ^1.15.5
-  '@swc/helpers': ^0.5.17
-  '@swc/wasm': ^1.11.24
-  '@taplo/cli': ^0.7.0
-  '@types/jest': 30.0.0
-  '@types/node': ^25.0.3
-  '@types/pluralize': ^0.0.33
-  '@types/react': ^19.2.7
-  '@types/react-dom': ^19.2.3
-  '@types/web': ^0.0.302
+  "@ls-lint/ls-lint": ^2.3.1
+  "@microsoft/api-extractor": ^7.49.2
+  "@nx/devkit": 22.2.7
+  "@nx/eslint-plugin": 22.2.7
+  "@nx/jest": 22.2.7
+  "@nx/js": 22.2.7
+  "@nx/plugin": 22.2.7
+  "@nx/workspace": 22.2.7
+  "@remotion/cli": ^4.0.392
+  "@remotion/eslint-config": ^4.0.392
+  "@remotion/fonts": ^4.0.392
+  "@remotion/google-fonts": ^4.0.392
+  "@remotion/media-utils": ^4.0.392
+  "@remotion/noise": ^4.0.392
+  "@remotion/paths": ^4.0.392
+  "@remotion/shapes": ^4.0.392
+  "@remotion/tailwind-v4": ^4.0.392
+  "@storm-software/build-tools": ^0.158.69
+  "@storm-software/cloudflare-tools": ^0.71.23
+  "@storm-software/config": ^1.134.69
+  "@storm-software/config-tools": ^1.188.69
+  "@storm-software/cspell": ^0.45.68
+  "@storm-software/esbuild": ^0.53.69
+  "@storm-software/eslint": ^0.169.70
+  "@storm-software/git-tools": ^2.124.52
+  "@storm-software/linting-tools": ^1.132.69
+  "@storm-software/markdownlint": ^0.30.68
+  "@storm-software/pnpm-tools": ^0.6.71
+  "@storm-software/prettier": ^0.57.68
+  "@storm-software/testing-tools": ^1.119.68
+  "@storm-software/tsconfig": ^0.47.68
+  "@storm-software/tsdoc": ^0.13.68
+  "@storm-software/untyped": ^0.24.50
+  "@storm-software/workspace-tools": ^1.294.14
+  "@swc-node/register": ^1.11.1
+  "@swc/core": ^1.15.5
+  "@swc/helpers": ^0.5.17
+  "@swc/wasm": ^1.11.24
+  "@types/jest": 30.0.0
+  "@types/node": ^25.0.3
+  "@types/pluralize": ^0.0.33
+  "@types/react": ^19.2.7
+  "@types/react-dom": ^19.2.3
+  "@types/web": ^0.0.302
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
   defu: ^6.1.4
@@ -84,22 +83,18 @@ catalog:
   unbuild: ^3.3.1
   verdaccio: 6.2.4
   zx: ^8.8.5
-
 configDependencies:
-  pnpm-plugin-storm-software: 0.1.4+sha512-Hegfb70ijqCc65CZwy8aLYhxrYQv3Wo+MZXqSfNAfcge7iSGYm2J3ydU5zkmf89JSvMOJy8J6lo/TMynBGvgtA==
-
+  pnpm-plugin-storm-software: 0.1.24+sha512-ynYDei9eV8Fakiw0QvhjFE22Y8GMKob331cXfwVc3naxJYXhkjth5PH7E37pQ+jbHmCUVFHQOZU0PxQWkHclmA==
 fetchTimeout: 240000
-
 minimumReleaseAgeExclude:
-  - '@storm-software/*'
-  - '@stryke/*'
-  - '@powerlines/*'
+  - "@storm-software/*"
+  - "@stryke/*"
+  - "@powerlines/*"
   - powerlines
-  - '@earthquake/*'
+  - "@earthquake/*"
   - earthquake
-
 onlyBuiltDependencies:
-  - '@swc/core'
+  - "@swc/core"
   - aws-crt
   - core-js
   - esbuild
@@ -111,29 +106,23 @@ onlyBuiltDependencies:
   - sharp
   - unrs-resolver
   - workerd
-
 overrides:
-  '@storm-software/tools-config': workspace:*
-  '@storm-software/tools-scripts': workspace:*
-  '@storm-software/video-assets': workspace:*
-  cookie: '>=0.7.0'
-  debug: '>=4.4.0'
-  follow-redirects: '>=1.15.9'
-  got: '>=14.4.5'
-  ip: '>=2.0.1'
-  markdown-it: '>=14.1.0'
-  micromatch: '>=4.0.8'
-  node-fetch: '>=3.3.2'
-  nth-check: '>=2.1.1'
-  parse-path: '>=7.0.0'
-  parse-url: '>=9.2.0'
-  path-to-regexp: '>=0.1.12'
-  shell-quote: '>=1.8.2'
-  simple-git: '>=3.27.0'
-  zod: '>=4.0.5'
-
-shamefullyHoist: true
-
+  "@storm-software/tools-config": workspace:*
+  "@storm-software/tools-scripts": workspace:*
+  "@storm-software/video-assets": workspace:*
+  cookie: ">=0.7.0"
+  debug: ">=4.4.0"
+  follow-redirects: ">=1.15.9"
+  got: ">=14.4.5"
+  ip: ">=2.0.1"
+  markdown-it: ">=14.1.0"
+  micromatch: ">=4.0.8"
+  node-fetch: ">=3.3.2"
+  nth-check: ">=2.1.1"
+  parse-path: ">=7.0.0"
+  parse-url: ">=9.2.0"
+  path-to-regexp: ">=0.1.12"
+  shell-quote: ">=1.8.2"
+  simple-git: ">=3.27.0"
+  zod: ">=4.0.5"
 trustPolicy: off
-
-useNodeVersion: 24.11.1
