@@ -2,6 +2,18 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.3) (12/17/2025)
+
+### Miscellaneous
+
+- **monorepo:** Update asset paths in markdown files and added `assets` path to
+  output ([31cd87c](https://github.com/storm-software/media-kit/commit/31cd87c))
+
+### Bug Fixes
+
+- **video-assets:** Reduce number of items copied into output directory
+  ([794c2d8](https://github.com/storm-software/media-kit/commit/794c2d8))
+
 ## [0.3.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.0) (12/17/2025)
 
 ### Miscellaneous
