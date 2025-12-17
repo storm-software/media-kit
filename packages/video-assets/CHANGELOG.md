@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.5) (12/17/2025)
+
+### Bug Fixes
+
+- **video-assets:** Update `cloudflare-tools` to resolve upload issues
+  ([cbe4957](https://github.com/storm-software/media-kit/commit/cbe4957))
+
 ## [0.3.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.4) (12/17/2025)
 
 ### Miscellaneous
