@@ -42,7 +42,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
         className
       )}>
       <Img
-        src="https://public.storm-cdn.com/storm-software/logo.svg"
+        src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
         className={
           size === "lg"
             ? "w-96"
