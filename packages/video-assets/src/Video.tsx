@@ -19,6 +19,7 @@
 import { Folder } from "remotion";
 import { RemotionVideo as AcidicVideo } from "./acidic/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
+import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
 
 export const RemotionVideo: React.FC = () => {
@@ -32,6 +33,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="acidic">
         <AcidicVideo />
+      </Folder>
+      <Folder name="shell-shock">
+        <ShellShockVideo />
       </Folder>
     </>
   );

@@ -16,4 +16,7 @@
 
  ------------------------------------------------------------------- */
 
-export const PROJECT_LIST = ["storm-software", "powerlines", "acidic"] as const;
+import { registerRoot } from "remotion";
+import { RemotionVideo } from "./Video";
+
+registerRoot(RemotionVideo);

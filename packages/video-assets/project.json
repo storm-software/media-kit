@@ -76,6 +76,25 @@
         "cwd": "{projectRoot}"
       }
     },
+
+    "build-shell-shock": {
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/src/shell-shock",
+        "{projectRoot}/src/components",
+        "{projectRoot}/src/types",
+        "{projectRoot}/src/utilities",
+        "{projectRoot}/src/style.css",
+        "{projectRoot}/scripts"
+      ],
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}/shell-shock/optimized"],
+      "executor": "nx:run-commands",
+      "dependsOn": ["clean", "^build"],
+      "options": {
+        "command": "tsx scripts/build.ts shell-shock",
+        "cwd": "{projectRoot}"
+      }
+    },
     "build": {
       "cache": true,
       "inputs": ["{projectRoot}/dist"],
@@ -85,14 +104,15 @@
         "typecheck",
         "build-storm-software",
         "build-powerlines",
-        "build-acidic"
+        "build-acidic",
+        "build-shell-shock"
       ],
       "command": "pnpm copyfiles --up=3 \"packages/video-assets/dist/*/assets/*\" \"./packages/video-assets/dist/*/optimized/*\" ./dist/packages/video-assets"
     },
     "nx-release-publish": {
       "executor": "@storm-software/cloudflare-tools:r2-upload-publish",
       "options": {
-        "bucketId": "storm-file-store",
+        "bucketId": "storm-public",
         "tag": "media-kit",
         "path": "dist/packages/video-assets"
       }
