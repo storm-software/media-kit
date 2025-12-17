@@ -51,7 +51,7 @@ try {
   proc =
     $`pnpm nx run-many --target=build --exclude="@storm-software/media-kit" --configuration=${
       configuration
-    } --outputStyle=dynamic-legacy --parallel=1`.timeout(`${25 * 60}s`);
+    } --outputStyle=dynamic-legacy --parallel=1`.timeout(`${45 * 60}s`);
   proc.stdout.on("data", data => {
     echo`${data}`;
   });
