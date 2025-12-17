@@ -28,7 +28,13 @@
     "node": ">=24.11.1",
     "pnpm": ">=10.24.0"
   },
-  "keywords": ["storm-software", "storm", "brand", "media-kit", "press-kit"],
+  "keywords": [
+    "storm-software",
+    "storm",
+    "brand",
+    "media-kit",
+    "press-kit"
+  ],
   "scripts": {
     "adr": "pnpm log4brains adr new",
     "adr-preview": "pnpm log4brains preview",
@@ -71,9 +77,9 @@
     "@storm-software/git-tools": "catalog:",
     "@storm-software/linting-tools": "catalog:",
     "@storm-software/markdownlint": "catalog:",
+    "@storm-software/pnpm-tools": "catalog:",
     "@storm-software/prettier": "catalog:",
     "@storm-software/testing-tools": "catalog:",
-    "@storm-software/pnpm-tools": "catalog:",
     "@storm-software/tsconfig": "catalog:",
     "@storm-software/tsdoc": "catalog:",
     "@storm-software/untyped": "catalog:",
