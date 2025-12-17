@@ -107,7 +107,7 @@
         "build-acidic",
         "build-shell-shock"
       ],
-      "command": "pnpm copyfiles --up=3 \"./packages/video-assets/dist/*/optimized/*\" ./dist/packages/video-assets"
+      "command": "pnpm copyfiles --up=3 \"packages/video-assets/dist/*/assets/*\" \"./packages/video-assets/dist/*/optimized/*\" ./dist/packages/video-assets"
     },
     "nx-release-publish": {
       "executor": "@storm-software/cloudflare-tools:r2-upload-publish",
