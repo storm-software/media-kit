@@ -22,7 +22,7 @@ catalog:
   '@remotion/shapes': ^4.0.392
   '@remotion/tailwind-v4': ^4.0.392
   '@storm-software/build-tools': ^0.158.69
-  '@storm-software/cloudflare-tools': ^0.71.24
+  '@storm-software/cloudflare-tools': ^0.71.25
   '@storm-software/config': ^1.134.69
   '@storm-software/config-tools': ^1.188.69
   '@storm-software/cspell': ^0.45.68
