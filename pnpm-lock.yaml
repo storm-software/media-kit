@@ -118,8 +118,8 @@ catalogs:
       specifier: ^19.2.7
       version: 19.2.7
     '@types/web':
-      specifier: ^0.0.301
-      version: 0.0.301
+      specifier: ^0.0.302
+      version: 0.0.302
     chalk-template:
       specifier: ^1.1.2
       version: 1.1.2
@@ -411,7 +411,7 @@ importers:
         version: 4.0.392(eslint@9.39.2(@types/eslint@9.6.1)(jiti@2.6.1))
       '@types/web':
         specifier: 'catalog:'
-        version: 0.0.301
+        version: 0.0.302
       chalk-template:
         specifier: 'catalog:'
         version: 1.1.2
@@ -6013,8 +6013,8 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  '@types/web@0.0.301':
-    resolution: {integrity: sha512-GAoFovImstIY39EAwGazoeal9+uy+zZz0vLhz/MDbqaHAbK0d8yzF8EKtlSkwNzZu9WEIyYdfSGwVTUSnJMtpw==}
+  '@types/web@0.0.302':
+    resolution: {integrity: sha512-jONPjYiKEvXrKzV37ATgSqqkHsVXqAa6/5hMe9XcjEo3KA5Nv4yX2RaAIXN1HJB/ZS5VPubXVZY9+7cGE1rFtQ==}
 
   '@types/which-boxed-primitive@1.1.0':
     resolution: {integrity: sha512-p5PUZOuUSMctikVRO2rhzmyD8yrF8FGY7JMg3g5LZM69KFhxRQlGgSIsH+bMFtW4uPmJafcPjHxd5cbLB9qpcA==}
@@ -20379,7 +20379,7 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/web@0.0.301': {}
+  '@types/web@0.0.302': {}
 
   '@types/which-boxed-primitive@1.1.0':
     dependencies:
@@ -26394,7 +26394,7 @@ snapshots:
   micromark-factory-space@2.0.1:
     dependencies:
       micromark-util-character: 2.1.1
-      micromark-util-types: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-factory-title@2.0.1:
     dependencies:
@@ -26413,7 +26413,7 @@ snapshots:
   micromark-util-character@2.1.1:
     dependencies:
       micromark-util-symbol: 2.0.1
-      micromark-util-types: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-util-chunked@2.0.1:
     dependencies:
@@ -26428,7 +26428,7 @@ snapshots:
   micromark-util-combine-extensions@2.0.1:
     dependencies:
       micromark-util-chunked: 2.0.1
-      micromark-util-types: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-util-decode-numeric-character-reference@2.0.2:
     dependencies:
@@ -26461,7 +26461,7 @@ snapshots:
 
   micromark-util-resolve-all@2.0.1:
     dependencies:
-      micromark-util-types: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-util-sanitize-uri@2.0.1:
     dependencies:
@@ -26474,7 +26474,7 @@ snapshots:
       devlop: 1.1.0
       micromark-util-chunked: 2.0.1
       micromark-util-symbol: 2.0.1
-      micromark-util-types: 2.0.1
+      micromark-util-types: 2.0.2
 
   micromark-util-symbol@2.0.1: {}
 

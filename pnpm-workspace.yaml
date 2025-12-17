@@ -47,7 +47,7 @@ catalog:
   '@types/pluralize': ^0.0.33
   '@types/react': ^19.2.7
   '@types/react-dom': ^19.2.3
-  '@types/web': ^0.0.301
+  '@types/web': ^0.0.302
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
   defu: ^6.1.4
