@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.2.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.2.0) (12/17/2025)
+
+### Features
+
+- **video-assets:** Added assets for the shell-shock project
+  ([8498c79](https://github.com/storm-software/media-kit/commit/8498c79))
+
 ## [0.1.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.1.11) (12/16/2025)
 
 ### Miscellaneous
