@@ -2,6 +2,18 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.0) (12/17/2025)
+
+### Miscellaneous
+
+- **video-assets:** Added missing font to tailwind styling
+  ([4950e7a](https://github.com/storm-software/media-kit/commit/4950e7a))
+
+### Features
+
+- **video-assets:** Added support for switching between Storm Software icon
+  colors ([d44ee31](https://github.com/storm-software/media-kit/commit/d44ee31))
+
 ## [0.2.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.2.0) (12/17/2025)
 
 ### Features
