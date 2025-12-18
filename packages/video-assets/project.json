@@ -93,7 +93,7 @@
       }
     },
     "build": {
-      "cache": true,
+      "cache": false,
       "inputs": ["{projectRoot}/dist"],
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "dependsOn": [
