@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.11) (12/18/2025)
+
+### Bug Fixes
+
+- **video-assets:** Ensure copying in `build` step is not cached
+  ([ff0b779](https://github.com/storm-software/media-kit/commit/ff0b779))
+
 ## [0.3.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.5) (12/17/2025)
 
 ### Bug Fixes
