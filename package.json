@@ -24,17 +24,8 @@
   "license": "Apache-2.0",
   "private": true,
   "packageManager": "pnpm@10.26.0",
-  "engines": {
-    "node": ">=24.11.1",
-    "pnpm": ">=10.24.0"
-  },
-  "keywords": [
-    "storm-software",
-    "storm",
-    "brand",
-    "media-kit",
-    "press-kit"
-  ],
+  "engines": { "node": ">=24.11.1", "pnpm": ">=10.24.0" },
+  "keywords": ["storm-software", "storm", "brand", "media-kit", "press-kit"],
   "scripts": {
     "adr": "pnpm log4brains adr new",
     "adr-preview": "pnpm log4brains preview",
@@ -108,10 +99,7 @@
     "verdaccio": "catalog:",
     "zx": "catalog:"
   },
-  "manypkg": {
-    "defaultBranch": "main",
-    "workspaceProtocol": "require"
-  },
+  "manypkg": { "defaultBranch": "main", "workspaceProtocol": "require" },
   "namespace": "@storm-software",
   "nx": {
     "includedScripts": [
