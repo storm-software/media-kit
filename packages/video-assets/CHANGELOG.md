@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.3.12](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.12) (12/18/2025)
+
+### Bug Fixes
+
+- **video-assets:** Ensure `clean` task is ran prior to building projects
+  ([af36885](https://github.com/storm-software/media-kit/commit/af36885))
+
 ## [0.3.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.11) (12/18/2025)
 
 ### Bug Fixes
