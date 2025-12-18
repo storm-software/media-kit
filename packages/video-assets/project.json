@@ -32,7 +32,7 @@
       ],
       "outputs": ["{projectRoot}/dist/optimized/storm-software"],
       "executor": "nx:run-commands",
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "clean"],
       "options": {
         "command": "tsx scripts/build.ts storm-software",
         "cwd": "{projectRoot}"
@@ -50,7 +50,7 @@
       ],
       "outputs": ["{projectRoot}/dist/optimized/powerlines"],
       "executor": "nx:run-commands",
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "clean"],
       "options": {
         "command": "tsx scripts/build.ts powerlines",
         "cwd": "{projectRoot}"
@@ -68,7 +68,7 @@
       ],
       "outputs": ["{projectRoot}/dist/optimized/acidic"],
       "executor": "nx:run-commands",
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "clean"],
       "options": {
         "command": "tsx scripts/build.ts acidic",
         "cwd": "{projectRoot}"
@@ -86,7 +86,7 @@
       ],
       "outputs": ["{projectRoot}/dist/optimized/shell-shock"],
       "executor": "nx:run-commands",
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "clean"],
       "options": {
         "command": "tsx scripts/build.ts shell-shock",
         "cwd": "{projectRoot}"
