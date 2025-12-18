@@ -1,3 +1,14 @@
+![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/optimized/banner-1280x320.gif)
+
+# Changelog for Media Kit - Video Assets
+
+## [0.3.13](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.13) (12/18/2025)
+
+### Miscellaneous
+
+- **monorepo:** Update CDN URLs for banner assets
+  ([c2fd6fc](https://github.com/storm-software/media-kit/commit/c2fd6fc))
+
 ![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/banner-1280x320.gif)
 
 # Changelog for Media Kit - Video Assets
