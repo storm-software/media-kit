@@ -119,13 +119,11 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
     frame
   });
 
-  const scale = size === "lg" || size === "md" ? 2 : 3;
+  const scale = size === "lg" ? 5 : size === "md" ? 4 : size === "sm" ? 3 : 2;
   const transform1 = translate(scale * 50 * (enter1 + exit1 + enter2 + exit2));
-  const transform2 = translate(scale * -15 * (enter1 + exit1 + enter2 + exit2));
-  const transform3 = translate(scale * 30 * (enter1 + exit1 + enter2 + exit2));
+  const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
+  const transform3 = translate(scale * 50 * (enter1 + exit1 + enter2 + exit2));
   const transform4 = translate(scale * -50 * (enter1 + exit1 + enter2 + exit2));
-  const transform5 = translate(scale * 15 * (enter1 + exit1 + enter2 + exit2));
-  const transform6 = translate(scale * 40 * (enter1 + exit1 + enter2 + exit2));
 
   return (
     <div
@@ -163,18 +161,6 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
         theme={theme}
         className="org-4"
         style={{ transform: transform4 }}
-      />
-      <SingleOrgTitle
-        size={size}
-        theme={theme}
-        className="org-5"
-        style={{ transform: transform5 }}
-      />
-      <SingleOrgTitle
-        size={size}
-        theme={theme}
-        className="org-6"
-        style={{ transform: transform6 }}
       />
     </div>
   );
