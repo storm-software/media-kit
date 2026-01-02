@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.1) (01/02/2026)
+
+### Miscellaneous
+
+- **video-assets:** Adjust scale on glitch effect
+  ([a74b0d0](https://github.com/storm-software/media-kit/commit/a74b0d0))
+
 ## [0.4.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.0) (01/02/2026)
 
 ### Features
