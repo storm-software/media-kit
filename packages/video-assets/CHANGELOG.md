@@ -1,3 +1,14 @@
+![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/banner-1280x320.gif)
+
+# Changelog for Media Kit - Video Assets
+
+## [0.4.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.0) (01/02/2026)
+
+### Features
+
+- **video-assets:** Added glitch effect to `OrgTitle` component
+  ([4883893](https://github.com/storm-software/media-kit/commit/4883893))
+
 ![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/optimized/banner-1280x320.gif)
 
 # Changelog for Media Kit - Video Assets
@@ -8,10 +19,6 @@
 
 - **monorepo:** Update CDN URLs for banner assets
   ([c2fd6fc](https://github.com/storm-software/media-kit/commit/c2fd6fc))
-
-![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/banner-1280x320.gif)
-
-# Changelog for Media Kit - Video Assets
 
 ## [0.3.12](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.3.12) (12/18/2025)
 
