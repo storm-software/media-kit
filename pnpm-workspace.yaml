@@ -12,35 +12,35 @@ catalog:
   '@nx/js': 22.3.1
   '@nx/plugin': 22.3.1
   '@nx/workspace': 22.3.1
-  '@remotion/cli': ^4.0.393
-  '@remotion/eslint-config': ^4.0.393
-  '@remotion/fonts': ^4.0.393
-  '@remotion/google-fonts': ^4.0.393
-  '@remotion/media-utils': ^4.0.393
-  '@remotion/noise': ^4.0.393
-  '@remotion/paths': ^4.0.393
-  '@remotion/shapes': ^4.0.393
-  '@remotion/tailwind-v4': ^4.0.393
+  '@remotion/cli': ^4.0.398
+  '@remotion/eslint-config': ^4.0.398
+  '@remotion/fonts': ^4.0.398
+  '@remotion/google-fonts': ^4.0.398
+  '@remotion/media-utils': ^4.0.398
+  '@remotion/noise': ^4.0.398
+  '@remotion/paths': ^4.0.398
+  '@remotion/shapes': ^4.0.398
+  '@remotion/tailwind-v4': ^4.0.398
   '@storm-software/build-tools': ^0.158.71
-  '@storm-software/cloudflare-tools': ^0.71.32
-  '@storm-software/config': ^1.134.71
-  '@storm-software/config-tools': ^1.188.71
-  '@storm-software/cspell': ^0.45.70
-  '@storm-software/esbuild': ^0.53.71
-  '@storm-software/eslint': ^0.169.72
-  '@storm-software/git-tools': ^2.124.54
-  '@storm-software/linting-tools': ^1.132.71
-  '@storm-software/markdownlint': ^0.30.70
-  '@storm-software/pnpm-tools': ^0.6.73
-  '@storm-software/prettier': ^0.57.70
-  '@storm-software/testing-tools': ^1.119.70
-  '@storm-software/tsconfig': ^0.47.70
-  '@storm-software/tsdoc': ^0.13.70
-  '@storm-software/untyped': ^0.24.52
-  '@storm-software/workspace-tools': ^1.294.17
+  '@storm-software/cloudflare-tools': ^0.71.36
+  '@storm-software/config': ^1.134.75
+  '@storm-software/config-tools': ^1.188.75
+  '@storm-software/cspell': ^0.45.74
+  '@storm-software/esbuild': ^0.53.75
+  '@storm-software/eslint': ^0.169.76
+  '@storm-software/git-tools': ^2.124.58
+  '@storm-software/linting-tools': ^1.132.75
+  '@storm-software/markdownlint': ^0.30.74
+  '@storm-software/pnpm-tools': ^0.6.77
+  '@storm-software/prettier': ^0.57.74
+  '@storm-software/testing-tools': ^1.119.74
+  '@storm-software/tsconfig': ^0.47.74
+  '@storm-software/tsdoc': ^0.13.74
+  '@storm-software/untyped': ^0.24.56
+  '@storm-software/workspace-tools': ^1.294.21
   '@swc-node/register': ^1.11.1
-  '@swc/core': ^1.15.7
-  '@swc/helpers': ^0.5.17
+  '@swc/core': ^1.15.8
+  '@swc/helpers': ^0.5.18
   '@swc/wasm': ^1.11.24
   '@types/jest': 30.0.0
   '@types/node': ^25.0.3
@@ -61,7 +61,7 @@ catalog:
   jest-environment-node: ^30.2.0
   jest-util: 30.2.0
   jiti: ^2.4.2
-  lefthook: ^2.0.12
+  lefthook: ^2.0.13
   loader-utils: ^3.3.1
   log4brains: ^1.1.0
   nx: 22.3.1
@@ -70,7 +70,7 @@ catalog:
   react: ^19.2.3
   react-dom: ^19.2.3
   react-native: ^0.77.0
-  remotion: ^4.0.393
+  remotion: ^4.0.398
   rimraf: ^6.1.2
   sharp: ^0.34.5
   sherif: ^1.9.0

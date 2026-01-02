@@ -16,8 +16,9 @@
 
  ------------------------------------------------------------------- */
 
+import { translate } from "@remotion/animation-utils";
 import { loadFont } from "@remotion/google-fonts/Orbitron";
-import { Img } from "remotion";
+import { Img, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { twMerge } from "tailwind-merge";
 import type { ThemeProps } from "../types/themes";
 
@@ -26,17 +27,20 @@ const { fontFamily } = loadFont();
 export interface OrgTitleProps extends ThemeProps {
   className?: string;
   size?: "lg" | "md" | "sm" | "xs";
+  style?: React.CSSProperties;
 }
 
-export const OrgTitle: React.FC<OrgTitleProps> = ({
+export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
   size = "md",
   theme,
-  className
+  className,
+  style
 }) => {
   return (
     <div
+      style={style}
       className={twMerge(
-        `flex justify-center flex-row ${
+        `flex justify-center flex-row items-center absolute h-full w-full ${
           size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"
         } `,
         className
@@ -47,7 +51,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
           size === "lg"
             ? "w-96"
             : size === "md"
-              ? "w-72"
+              ? "w-70"
               : size === "sm"
                 ? "w-40"
                 : "w-24"
@@ -55,7 +59,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
-        className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-black font-orbitron ${
+        className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
           size === "lg"
             ? "text-[20rem] mt-10"
             : size === "md"
@@ -66,6 +70,112 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
         }`}>
         Storm
       </h1>
+    </div>
+  );
+};
+
+export const OrgTitle: React.FC<OrgTitleProps> = ({
+  size = "md",
+  theme,
+  className
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const durationInFrames = 4;
+  const enter1 = spring({
+    fps,
+    durationInFrames,
+    delay: 20,
+    from: 1,
+    to: -1,
+    frame
+  });
+
+  const exit1 = spring({
+    fps,
+    durationInFrames,
+    delay: 20 + durationInFrames,
+    from: -1,
+    to: 1,
+    frame
+  });
+
+  const enter2 = spring({
+    fps,
+    durationInFrames,
+    delay: 40,
+    from: -1,
+    to: 1,
+    frame
+  });
+
+  const exit2 = spring({
+    fps,
+    durationInFrames,
+    delay: 40 + durationInFrames,
+    from: 1,
+    to: -1,
+    frame
+  });
+
+  const scale = size === "lg" || size === "md" ? 2 : 3;
+  const transform1 = translate(scale * 50 * (enter1 + exit1 + enter2 + exit2));
+  const transform2 = translate(scale * -15 * (enter1 + exit1 + enter2 + exit2));
+  const transform3 = translate(scale * 30 * (enter1 + exit1 + enter2 + exit2));
+  const transform4 = translate(scale * -50 * (enter1 + exit1 + enter2 + exit2));
+  const transform5 = translate(scale * 15 * (enter1 + exit1 + enter2 + exit2));
+  const transform6 = translate(scale * 40 * (enter1 + exit1 + enter2 + exit2));
+
+  return (
+    <div
+      className={twMerge(
+        "relative w-full",
+        size === "lg"
+          ? "h-142"
+          : size === "md"
+            ? "h-142"
+            : size === "sm"
+              ? "h-65"
+              : "h-50",
+        className
+      )}>
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-1"
+        style={{ transform: transform1 }}
+      />
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-2"
+        style={{ transform: transform2 }}
+      />
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-3"
+        style={{ transform: transform3 }}
+      />
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-4"
+        style={{ transform: transform4 }}
+      />
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-5"
+        style={{ transform: transform5 }}
+      />
+      <SingleOrgTitle
+        size={size}
+        theme={theme}
+        className="org-6"
+        style={{ transform: transform6 }}
+      />
     </div>
   );
 };
