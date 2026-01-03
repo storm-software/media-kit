@@ -82,10 +82,9 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const durationInFrames = 4;
   const enter1 = spring({
     fps,
-    durationInFrames,
+    durationInFrames: 2,
     delay: 20,
     from: 1,
     to: -1,
@@ -94,8 +93,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const exit1 = spring({
     fps,
-    durationInFrames,
-    delay: 20 + durationInFrames,
+    durationInFrames: 2,
+    delay: 20 + 2,
     from: -1,
     to: 1,
     frame
@@ -103,8 +102,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const enter2 = spring({
     fps,
-    durationInFrames,
-    delay: 40,
+    durationInFrames: 5,
+    delay: 70,
     from: -1,
     to: 1,
     frame
@@ -112,8 +111,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const exit2 = spring({
     fps,
-    durationInFrames,
-    delay: 40 + durationInFrames,
+    durationInFrames: 5,
+    delay: 70 + 5,
     from: 1,
     to: -1,
     frame
