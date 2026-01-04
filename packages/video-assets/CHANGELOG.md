@@ -2,6 +2,18 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.2) (01/03/2026)
+
+### Miscellaneous
+
+- **monorepo:** Update the `remotion` packages
+  ([947dd79](https://github.com/storm-software/media-kit/commit/947dd79))
+
+### Bug Fixes
+
+- **video-assets:** Cleaning up glitch animation effects
+  ([ddbf3cd](https://github.com/storm-software/media-kit/commit/ddbf3cd))
+
 ## [0.4.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.1) (01/02/2026)
 
 ### Miscellaneous
