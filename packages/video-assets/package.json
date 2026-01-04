@@ -39,7 +39,7 @@
   "license": "Apache-2.0",
   "private": false,
   "dependencies": {
-    "@remotion/animation-utils": "^4.0.398",
+    "@remotion/animation-utils": "catalog:",
     "@remotion/fonts": "catalog:",
     "@remotion/google-fonts": "catalog:",
     "@remotion/media-utils": "catalog:",
