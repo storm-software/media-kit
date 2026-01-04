@@ -52,7 +52,7 @@ catalog:
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
   defu: ^6.1.4
-  esbuild: ^0.24.2
+  esbuild: ^0.25.0
   eslint: ^9.39.2
   eslint-flat-config-utils: ^2.1.4
   imagemin: ^9.0.1
@@ -63,10 +63,10 @@ catalog:
   jest-util: 30.2.0
   jiti: ^2.4.2
   lefthook: ^2.0.13
-  loader-utils: ^3.3.1
+  loader-utils: ^1.4.2
   log4brains: ^1.1.0
   nx: 22.3.1
-  postcss: ^8.5.6
+  postcss: ^8.4.31
   prettier: ^3.7.4
   react: ^19.2.3
   react-dom: ^19.2.3
