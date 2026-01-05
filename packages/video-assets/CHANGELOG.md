@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.3) (01/05/2026)
+
+### Miscellaneous
+
+- **video-assets:** Improve gitch effect rendering
+  ([20e7156](https://github.com/storm-software/media-kit/commit/20e7156))
+
 ## [0.4.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.2) (01/03/2026)
 
 ### Miscellaneous
