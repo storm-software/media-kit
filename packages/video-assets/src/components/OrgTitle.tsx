@@ -84,7 +84,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const enter1 = spring({
     fps,
-    durationInFrames: 2,
+    durationInFrames: 4,
     delay: 20,
     from: 1,
     to: -1,
@@ -93,8 +93,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const exit1 = spring({
     fps,
-    durationInFrames: 2,
-    delay: 20 + 2,
+    durationInFrames: 4,
+    delay: 20 + 4,
     from: -1,
     to: 1,
     frame
@@ -103,7 +103,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const enter2 = spring({
     fps,
     durationInFrames: 5,
-    delay: 70,
+    delay: 24,
     from: -1,
     to: 1,
     frame
@@ -112,17 +112,17 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const exit2 = spring({
     fps,
     durationInFrames: 5,
-    delay: 70 + 5,
+    delay: 24 + 5,
     from: 1,
     to: -1,
     frame
   });
 
   const scale = size === "lg" ? 5 : size === "md" ? 4 : size === "sm" ? 3 : 2;
-  const transform1 = translate(scale * 50 * (enter1 + exit1 + enter2 + exit2));
+  const transform1 = translate(scale * -5 * (enter1 + exit1 + enter2 + exit2));
   const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
-  const transform3 = translate(scale * 50 * (enter1 + exit1 + enter2 + exit2));
-  const transform4 = translate(scale * -50 * (enter1 + exit1 + enter2 + exit2));
+  const transform3 = translate(scale * 70 * (enter1 + exit1 + enter2 + exit2));
+  const transform4 = translate(scale * 20 * (enter1 + exit1 + enter2 + exit2));
 
   return (
     <div
