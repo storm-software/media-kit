@@ -122,7 +122,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const transform1 = translate(scale * -5 * (enter1 + exit1 + enter2 + exit2));
   const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
   const transform3 = translate(scale * 70 * (enter1 + exit1 + enter2 + exit2));
-  const transform4 = translate(scale * 20 * (enter1 + exit1 + enter2 + exit2));
+  const transform4 = translate(scale * 8 * (enter1 + exit1 + enter2 + exit2));
 
   return (
     <div
