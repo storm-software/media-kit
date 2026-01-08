@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.4) (01/08/2026)
+
+### Miscellaneous
+
+- **video-assets:** More cleanup of glitch animation effect
+  ([6b9a774](https://github.com/storm-software/media-kit/commit/6b9a774))
+
 ## [0.4.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.3) (01/05/2026)
 
 ### Miscellaneous
