@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.5) (01/19/2026)
+
+### Miscellaneous
+
+- **video-assets:** Added opacity fade to glitch animation
+  ([1f9adea](https://github.com/storm-software/media-kit/commit/1f9adea))
+
 ## [0.4.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.4) (01/08/2026)
 
 ### Miscellaneous
