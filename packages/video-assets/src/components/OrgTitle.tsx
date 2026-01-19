@@ -49,9 +49,9 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
         src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
         className={
           size === "lg"
-            ? "w-96"
+            ? "w-80"
             : size === "md"
-              ? "w-70"
+              ? "w-60"
               : size === "sm"
                 ? "w-40"
                 : "w-24"
@@ -61,7 +61,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
         className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
           size === "lg"
-            ? "text-[20rem] mt-10"
+            ? "text-[18rem] mt-10"
             : size === "md"
               ? "text-[16rem]"
               : size === "sm"
@@ -84,7 +84,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const enter1 = spring({
     fps,
-    durationInFrames: 4,
+    durationInFrames: 4.5,
     delay: 20,
     from: 1,
     to: -1,
@@ -93,8 +93,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const exit1 = spring({
     fps,
-    durationInFrames: 4,
-    delay: 20 + 4,
+    durationInFrames: 4.5,
+    delay: 20 + 4.5,
     from: -1,
     to: 1,
     frame
@@ -102,8 +102,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const enter2 = spring({
     fps,
-    durationInFrames: 5,
-    delay: 24,
+    durationInFrames: 6.5,
+    delay: 24.5,
     from: -1,
     to: 1,
     frame
@@ -111,8 +111,8 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const exit2 = spring({
     fps,
-    durationInFrames: 5,
-    delay: 24 + 5,
+    durationInFrames: 6.5,
+    delay: 24.5 + 6.5,
     from: 1,
     to: -1,
     frame
@@ -120,23 +120,23 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
 
   const enterOpacity = spring({
     fps,
-    durationInFrames: 6,
+    durationInFrames: size === "lg" ? 8 : 5,
     delay: 20,
     from: 1,
-    to: 0.05,
+    to: 0.1,
     frame
   });
 
   const exitOpacity = spring({
     fps,
-    durationInFrames: 6,
-    delay: 20 + 6,
+    durationInFrames: 10,
+    delay: 20 + 8,
     from: 0,
     to: 1,
     frame
   });
 
-  const scale = size === "lg" ? 6 : size === "md" ? 5 : 4;
+  const scale = size === "lg" ? 8 : size === "md" ? 4 : 3;
   const transform1 = translate(scale * -5 * (enter1 + exit1 + enter2 + exit2));
   const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
   const transform3 = translate(scale * 70 * (enter1 + exit1 + enter2 + exit2));
@@ -147,7 +147,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
       className={twMerge(
         "relative w-full",
         size === "lg"
-          ? "h-142"
+          ? "h-142 w-9/12"
           : size === "md"
             ? "h-142"
             : size === "sm"
