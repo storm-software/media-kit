@@ -118,7 +118,25 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
     frame
   });
 
-  const scale = size === "lg" ? 5 : size === "md" ? 4 : size === "sm" ? 3 : 2;
+  const enterOpacity = spring({
+    fps,
+    durationInFrames: 6,
+    delay: 20,
+    from: 1,
+    to: 0.05,
+    frame
+  });
+
+  const exitOpacity = spring({
+    fps,
+    durationInFrames: 6,
+    delay: 20 + 6,
+    from: 0,
+    to: 1,
+    frame
+  });
+
+  const scale = size === "lg" ? 6 : size === "md" ? 5 : 4;
   const transform1 = translate(scale * -5 * (enter1 + exit1 + enter2 + exit2));
   const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
   const transform3 = translate(scale * 70 * (enter1 + exit1 + enter2 + exit2));
@@ -147,13 +165,13 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
         size={size}
         theme={theme}
         className="org-2"
-        style={{ transform: transform2 }}
+        style={{ transform: transform2, opacity: enterOpacity + exitOpacity }}
       />
       <SingleOrgTitle
         size={size}
         theme={theme}
         className="org-3"
-        style={{ transform: transform3 }}
+        style={{ transform: transform3, opacity: enterOpacity + exitOpacity }}
       />
       <SingleOrgTitle
         size={size}
