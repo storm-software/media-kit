@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.6) (01/19/2026)
+
+### Miscellaneous
+
+- **video-assets:** Clean up glitch animation values
+  ([ae221bd](https://github.com/storm-software/media-kit/commit/ae221bd))
+
 ## [0.4.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.5) (01/19/2026)
 
 ### Miscellaneous
