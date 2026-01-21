@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.4.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.7) (01/21/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update logo to use unglitched by default
+  ([c271e20](https://github.com/storm-software/media-kit/commit/c271e20))
+
 ## [0.4.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.6) (01/19/2026)
 
 ### Miscellaneous
