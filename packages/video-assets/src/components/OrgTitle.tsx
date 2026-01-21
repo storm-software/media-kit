@@ -46,7 +46,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
         className
       )}>
       <Img
-        src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
+        src={`https://public.storm-cdn.com/storm-software/icon-unglitched-${theme}.svg`}
         className={
           size === "lg"
             ? "w-80"
@@ -82,45 +82,55 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
+  const transformationStiffness = 800;
+  const transformationMass = 5;
+
+  const duration1 = 4.5;
+  const duration2 = 6.5;
+
   const enter1 = spring({
     fps,
-    durationInFrames: 4.5,
+    durationInFrames: duration1,
     delay: 20,
     from: 1,
     to: -1,
-    frame
+    frame,
+    config: { stiffness: transformationStiffness, mass: transformationMass }
   });
 
   const exit1 = spring({
     fps,
-    durationInFrames: 4.5,
-    delay: 20 + 4.5,
+    durationInFrames: duration1,
+    delay: 20 + duration1,
     from: -1,
     to: 1,
-    frame
+    frame,
+    config: { stiffness: transformationStiffness, mass: transformationMass }
   });
 
   const enter2 = spring({
     fps,
-    durationInFrames: 6.5,
-    delay: 24.5,
+    durationInFrames: duration2,
+    delay: 20 + duration1,
     from: -1,
     to: 1,
-    frame
+    frame,
+    config: { stiffness: transformationStiffness, mass: transformationMass }
   });
 
   const exit2 = spring({
     fps,
-    durationInFrames: 6.5,
-    delay: 24.5 + 6.5,
+    durationInFrames: duration2,
+    delay: 20 + duration1 + duration2,
     from: 1,
     to: -1,
-    frame
+    frame,
+    config: { stiffness: transformationStiffness, mass: transformationMass }
   });
 
   const enterOpacity = spring({
     fps,
-    durationInFrames: size === "lg" ? 8 : 5,
+    durationInFrames: duration1,
     delay: 20,
     from: 1,
     to: 0.1,
@@ -130,13 +140,13 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const exitOpacity = spring({
     fps,
     durationInFrames: 10,
-    delay: 20 + 8,
+    delay: 20 + duration1,
     from: 0,
     to: 1,
     frame
   });
 
-  const scale = size === "lg" ? 8 : size === "md" ? 4 : 3;
+  const scale = 3;
   const transform1 = translate(scale * -5 * (enter1 + exit1 + enter2 + exit2));
   const transform2 = translate(scale * -60 * (enter1 + exit1 + enter2 + exit2));
   const transform3 = translate(scale * 70 * (enter1 + exit1 + enter2 + exit2));

@@ -40,13 +40,13 @@ catalog:
   '@storm-software/untyped': ^0.24.61
   '@storm-software/workspace-tools': ^1.294.26
   '@swc-node/register': ^1.11.1
-  '@swc/core': ^1.15.8
+  '@swc/core': ^1.15.10
   '@swc/helpers': ^0.5.18
   '@swc/wasm': ^1.11.24
   '@types/jest': 30.0.0
   '@types/node': ^25.0.9
   '@types/pluralize': ^0.0.33
-  '@types/react': ^19.2.8
+  '@types/react': ^19.2.9
   '@types/react-dom': ^19.2.3
   '@types/web': ^0.0.302
   chalk-template: ^1.1.2
@@ -67,7 +67,7 @@ catalog:
   log4brains: ^1.1.0
   nx: 22.3.1
   postcss: ^8.5.6
-  prettier: ^3.8.0
+  prettier: ^3.8.1
   react: ^19.2.3
   react-dom: ^19.2.3
   react-native: ^0.77.0
