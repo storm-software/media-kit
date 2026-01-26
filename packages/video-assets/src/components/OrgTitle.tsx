@@ -53,7 +53,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
         className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
           size === "lg"
-            ? "text-[14rem] mt-10"
+            ? "text-[14rem] mt-2"
             : size === "md"
               ? "text-[10rem]"
               : "text-[7.5rem]"
