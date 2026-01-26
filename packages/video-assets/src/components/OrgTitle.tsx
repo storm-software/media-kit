@@ -46,27 +46,17 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
         className
       )}>
       <Img
-        src={`https://public.storm-cdn.com/storm-software/icon-unglitched-${theme}.svg`}
-        className={
-          size === "lg"
-            ? "w-80"
-            : size === "md"
-              ? "w-60"
-              : size === "sm"
-                ? "w-40"
-                : "w-24"
-        }
+        src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
+        className="h-full"
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
         className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
           size === "lg"
-            ? "text-[18rem] mt-10"
+            ? "text-[14rem] mt-10"
             : size === "md"
-              ? "text-[16rem]"
-              : size === "sm"
-                ? "text-[10rem]"
-                : "text-[6rem]"
+              ? "text-[10rem]"
+              : "text-[7.5rem]"
         }`}>
         Storm
       </h1>
@@ -156,13 +146,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
     <div
       className={twMerge(
         "relative w-full",
-        size === "lg"
-          ? "h-142 w-9/12"
-          : size === "md"
-            ? "h-142"
-            : size === "sm"
-              ? "h-65"
-              : "h-50",
+        size === "lg" ? "h-1/2" : size === "md" ? "h-2/3" : "h-42",
         className
       )}>
       <SingleOrgTitle

@@ -31,7 +31,7 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
     <>
       <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size={type === "thin" ? "sm" : "md"} theme={theme} />
+        <OrgTitle size={type === "thin" ? "md" : "lg"} theme={theme} />
       </AbsoluteFill>
     </>
   );
