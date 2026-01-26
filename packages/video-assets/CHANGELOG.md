@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.5.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.5.0) (01/26/2026)
+
+### Features
+
+- **video-assets:** Update icon in logos and size adjustments
+  ([3a759cd](https://github.com/storm-software/media-kit/commit/3a759cd))
+
 ## [0.4.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.4.7) (01/21/2026)
 
 ### Miscellaneous
