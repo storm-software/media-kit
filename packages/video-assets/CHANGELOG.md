@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.5.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.5.1) (01/26/2026)
+
+### Bug Fixes
+
+- **video-assets:** Reduce margin causing banner text to be off center
+  ([7a47504](https://github.com/storm-software/media-kit/commit/7a47504))
+
 ## [0.5.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.5.0) (01/26/2026)
 
 ### Features
