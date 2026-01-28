@@ -25,41 +25,6 @@ import { Social } from "./Social";
 export const RemotionVideo: React.FC = () => {
   return (
     <>
-      {/* <Folder name="logos">
-        <Composition
-          id={formatId("storm-software", "logo-1920x1080")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
-        <Composition
-          id={formatId("storm-software", "logo-1920x1080-dark")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
-        <Composition
-          id={formatId("storm-software", "logo-1920x1080-light")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "light"
-          }}
-        />
-      </Folder> */}
       <Folder name="banners">
         <Composition
           id={formatId("storm-software", "banner-1280x640")}
