@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.2) (01/28/2026)
+
+### Miscellaneous
+
+- **monorepo:** Update workspace packages' dependencies ([a6e963e](https://github.com/storm-software/media-kit/commit/a6e963e))
+
 ## [0.6.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.1) (01/28/2026)
 
 ### Miscellaneous
