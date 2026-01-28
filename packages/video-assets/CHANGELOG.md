@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.1) (01/28/2026)
+
+### Miscellaneous
+
+- **monorepo:** Resolve zod mismatch issues and json editor formatting ([b9c25e0](https://github.com/storm-software/media-kit/commit/b9c25e0))
+
 ## [0.6.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.0) (01/28/2026)
 
 ### Features

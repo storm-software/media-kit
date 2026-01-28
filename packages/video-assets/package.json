@@ -1,6 +1,6 @@
 {
   "name": "@storm-software/video-assets",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "type": "module",
   "description": "Storm Software branded video assets to be used in other projects.",
   "repository": {
@@ -50,7 +50,7 @@
     "react": "catalog:",
     "react-dom": "catalog:",
     "remotion": "catalog:",
-    "zod": "catalog:"
+    "zod": "3.25.76"
   },
   "devDependencies": {
     "@remotion/cli": "catalog:",
