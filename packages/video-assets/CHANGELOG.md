@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.3) (01/28/2026)
+
+### Miscellaneous
+
+- **video-assets:** Clean up `Video` component file ([caa188d](https://github.com/storm-software/media-kit/commit/caa188d))
+
 ## [0.6.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.2) (01/28/2026)
 
 ### Miscellaneous
