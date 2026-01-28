@@ -47,7 +47,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
       )}>
       <Img
         src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
-        className="h-full"
+        className={size === "lg" ? "h-80" : size === "md" ? "h-64" : "h-42"}
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
@@ -130,7 +130,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
   const exitOpacity = spring({
     fps,
     durationInFrames: 10,
-    delay: 20 + duration1,
+    delay: 22 + duration1,
     from: 0,
     to: 1,
     frame
@@ -146,7 +146,7 @@ export const OrgTitle: React.FC<OrgTitleProps> = ({
     <div
       className={twMerge(
         "relative w-full",
-        size === "lg" ? "h-1/2" : size === "md" ? "h-2/3" : "h-42",
+        size === "lg" ? "h-3/4" : size === "md" ? "h-4/5" : "h-42",
         className
       )}>
       <SingleOrgTitle

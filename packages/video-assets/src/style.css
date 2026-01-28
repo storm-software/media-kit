@@ -7,17 +7,17 @@
 }
 
 .org-1 {
-  clip-path: polygon(0 0, 100% 0, 100% 36%, 0 36%);
+  clip-path: polygon(0 0, 100% 0, 100% 26%, 0 26%);
 }
 
 .org-2 {
-  clip-path: polygon(0 35%, 100% 35%, 100% 51%, 0 51%);
+  clip-path: polygon(0 25%, 100% 25%, 100% 51%, 0 51%);
 }
 
 .org-3 {
-  clip-path: polygon(0 50%, 100% 50%, 100% 86%, 0 86%);
+  clip-path: polygon(0 50%, 100% 50%, 100% 79%, 0 79%);
 }
 
 .org-4 {
-  clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+  clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
 }

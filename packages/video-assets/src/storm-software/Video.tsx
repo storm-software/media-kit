@@ -20,6 +20,7 @@ import { Composition, Folder } from "remotion";
 import "../style.css";
 import { formatId } from "../utilities/id-helpers";
 import { Banner } from "./Banner";
+import { Social } from "./Social";
 
 export const RemotionVideo: React.FC = () => {
   return (
@@ -127,6 +128,41 @@ export const RemotionVideo: React.FC = () => {
           defaultProps={{
             theme: "light",
             type: "thin"
+          }}
+        />
+      </Folder>
+      <Folder name="socials">
+        <Composition
+          id={formatId("storm-software", "social-1280x640")}
+          component={Social}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={640}
+          defaultProps={{
+            theme: "dark"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "social-1280x640-dark")}
+          component={Social}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={640}
+          defaultProps={{
+            theme: "dark"
+          }}
+        />
+        <Composition
+          id={formatId("storm-software", "social-1280x640-light")}
+          component={Social}
+          durationInFrames={105}
+          fps={30}
+          width={1280}
+          height={640}
+          defaultProps={{
+            theme: "light"
           }}
         />
       </Folder>
