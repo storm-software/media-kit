@@ -84,7 +84,7 @@ catalog:
   tsx: ^4.21.0
   unbuild: ^3.3.1
   verdaccio: 6.2.4
-  zod: 3.25.76
+  zod: ^4.3.6
   zx: ^8.8.5
 
 configDependencies:
@@ -133,6 +133,7 @@ overrides:
   shell-quote: ">=1.8.2"
   simple-git: ">=3.27.0"
   zod: ">=4.0.5"
+  "@storm-software/video-assets>zod": "3.25.76"
 
 shamefullyHoist: true
 
