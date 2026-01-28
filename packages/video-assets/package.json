@@ -49,8 +49,7 @@
     "@remotion/tailwind-v4": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "remotion": "catalog:",
-    "zod": "3.25.76"
+    "remotion": "catalog:"
   },
   "devDependencies": {
     "@remotion/cli": "catalog:",
