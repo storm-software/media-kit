@@ -72,7 +72,8 @@ async function renderAssets(project: string) {
         codec: "gif",
         composition,
         serveUrl: bundled,
-        outputLocation
+        outputLocation,
+        timeoutInMilliseconds: 120_000
       });
 
       console.log(
