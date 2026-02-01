@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.4) (02/01/2026)
+
+### Miscellaneous
+
+- **video-assets:** Clean up website URL and resize icon ([1a3d126](https://github.com/storm-software/media-kit/commit/1a3d126))
+
 ## [0.6.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.3) (01/28/2026)
 
 ### Miscellaneous
