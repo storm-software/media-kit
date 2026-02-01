@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.7) (02/01/2026)
+
+### Miscellaneous
+
+- **video-assets:** Clean up sizes of banner logos ([4f4bf47](https://github.com/storm-software/media-kit/commit/4f4bf47))
+
 ## [0.6.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.5) (02/01/2026)
 
 ### Bug Fixes
