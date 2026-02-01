@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.6.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.5) (02/01/2026)
+
+### Bug Fixes
+
+- **video-assets:** Increase `timeoutInMilliseconds` to prevent render issue ([64b5805](https://github.com/storm-software/media-kit/commit/64b5805))
+
 ## [0.6.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.4) (02/01/2026)
 
 ### Miscellaneous
