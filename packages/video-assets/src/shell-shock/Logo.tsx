@@ -35,14 +35,24 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
             src={`https://public.storm-cdn.com/shell-shock/logo-${theme}.svg`}
             className="max-w-18"
           />
-          <h1
-            style={{
-              fontFamily,
-              color: theme === "light" ? "#1d1e22" : "white"
-            }}
-            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-bold text-[120px]`}>
-            Shell Shock
-          </h1>
+          <div className="flex flex-1 flex-row items-center gap-6">
+            <h1
+              style={{
+                fontFamily,
+                color: theme === "light" ? "#1d1e22" : "white"
+              }}
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-bold text-[120px]`}>
+              Shell
+            </h1>
+            <h1
+              style={{
+                fontFamily,
+                color: theme === "light" ? "#1d1e22" : "white"
+              }}
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-bold text-[120px]`}>
+              Shock
+            </h1>
+          </div>
         </div>
         <OrgTitle className="mr-8" size="sm" theme={theme} />
       </AbsoluteFill>

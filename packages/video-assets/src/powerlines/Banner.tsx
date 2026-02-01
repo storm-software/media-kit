@@ -36,7 +36,7 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
           className="w-[80%]"
         />
         {type !== "thin" && (
-          <OrgTitle className="mr-8" size="xs" theme={theme} />
+          <OrgTitle className="mr-8" size="sm" theme={theme} />
         )}
       </AbsoluteFill>
     </>

@@ -47,7 +47,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
       )}>
       <Img
         src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
-        className={size === "lg" ? "h-64" : size === "md" ? "h-48" : "h-36"}
+        className={size === "lg" ? "h-64" : size === "md" ? "h-48" : "h-28"}
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
@@ -56,7 +56,7 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
             ? "text-[14rem] mt-2"
             : size === "md"
               ? "text-[10rem]"
-              : "text-[7.5rem]"
+              : "text-[6rem]"
         }`}>
         Storm
       </h1>

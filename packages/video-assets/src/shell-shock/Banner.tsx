@@ -34,22 +34,32 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
     <>
       <GlitchBackground theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div className="flex flex-1 flex-row justify-center items-center w-[4/5] gap-10 max-h-75">
+        <div className="flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75">
           <Img
             src={`https://public.storm-cdn.com/shell-shock/logo-${theme}.svg`}
             className={type === "thin" ? "max-w-20" : "max-w-18"}
           />
-          <h1
-            style={{
-              fontFamily,
-              color: theme === "light" ? "#1d1e22" : "white"
-            }}
-            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-bold text-[115px]`}>
-            Shell Shock
-          </h1>
+          <div className="flex flex-1 flex-row gap-2 mb-5">
+            <h1
+              style={{
+                fontFamily,
+                color: theme === "light" ? "#1d1e22" : "white"
+              }}
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-semibold text-[130px]`}>
+              Shell
+            </h1>
+            <h1
+              style={{
+                fontFamily,
+                color: theme === "light" ? "#1d1e22" : "white"
+              }}
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-semibold text-[130px]`}>
+              Shock
+            </h1>
+          </div>
         </div>
         {type !== "thin" && (
-          <OrgTitle className="mr-8" size="xs" theme={theme} />
+          <OrgTitle className="mr-8" size="sm" theme={theme} />
         )}
       </AbsoluteFill>
     </>

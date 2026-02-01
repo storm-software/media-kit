@@ -44,7 +44,7 @@ catalog:
   '@swc/helpers': ^0.5.18
   '@swc/wasm': ^1.11.24
   '@types/jest': 30.0.0
-  '@types/node': ^25.1.0
+  '@types/node': ^25.2.0
   '@types/pluralize': ^0.0.33
   '@types/react': ^19.2.10
   '@types/react-dom': ^19.2.3
