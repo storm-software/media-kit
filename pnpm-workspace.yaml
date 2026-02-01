@@ -12,16 +12,16 @@ catalog:
   '@nx/js': 22.3.1
   '@nx/plugin': 22.3.1
   '@nx/workspace': 22.3.1
-  '@remotion/animation-utils': ^4.0.414
-  '@remotion/cli': ^4.0.414
-  '@remotion/eslint-config': ^4.0.414
-  '@remotion/fonts': ^4.0.414
-  '@remotion/google-fonts': ^4.0.414
-  '@remotion/media-utils': ^4.0.414
-  '@remotion/noise': ^4.0.414
-  '@remotion/paths': ^4.0.414
-  '@remotion/shapes': ^4.0.414
-  '@remotion/tailwind-v4': ^4.0.414
+  '@remotion/animation-utils': ^4.0.415
+  '@remotion/cli': ^4.0.415
+  '@remotion/eslint-config': ^4.0.415
+  '@remotion/fonts': ^4.0.415
+  '@remotion/google-fonts': ^4.0.415
+  '@remotion/media-utils': ^4.0.415
+  '@remotion/noise': ^4.0.415
+  '@remotion/paths': ^4.0.415
+  '@remotion/shapes': ^4.0.415
+  '@remotion/tailwind-v4': ^4.0.415
   '@storm-software/build-tools': ^0.158.81
   '@storm-software/cloudflare-tools': ^0.71.47
   '@storm-software/config': ^1.135.1
@@ -71,7 +71,7 @@ catalog:
   react: ^19.2.4
   react-dom: ^19.2.4
   react-native: ^0.77.0
-  remotion: ^4.0.414
+  remotion: ^4.0.415
   rimraf: ^6.1.2
   sharp: ^0.34.5
   sherif: ^1.10.0
@@ -84,7 +84,6 @@ catalog:
   tsx: ^4.21.0
   unbuild: ^3.3.1
   verdaccio: 6.2.4
-  zod: 3.25.76
   zx: ^8.8.5
 
 configDependencies:

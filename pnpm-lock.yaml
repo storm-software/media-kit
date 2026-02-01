@@ -28,35 +28,35 @@ catalogs:
       specifier: 22.3.1
       version: 22.3.1
     '@remotion/animation-utils':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/cli':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/eslint-config':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/fonts':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/google-fonts':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/media-utils':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/noise':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/paths':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/shapes':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@remotion/tailwind-v4':
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     '@storm-software/cloudflare-tools':
       specifier: ^0.71.47
       version: 0.71.47
@@ -175,8 +175,8 @@ catalogs:
       specifier: ^19.2.4
       version: 19.2.4
     remotion:
-      specifier: ^4.0.414
-      version: 4.0.414
+      specifier: ^4.0.415
+      version: 4.0.415
     rimraf:
       specifier: ^6.1.2
       version: 6.1.2
@@ -379,28 +379,28 @@ importers:
     dependencies:
       '@remotion/animation-utils':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/fonts':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/google-fonts':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/media-utils':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/noise':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/paths':
         specifier: 'catalog:'
-        version: 4.0.414
+        version: 4.0.415
       '@remotion/shapes':
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/tailwind-v4':
         specifier: 'catalog:'
-        version: 4.0.414(@remotion/bundler@4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(webpack@5.103.0(@swc/core@1.15.11(@swc/helpers@0.5.18))(esbuild@0.25.12))
+        version: 4.0.415(@remotion/bundler@4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(webpack@5.103.0(@swc/core@1.15.11(@swc/helpers@0.5.18))(esbuild@0.25.12))
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.10
@@ -412,14 +412,14 @@ importers:
         version: 19.2.4(react@19.2.4)
       remotion:
         specifier: 'catalog:'
-        version: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
     devDependencies:
       '@remotion/cli':
         specifier: 'catalog:'
-        version: 4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 4.0.415(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/eslint-config':
         specifier: 'catalog:'
-        version: 4.0.414(eslint@9.39.2(@types/eslint@9.6.1)(jiti@2.6.1))
+        version: 4.0.415(eslint@9.39.2(@types/eslint@9.6.1)(jiti@2.6.1))
       '@types/web':
         specifier: 'catalog:'
         version: 0.0.302
@@ -1476,8 +1476,8 @@ packages:
   '@cspell/dict-en-gb@1.1.33':
     resolution: {integrity: sha512-tKSSUf9BJEV+GJQAYGw5e+ouhEe2ZXE620S7BLKe3ZmpnjlNG9JqlnaBhkIMxKnNFkLY2BP/EARzw31AZnOv4g==}
 
-  '@cspell/dict-en_us@4.4.27':
-    resolution: {integrity: sha512-0y4vH2i5cFmi8sxkc4OlD2IlnqDznOtKczm4h6jA288g5VVrm3bhkYK6vcB8b0CoRKtYWKet4VEmHBP1yI+Qfw==}
+  '@cspell/dict-en_us@4.4.28':
+    resolution: {integrity: sha512-/rzhbZaZDsDWmXbc9Fmmr4/ngmaNcG2b+TGT+ZjGqpOXVQYI75yZ9+XduyI43xJ5O38QcX3QIbJY5GWaJqxPEg==}
 
   '@cspell/dict-filetypes@3.0.15':
     resolution: {integrity: sha512-uDMeqYlLlK476w/muEFQGBy9BdQWS0mQ7BJiy/iQv5XUWZxE2O54ZQd9nW8GyQMzAgoyg5SG4hf9l039Qt66oA==}
@@ -1553,8 +1553,8 @@ packages:
   '@cspell/dict-node@5.0.9':
     resolution: {integrity: sha512-hO+ga+uYZ/WA4OtiMEyKt5rDUlUyu3nXMf8KVEeqq2msYvAPdldKBGH7lGONg6R/rPhv53Rb+0Y1SLdoK1+7wQ==}
 
-  '@cspell/dict-npm@5.2.31':
-    resolution: {integrity: sha512-+HoFoFe53pL0wDuSHRs5L+CcDMaG5sLfjKLPT4H0VdwNzho3HLOohTCZr6cYt7OEbXf3xi4YXBkamCy38xOpjA==}
+  '@cspell/dict-npm@5.2.32':
+    resolution: {integrity: sha512-H0XD0eg4d96vevle8VUKVoPhsgsw003ByJ47XzipyiMKoQTZ2IAUW+VTkQq8wU1floarNjmThQJOoKL9J4UYuw==}
 
   '@cspell/dict-php@4.1.1':
     resolution: {integrity: sha512-EXelI+4AftmdIGtA8HL8kr4WlUE11OqCSVlnIgZekmTkEGSZdYnkFdiJ5IANSALtlQ1mghKjz+OFqVs6yowgWA==}
@@ -1574,8 +1574,8 @@ packages:
   '@cspell/dict-ruby@5.1.0':
     resolution: {integrity: sha512-9PJQB3cfkBULrMLp5kSAcFPpzf8oz9vFN+QYZABhQwWkGbuzCIXSorHrmWSASlx4yejt3brjaWS57zZ/YL5ZQQ==}
 
-  '@cspell/dict-rust@4.1.1':
-    resolution: {integrity: sha512-fXiXnZH0wOaEVTKFRNaz6TsUGhuB8dAT0ubYkDNzRQCaV5JGSOebGb1v2x5ZrOSVp+moxWM/vdBfiNU6KOEaFQ==}
+  '@cspell/dict-rust@4.1.2':
+    resolution: {integrity: sha512-O1FHrumYcO+HZti3dHfBPUdnDFkI+nbYK3pxYmiM1sr+G0ebOd6qchmswS0Wsc6ZdEVNiPYJY/gZQR6jfW3uOg==}
 
   '@cspell/dict-scala@5.0.9':
     resolution: {integrity: sha512-AjVcVAELgllybr1zk93CJ5wSUNu/Zb5kIubymR/GAYkMyBdYFCZ3Zbwn4Zz8GJlFFAbazABGOu0JPVbeY59vGg==}
@@ -4250,8 +4250,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@remotion/animation-utils@4.0.414':
-    resolution: {integrity: sha512-YIC8y8SgKy6UD7DkTCTmdyVrky6ZHnF+KNtzOutMUEkhqB3MXXpG2EB9i7EiRSNjRDkuwYfw9EFV5ArmvU9ltw==}
+  '@remotion/animation-utils@4.0.415':
+    resolution: {integrity: sha512-VOjR48b7+WFhMueo5lrTwHlUlzCBKpLhiYA1yV3TWI8p6PqehjlvCx/mDUEXFq0X2Ou9zhpgFptRXkPIWcpbEw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -4262,8 +4262,8 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/cli@4.0.414':
-    resolution: {integrity: sha512-GfOMVZts6SW8TLZEOi82IoNQlsWOIR3yOS9F0h7U6kHodClIqdn0hBogppxL/7K1+IZoSTx3qGYaDGsh+AxJtA==}
+  '@remotion/cli@4.0.415':
+    resolution: {integrity: sha512-OBpumyCiKUthEQuu/tHc497RM33C0aYXHXEfTxxgCF/jq/Q0Iy+jPPsain/dabHCWvdwBIue0ul6GAsPA+Xp8w==}
     hasBin: true
     peerDependencies:
       react: '>=16.8.0'
@@ -4304,16 +4304,16 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@remotion/eslint-config@4.0.414':
-    resolution: {integrity: sha512-fvXDh3jjp5nqjN3ijqHRkAgepAxu4DqzFB8sKwfdRfPrh7piku/ZiIvJGiDPcfv8eQhTBNOq6k7eRHDGDGnlsA==}
+  '@remotion/eslint-config@4.0.415':
+    resolution: {integrity: sha512-bRkYWpXTWVj3qZmZenYVjTOotto9Df1t5t8xl8QusI1pAaB/vz4CQlN15Vn9DXrAkzBJpnKIL8m1l5tgM1Amng==}
     peerDependencies:
       eslint: '>=7.15.0'
 
-  '@remotion/fonts@4.0.414':
-    resolution: {integrity: sha512-91WIlb1jmRJ1aQ02O+dZ5bFiUkInkStYYNOiB/U+Xf52M4FYfaWdbo32WnABkM5cBFrxGY8DURmdT/dOigVTew==}
+  '@remotion/fonts@4.0.415':
+    resolution: {integrity: sha512-0Tzm9Na99GLD7WAHM71oiZ+p9Z0bMYncMY7I93QECyRQn+NHhe62xM3h5Iosl2Eu1mkhhN2lvl849Qln1l3rMw==}
 
-  '@remotion/google-fonts@4.0.414':
-    resolution: {integrity: sha512-Z5elWG6uLOlKGUG4rubMRe2URddHnkgrq6mDxspKNMFswrcCksLUUKahHCqVyjLeerofWIT4+zB03TSsOKciJQ==}
+  '@remotion/google-fonts@4.0.415':
+    resolution: {integrity: sha512-HNR3pgnSXZ3WY33gA9jmUM5C7RVst1GrxZtPkMuWY8BbL1MvHFkMupdVjBUXn2iRbOg36lR50xoXfmxXNQDKog==}
 
   '@remotion/licensing@4.0.414':
     resolution: {integrity: sha512-/0HZCUodTVlgYJsuMmCle1MnWDJR0k1nRFjaI/sBeUdz80BUs8kJMIpx4BM+pp5j6HuNXUstNsfZflxsPpPeAA==}
@@ -4327,11 +4327,20 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/noise@4.0.414':
-    resolution: {integrity: sha512-FwTW+ThmQkJs5KTue9bGYJZ0y2zjUb770jle2Efp+KuaPhx24/fBtmLVPSViIf2Tw4wrsBgE/D4fBrnvNeRtgQ==}
+  '@remotion/media-utils@4.0.415':
+    resolution: {integrity: sha512-CfbyIfttWADVMpYgDJhdcGdoRzl8JGZ63vgdmut3P+xNhC8kdmI0sqkP6+5A3oNmaGZBIY09tsDl4GV7ssj8Aw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  '@remotion/noise@4.0.415':
+    resolution: {integrity: sha512-YP9IJZ/t4srNx2tqrwZCDVdMWXgLthIIV29yvN0YNTf1QDKfvh9tL8fbTGM2OroY91+ncsgBNlPT9QEKSTLT1Q==}
 
   '@remotion/paths@4.0.414':
     resolution: {integrity: sha512-quZ4vDCYm8kORyYJJV0XqQVJP/BARhfa8p5qOgi4cALtSMx94p1TddXU/GE6Sl8PaypyGIJjbJ9ZyP/GXF1vPQ==}
+
+  '@remotion/paths@4.0.415':
+    resolution: {integrity: sha512-WwsgztO45SzdS9DyRwmBwhMdQj/QRCcOv18Zqq4LhU7UmZyEOGHfUY2WGOWhj12uK4ciOIjiNdLWqn4JQ6AZ6A==}
 
   '@remotion/player@4.0.414':
     resolution: {integrity: sha512-T0JMjqLILjm0ro02Es8TOwzLFALQIJjRBU5soYA0JE9n58+mUyDuFnGFIJ3CmfuGa8KoUp+JvwpTkzY3OqsjyA==}
@@ -4345,8 +4354,8 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/shapes@4.0.414':
-    resolution: {integrity: sha512-VmQXaV3egYA8UcB8TTVPy3ysuW/ElxEaEGJjwp/cQctPqIfuRLdmdYvMI2lS2AYC56oRlfI6LHChRA88i3rXAw==}
+  '@remotion/shapes@4.0.415':
+    resolution: {integrity: sha512-Pkx55pXhVtsy7oQW46rlq85P/3GhykzIO7X693Jb2/z0OoeRPOcABym6vs7G2a0RqAZtNoWxYT2SEv5j4Dn9Gg==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -4366,8 +4375,8 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/tailwind-v4@4.0.414':
-    resolution: {integrity: sha512-DhW6Lhyran0UTl7PdA5bAZT8U13t3n692CvS/nPMops4KnTy7P17hhsZlPSpG6rwb3zp4MMqDmVXSEPxv7EHaw==}
+  '@remotion/tailwind-v4@4.0.415':
+    resolution: {integrity: sha512-+yzRTO0q9dEj6pMflIxWhy5lhLbEGAIvysXcfssGMjtwBY2R+fLYueawzprkTBn1/yvSoBiEzlpU+USPnUWQvw==}
     peerDependencies:
       '@remotion/bundler': 4.0.414
 
@@ -12189,6 +12198,12 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
+  remotion@4.0.415:
+    resolution: {integrity: sha512-/s8uX+dM8AVggmwgw8k77hFMcaQrXvD9NxA3eMRKfmzUhJeAViMxLocVh/eOMKGBPf+xBBht+CB25DgzZnn58g==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
   remove-markdown@0.5.5:
     resolution: {integrity: sha512-lMR8tOtDqazFT6W2bZidoXwkptMdF3pCxpri0AEokHg0sZlC2GdoLqnoaxsEj1o7/BtXV1MKtT3YviA1t7rW7g==}
 
@@ -15368,7 +15383,7 @@ snapshots:
       '@cspell/dict-elixir': 4.0.8
       '@cspell/dict-en-common-misspellings': 2.1.12
       '@cspell/dict-en-gb': 1.1.33
-      '@cspell/dict-en_us': 4.4.27
+      '@cspell/dict-en_us': 4.4.28
       '@cspell/dict-filetypes': 3.0.15
       '@cspell/dict-flutter': 1.1.1
       '@cspell/dict-fonts': 4.0.5
@@ -15392,14 +15407,14 @@ snapshots:
       '@cspell/dict-markdown': 2.0.14(@cspell/dict-css@4.0.19)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)
       '@cspell/dict-monkeyc': 1.0.12
       '@cspell/dict-node': 5.0.9
-      '@cspell/dict-npm': 5.2.31
+      '@cspell/dict-npm': 5.2.32
       '@cspell/dict-php': 4.1.1
       '@cspell/dict-powershell': 5.0.15
       '@cspell/dict-public-licenses': 2.0.15
       '@cspell/dict-python': 4.2.25
       '@cspell/dict-r': 2.1.1
       '@cspell/dict-ruby': 5.1.0
-      '@cspell/dict-rust': 4.1.1
+      '@cspell/dict-rust': 4.1.2
       '@cspell/dict-scala': 5.0.9
       '@cspell/dict-shell': 1.1.2
       '@cspell/dict-software-terms': 4.2.5
@@ -15429,7 +15444,7 @@ snapshots:
       '@cspell/dict-elixir': 4.0.8
       '@cspell/dict-en-common-misspellings': 2.1.12
       '@cspell/dict-en-gb': 1.1.33
-      '@cspell/dict-en_us': 4.4.27
+      '@cspell/dict-en_us': 4.4.28
       '@cspell/dict-filetypes': 3.0.15
       '@cspell/dict-flutter': 1.1.1
       '@cspell/dict-fonts': 4.0.5
@@ -15453,14 +15468,14 @@ snapshots:
       '@cspell/dict-markdown': 2.0.14(@cspell/dict-css@4.0.19)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)
       '@cspell/dict-monkeyc': 1.0.12
       '@cspell/dict-node': 5.0.9
-      '@cspell/dict-npm': 5.2.31
+      '@cspell/dict-npm': 5.2.32
       '@cspell/dict-php': 4.1.1
       '@cspell/dict-powershell': 5.0.15
       '@cspell/dict-public-licenses': 2.0.15
       '@cspell/dict-python': 4.2.25
       '@cspell/dict-r': 2.1.1
       '@cspell/dict-ruby': 5.1.0
-      '@cspell/dict-rust': 4.1.1
+      '@cspell/dict-rust': 4.1.2
       '@cspell/dict-scala': 5.0.9
       '@cspell/dict-shell': 1.1.2
       '@cspell/dict-software-terms': 5.1.20
@@ -15531,7 +15546,7 @@ snapshots:
 
   '@cspell/dict-en-gb@1.1.33': {}
 
-  '@cspell/dict-en_us@4.4.27': {}
+  '@cspell/dict-en_us@4.4.28': {}
 
   '@cspell/dict-filetypes@3.0.15': {}
 
@@ -15584,7 +15599,7 @@ snapshots:
 
   '@cspell/dict-node@5.0.9': {}
 
-  '@cspell/dict-npm@5.2.31': {}
+  '@cspell/dict-npm@5.2.32': {}
 
   '@cspell/dict-php@4.1.1': {}
 
@@ -15600,7 +15615,7 @@ snapshots:
 
   '@cspell/dict-ruby@5.1.0': {}
 
-  '@cspell/dict-rust@4.1.1': {}
+  '@cspell/dict-rust@4.1.2': {}
 
   '@cspell/dict-scala@5.0.9': {}
 
@@ -18553,7 +18568,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@remotion/animation-utils@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/animation-utils@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -18581,7 +18596,7 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@remotion/cli@4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/cli@4.0.415(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@remotion/bundler': 4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/media-utils': 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -18627,18 +18642,18 @@ snapshots:
   '@remotion/compositor-win32-x64-msvc@4.0.414':
     optional: true
 
-  '@remotion/eslint-config@4.0.414(eslint@9.39.2(@types/eslint@9.6.1)(jiti@2.6.1))':
+  '@remotion/eslint-config@4.0.415(eslint@9.39.2(@types/eslint@9.6.1)(jiti@2.6.1))':
     dependencies:
       eslint: 9.39.2(@types/eslint@9.6.1)(jiti@2.6.1)
 
-  '@remotion/fonts@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/fonts@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      remotion: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      remotion: 4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@remotion/google-fonts@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/google-fonts@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       remotion: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
     transitivePeerDependencies:
@@ -18658,7 +18673,16 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
       remotion: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
-  '@remotion/noise@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/media-utils@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@remotion/media-parser': 4.0.414
+      '@remotion/webcodecs': 4.0.414
+      mediabunny: 1.29.0
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      remotion: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+
+  '@remotion/noise@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       remotion: 4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       simplex-noise: 4.0.1
@@ -18667,6 +18691,8 @@ snapshots:
       - react-dom
 
   '@remotion/paths@4.0.414': {}
+
+  '@remotion/paths@4.0.415': {}
 
   '@remotion/player@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
@@ -18699,7 +18725,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@remotion/shapes@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@remotion/shapes@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@remotion/paths': 4.0.414
       react: 19.2.4
@@ -18760,7 +18786,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@remotion/tailwind-v4@4.0.414(@remotion/bundler@4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(webpack@5.103.0(@swc/core@1.15.11(@swc/helpers@0.5.18))(esbuild@0.25.12))':
+  '@remotion/tailwind-v4@4.0.415(@remotion/bundler@4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(webpack@5.103.0(@swc/core@1.15.11(@swc/helpers@0.5.18))(esbuild@0.25.12))':
     dependencies:
       '@remotion/bundler': 4.0.414(@swc/core@1.15.11(@swc/helpers@0.5.18))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@tailwindcss/postcss': 4.1.1
@@ -28779,6 +28805,11 @@ snapshots:
       unified: 11.0.5
 
   remotion@4.0.414(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  remotion@4.0.415(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
