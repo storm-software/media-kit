@@ -41,13 +41,13 @@ export const SingleOrgTitle: React.FC<OrgTitleProps> = ({
       style={style}
       className={twMerge(
         `flex justify-center flex-row items-center absolute h-full w-full ${
-          size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-4"
+          size === "lg" ? "gap-10" : size === "xs" ? "gap-6" : "gap-8"
         } `,
         className
       )}>
       <Img
         src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
-        className={size === "lg" ? "h-80" : size === "md" ? "h-64" : "h-42"}
+        className={size === "lg" ? "h-64" : size === "md" ? "h-48" : "h-36"}
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}

@@ -54,7 +54,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
           className={`align-middle text-${
             theme === "light" ? "text-zinc-900" : "text-zinc-400"
           } font-medium text-2xl`}>
-          StormSoftware.com
+          stormsoftware.com
         </h3>
       </div>
 
