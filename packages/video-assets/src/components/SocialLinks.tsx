@@ -49,11 +49,13 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
         <h3
           style={{
             fontFamily,
-            color: theme === "light" ? "#18181b" : "#9f9fa9"
+            color: theme === "light" ? "#18181b" : "#f4f4f5"
           }}
           className={`align-middle text-${
-            theme === "light" ? "text-zinc-900" : "text-zinc-400"
-          } font-medium text-2xl`}>
+            theme === "light"
+              ? "text-zinc-900 font-black"
+              : "text-zinc-100 font-semibold"
+          } text-2xl mt-1`}>
           stormsoftware.com
         </h3>
       </div>
@@ -63,11 +65,13 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
         <h3
           style={{
             fontFamily,
-            color: theme === "light" ? "#18181b" : "#9f9fa9"
+            color: theme === "light" ? "#18181b" : "#f4f4f5"
           }}
           className={`align-middle text-${
-            theme === "light" ? "text-zinc-900" : "text-zinc-400"
-          } font-medium text-2xl`}>
+            theme === "light"
+              ? "text-zinc-900 font-black"
+              : "text-zinc-100 font-semibold"
+          } text-2xl`}>
           discord.gg/MQ6YVzakM5
         </h3>
       </div>
@@ -76,11 +80,13 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
         <h3
           style={{
             fontFamily,
-            color: theme === "light" ? "#18181b" : "#9f9fa9"
+            color: theme === "light" ? "#18181b" : "#f4f4f5"
           }}
           className={`align-middle text-${
-            theme === "light" ? "text-zinc-900" : "text-zinc-400"
-          } font-medium text-2xl`}>
+            theme === "light"
+              ? "text-zinc-900 font-black"
+              : "text-zinc-100 font-semibold"
+          } text-2xl`}>
           @StormSoftwareHQ
         </h3>
       </div>
@@ -89,10 +95,10 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
         <h3
           style={{
             fontFamily,
-            color: theme === "light" ? "#18181b" : "#9f9fa9"
+            color: theme === "light" ? "#18181b" : "#f4f4f5"
           }}
           className={`align-middle text-${
-            theme === "light" ? "text-zinc-900" : "text-zinc-400"
+            theme === "light" ? "text-zinc-900" : "text-zinc-100"
           } font-normal text-2xl`}>
           medium.com/storm-software
         </h3>

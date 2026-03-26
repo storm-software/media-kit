@@ -18,16 +18,16 @@
 
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { Background } from "../components/Background";
+import { DissolvingOrgTitle } from "../components/DissolvingOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 export const Logo: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center">
-        <OrgTitle size="lg" theme={theme} />
+        <DissolvingOrgTitle size="lg" theme={theme} />
       </AbsoluteFill>
     </>
   );

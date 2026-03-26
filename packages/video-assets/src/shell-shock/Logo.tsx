@@ -19,8 +19,8 @@
 import { loadFont } from "@remotion/google-fonts/Silkscreen";
 import React from "react";
 import { AbsoluteFill, Img } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { Background } from "../components/Background";
+import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
@@ -28,7 +28,7 @@ const { fontFamily } = loadFont();
 export const Logo: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
         <div className="flex flex-1 flex-row justify-center items-center mx-4 gap-10 max-h-75">
           <Img
@@ -54,7 +54,7 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
             </h1>
           </div>
         </div>
-        <OrgTitle className="mr-8" size="sm" theme={theme} />
+        <StaticOrgTitle className="mr-8" size="sm" theme={theme} />
       </AbsoluteFill>
     </>
   );

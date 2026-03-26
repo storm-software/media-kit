@@ -18,9 +18,10 @@
 
 import { loadFont } from "@remotion/google-fonts/Silkscreen";
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { AbsoluteFill, Img, useCurrentFrame } from "remotion";
+import { twMerge } from "tailwind-merge";
+import { Background } from "../components/Background";
+import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
@@ -30,22 +31,30 @@ export interface BannerProps extends ThemeProps {
 }
 
 export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
+  const frame = useCurrentFrame();
+
+  const showCursor = frame % 60 > 30;
+
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div className="flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75">
+        <div
+          className={twMerge(
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
+            type === "thin" ? "" : "mt-15"
+          )}>
           <Img
             src={`https://public.storm-cdn.com/shell-shock/logo-${theme}.svg`}
-            className={type === "thin" ? "max-w-20" : "max-w-18"}
+            className={type === "thin" ? "max-w-20" : "max-w-15"}
           />
-          <div className="flex flex-1 flex-row gap-2 mb-5">
+          <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
             <h1
               style={{
                 fontFamily,
                 color: theme === "light" ? "#1d1e22" : "white"
               }}
-              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-semibold text-[130px]`}>
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-normal text-[130px]`}>
               Shell
             </h1>
             <h1
@@ -53,13 +62,24 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
                 fontFamily,
                 color: theme === "light" ? "#1d1e22" : "white"
               }}
-              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-semibold text-[130px]`}>
+              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-normal text-[130px]`}>
               Shock
             </h1>
+
+            <div
+              className={twMerge(
+                "h-22 w-12 mt-5 ml-1",
+                !showCursor
+                  ? ""
+                  : theme === "light"
+                    ? "bg-[#1d1e22]"
+                    : "bg-white"
+              )}
+            />
           </div>
         </div>
         {type !== "thin" && (
-          <OrgTitle className="mr-8" size="sm" theme={theme} />
+          <StaticOrgTitle className="mr-8" size="sm" theme={theme} />
         )}
       </AbsoluteFill>
     </>

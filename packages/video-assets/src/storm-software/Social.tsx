@@ -18,18 +18,18 @@
 
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { Background } from "../components/Background";
 import { SocialLinks } from "../components/SocialLinks";
+import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 export const Social: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center pt-10">
         <div className="flex-3 w-full flex justify-center items-center">
-          <OrgTitle size="lg" theme={theme} />
+          <StaticOrgTitle size="lg" theme={theme} />
         </div>
         <SocialLinks theme={theme} size="lg" className="py-10" />
       </AbsoluteFill>

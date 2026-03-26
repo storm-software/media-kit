@@ -18,20 +18,20 @@
 
 import React from "react";
 import { AbsoluteFill, Img } from "remotion";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { Background } from "../components/Background";
+import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 export const Logo: React.FC<ThemeProps> = ({ theme }) => {
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center gap-18">
         <Img
           src={`https://public.storm-cdn.com/powerlines/logo-${theme}.webp`}
           className="w-[80%]"
         />
-        <OrgTitle className="mr-8" size="sm" theme={theme} />
+        <StaticOrgTitle className="mr-8" size="sm" theme={theme} />
       </AbsoluteFill>
     </>
   );

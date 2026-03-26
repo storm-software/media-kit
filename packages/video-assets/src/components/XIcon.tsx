@@ -33,7 +33,7 @@ export function XIcon(props: XIconProps) {
       style={style}
       className={twMerge(
         size === "lg" ? "h-7" : size === "sm" ? "h-5" : "h-6",
-        theme === "light" ? "fill-zinc-900" : "fill-zinc-400",
+        theme === "light" ? "fill-zinc-900" : "fill-zinc-100",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"

@@ -22,6 +22,9 @@ import { formatId } from "../utilities/id-helpers";
 import { Banner } from "./Banner";
 import { Social } from "./Social";
 
+const DURATION_IN_FRAMES = 60;
+const FPS = 30;
+
 export const RemotionVideo: React.FC = () => {
   return (
     <>
@@ -29,8 +32,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x640")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -40,8 +43,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x640-dark")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -51,8 +54,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x640-light")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -62,8 +65,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x320")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
@@ -74,8 +77,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x320-dark")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
@@ -86,8 +89,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "banner-1280x320-light")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
@@ -100,8 +103,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "social-1280x640")}
           component={Social}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -111,8 +114,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "social-1280x640-dark")}
           component={Social}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -122,8 +125,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("storm-software", "social-1280x640-light")}
           component={Social}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{

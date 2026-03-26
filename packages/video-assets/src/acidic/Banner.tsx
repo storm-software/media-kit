@@ -20,8 +20,8 @@ import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
 import React from "react";
 import { AbsoluteFill, Img } from "remotion";
 import { twMerge } from "tailwind-merge";
-import { GlitchBackground } from "../components/GlitchBackground";
-import { OrgTitle } from "../components/OrgTitle";
+import { Background } from "../components/Background";
+import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
@@ -33,7 +33,7 @@ export interface BannerProps extends ThemeProps {
 export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
   return (
     <>
-      <GlitchBackground theme={theme} />
+      <Background theme={theme} />
       <AbsoluteFill className="flex flex-col gap-10 justify-center items-center w-full py-10">
         <div className="flex flex-1 flex-row justify-center items-center mx-4 w-[4/5] max-h-125">
           <Img
@@ -53,7 +53,7 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
           </h1>
         </div>
         {type !== "thin" && (
-          <OrgTitle className="mr-8" size="xs" theme={theme} />
+          <StaticOrgTitle className="mr-8" size="xs" theme={theme} />
         )}
       </AbsoluteFill>
     </>

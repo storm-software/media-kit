@@ -21,50 +21,18 @@ import "../style.css";
 import { formatId } from "../utilities/id-helpers";
 import { Banner } from "./Banner";
 
+const DURATION_IN_FRAMES = 60;
+const FPS = 30;
+
 export const RemotionVideo: React.FC = () => {
   return (
     <>
-      {/* <Folder name="logos">
-        <Composition
-          id={formatId("shell-shock", "logo-1920x1080")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
-        <Composition
-          id={formatId("shell-shock", "logo-1920x1080-dark")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "dark"
-          }}
-        />
-        <Composition
-          id={formatId("shell-shock", "logo-1920x1080-light")}
-          component={Logo}
-          durationInFrames={105}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            theme: "light"
-          }}
-        />
-      </Folder> */}
       <Folder name="banners">
         <Composition
           id={formatId("shell-shock", "banner-1280x640")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -74,8 +42,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("shell-shock", "banner-1280x640-dark")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -85,8 +53,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("shell-shock", "banner-1280x640-light")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={640}
           defaultProps={{
@@ -96,8 +64,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("shell-shock", "banner-1280x320")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
@@ -108,8 +76,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("shell-shock", "banner-1280x320-dark")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
@@ -120,8 +88,8 @@ export const RemotionVideo: React.FC = () => {
         <Composition
           id={formatId("shell-shock", "banner-1280x320-light")}
           component={Banner}
-          durationInFrames={105}
-          fps={30}
+          durationInFrames={DURATION_IN_FRAMES}
+          fps={FPS}
           width={1280}
           height={320}
           defaultProps={{
