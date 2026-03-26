@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.7.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.7.0) (03/26/2026)
+
+### Features
+
+- **video-assets:** Update revision of video assets - Contour Lines ([4c93836](https://github.com/storm-software/media-kit/commit/4c93836))
+
 ## [0.6.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.6.7) (02/01/2026)
 
 ### Miscellaneous

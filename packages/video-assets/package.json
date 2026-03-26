@@ -1,6 +1,6 @@
 {
   "name": "@storm-software/video-assets",
-  "version": "0.6.7",
+  "version": "0.7.0",
   "type": "module",
   "description": "Storm Software branded video assets to be used in other projects.",
   "repository": {
@@ -66,7 +66,5 @@
     "tsx": "catalog:",
     "typescript": "^5.9.3"
   },
-  "sideEffects": [
-    "*.css"
-  ]
+  "sideEffects": ["*.css"]
 }
