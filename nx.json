@@ -15,5 +15,6 @@
     "@storm-software/workspace-tools/plugins/typescript",
     "@storm-software/workspace-tools/plugins/typescript/untyped",
     "@storm-software/workspace-tools/plugins/typescript/tsup"
-  ]
+  ],
+  "analytics": false
 }
