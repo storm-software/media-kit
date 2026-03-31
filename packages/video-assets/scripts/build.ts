@@ -89,7 +89,7 @@ async function renderAssets(project: string) {
           )
         );
 
-      await Promise.allSettled([
+      await Promise.all([
         (async () => {
           const output = `dist/generated/${project}/${composition.id.replace(
             `${project}-`,
@@ -104,7 +104,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 86, // 4
+            frame: 4,
             imageFormat: "png"
           });
           await sharp(output)
@@ -117,7 +117,7 @@ async function renderAssets(project: string) {
             );
 
           console.log(
-            chalkTemplate`green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
+            chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${output} still! }`
           );
         })(),
         (async () => {
@@ -134,7 +134,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 86, // 4
+            frame: 4,
             imageFormat: "jpeg"
           });
           await sharp(output)
@@ -164,7 +164,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 86, // 4
+            frame: 4,
             imageFormat: "webp"
           });
           await sharp(output)
@@ -188,7 +188,7 @@ async function renderAssets(project: string) {
     );
   } catch (err) {
     console.error(
-      chalkTemplate`{red  ${project}: }{redBright  An error occurred while rendering ${project} assets: }${err}`
+      chalkTemplate`{red  ${project}: }{redBright  An error occurred while rendering ${project} assets: } \n${err}`
     );
   }
 }
@@ -222,7 +222,7 @@ try {
   process.exit(0);
 } catch (err) {
   console.error(
-    chalkTemplate`{redBright  An error occurred while rendering videos: }${err}`
+    chalkTemplate`{redBright  An error occurred while rendering videos: } \n${err}`
   );
   process.exit(1);
 }
