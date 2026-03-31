@@ -104,7 +104,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 4,
+            frame: 31,
             imageFormat: "png"
           });
           await sharp(output)
@@ -134,7 +134,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 4,
+            frame: 31,
             imageFormat: "jpeg"
           });
           await sharp(output)
@@ -164,7 +164,7 @@ async function renderAssets(project: string) {
             composition,
             serveUrl: bundled,
             output,
-            frame: 4,
+            frame: 31,
             imageFormat: "webp"
           });
           await sharp(output)
