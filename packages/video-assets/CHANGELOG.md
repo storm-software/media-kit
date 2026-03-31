@@ -2,6 +2,16 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.7.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.7.1) (03/31/2026)
+
+### Miscellaneous
+
+- **video-assets:** Ensure second half of banner is captured in still image ([493d8f6](https://github.com/storm-software/media-kit/commit/493d8f6))
+
+### Bug Fixes
+
+- **video-assets:** Resolve missing chalk token issue in build script ([35d9762](https://github.com/storm-software/media-kit/commit/35d9762))
+
 ## [0.7.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.7.0) (03/26/2026)
 
 ### Features
