@@ -37,6 +37,7 @@ brand guidelines needed to represent Storm Software in external projects/product
 
 - [Brand Guidelines](#brand-guidelines)
   - [Who is this for?](#who-is-this-for)
+  - [Tips](#tips)
   - [Logo](#logo)
     - [Use Cases](#use-cases)
     - [Variations](#variations)
@@ -48,6 +49,7 @@ brand guidelines needed to represent Storm Software in external projects/product
     - [Variations](#variations-1)
       - [Normal (1280x640)](#normal-1280x640)
       - [Thin (1280x320)](#thin-1280x320)
+      - [Socials](#socials)
   - [Stormie](#stormie)
     - [Use Cases](#use-cases-2)
     - [Variations](#variations-2)
@@ -73,6 +75,19 @@ This media kit is intended for anyone who wishes to use Storm Software's brand a
 - **Marketers**: If you are a marketer who is promoting Storm Software's products or services, you may want to use the brand assets in your campaigns to create a strong and recognizable brand presence.
 - **Community Members**: If you are a member of the Storm Software community, you may want to use the brand assets to show your support for the company and its mission.
 - **Anyone else**: If you are anyone else who is interested in using Storm Software's brand assets, please feel free to do so, but be sure to follow the guidelines outlined in this media kit to ensure that you are using the assets in a way that is consistent with the brand's standards.
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
+
+## Tips
+
+When using Storm Software's brand assets, please keep the following tips in mind:
+
+- **Quality**: Always use high-quality versions of the assets to ensure that they look professional and visually appealing. Avoid using low-resolution or pixelated versions of the assets, as this can detract from the brand's image and make it appear unprofessional. In general, it is best to use the SVG versions of the assets whenever possible, as they are scalable and will maintain their quality regardless of size. If you need to use a raster format, such as PNG or WebP, be sure to use a high-resolution version of the asset to ensure that it looks crisp and clear.
+- **Consistency**: Always use the assets in a way that is consistent with the brand's identity and values. This includes using the correct colors, fonts, and imagery that align with Storm Software's visual style.
+- **Respect**: Always use the assets in a respectful manner that does not misrepresent or harm the brand. This includes avoiding any use of the assets that could be considered offensive, inappropriate, or misleading.
+- **Attribution**: When using the assets, please provide proper attribution to Storm Software. This can be done by including a link to the company's website or by mentioning Storm Software in your materials.
+- **Permission**: If you are unsure about how to use the assets or if you want to use them in a way that is not covered by these guidelines, please reach out to Storm Software for permission before using the assets. This will help ensure that you are using the assets in a way that is consistent with the brand's standards and that you are not inadvertently misrepresenting or harming the brand.
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
@@ -166,6 +181,15 @@ The thin banner is a shorter version of the normal banner, designed to fit in na
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://public.storm-cdn.com/storm-software/banner-1280x320-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.gif)                                                                                               |
 | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.webp) |
+
+#### Socials
+
+The socials banner is a high-resolution graphic that matches the standard Storm Software banner with organization specific URLs displayed at the bottom. This banner is designed to be used in social media contexts, such as on Twitter, LinkedIn, or Facebook, where it can help promote the brand and its online presence. The URLs provide easy access to Storm Software's website and social media profiles, making it convenient for users to connect with the company and stay updated on its latest news and offerings.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/social-1280x640-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/social-1280x640-dark.gif)                                                                                               |
+| [**⬇ GIF**](https://public.storm-cdn.com/storm-software/social-1280x640-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/social-1280x640-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/social-1280x640-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/social-1280x640-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/social-1280x640-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/social-1280x640-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/social-1280x640-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/social-1280x640-dark.webp) |
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
