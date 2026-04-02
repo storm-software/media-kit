@@ -23,7 +23,7 @@ brand guidelines you need to represent Storm Software in your projects.
 <h3 align="center">💻 Visit <a href="https://stormsoftware.com" target="_blank">stormsoftware.com</a> to stay up to date with this developer</h3>
 <br />
 
-[![github](https://img.shields.io/github/package-json/v/storm-software/media-kit?style=for-the-badge&color=1fb2a6)](https://github.com/storm-software/media-kit)&nbsp;[![Nx](https://img.shields.io/badge/Nx-17.0.2-lightgrey?style=for-the-badge&logo=nx&logoWidth=20&&color=1fb2a6)](http://nx.dev/)&nbsp;[![NextJs](https://img.shields.io/badge/Next.js-14.0.2-lightgrey?style=for-the-badge&logo=nextdotjs&logoWidth=20&color=1fb2a6)](https://nextjs.org/)&nbsp;[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge&logo=commitlint&color=1fb2a6)](http://commitizen.github.io/cz-cli/)&nbsp;![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge&color=1fb2a6)&nbsp;![documented with docusaurus](https://img.shields.io/badge/documented_with-docusaurus-success.svg?style=for-the-badge&logo=readthedocs&color=1fb2a6)&nbsp;![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/storm-software/media-kit/cr.yml?style=for-the-badge&logo=github-actions&color=1fb2a6)
+[![github](https://img.shields.io/github/package-json/v/storm-software/media-kit?style=for-the-badge&color=1fb2a6)](https://github.com/storm-software/media-kit)&nbsp;[![Nx](https://img.shields.io/badge/Nx-22.6.0-lightgrey?style=for-the-badge&logo=nx&logoWidth=20&&color=1fb2a6)](http://nx.dev/)&nbsp;[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge&logo=commitlint&color=1fb2a6)](http://commitizen.github.io/cz-cli/)&nbsp;![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge&color=1fb2a6)&nbsp;![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/storm-software/media-kit/release.yml?style=for-the-badge&logo=github-actions&color=1fb2a6)
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -35,25 +35,83 @@ brand guidelines you need to represent Storm Software in your projects.
 <!-- prettier-ignore-end -->
 
 <div align="center">
+<a href="https://github.com/storm-software/media-kit" target="_blank">
 <b>Be sure to ⭐ this repository on GitHub so you can keep up to date on any daily progress!</b>
+</a>
 </div>
 
 <!-- START doctoc -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Badges](#badges)
-- [Brand](#brand)
+- [Brand Guidelines](#brand-guidelines)
   - [Logo](#logo)
-    - [Dark Version](#dark-version)
-    - [Light Version](#light-version)
+    - [Use Cases](#use-cases)
+    - [Variations](#variations)
+  - [Stormie](#stormie)
+    - [Use Cases](#use-cases-1)
+    - [Variations](#variations-1)
+  - [Badges](#badges)
   - [Typography](#typography)
 
 <!-- END doctoc -->
 
 <br />
 
-# Badges
+# Brand Guidelines
+
+ℹ️ These _guidelines_ will help you to use the **Storm Software
+brand** assets in your projects so that it remains in accordance with the brand's identity and values. Please read through them carefully to ensure that you are using the assets in a way that is consistent with the brand's identity and values.
+
+## Logo
+
+The Storm Software logo is a stylized lightning bolt, designed with sharp angles and a modern aesthetic. It represents the power, speed, and innovation that Storm Software embodies in its products and services. The logo is typically rendered in a bold, vibrant color to convey energy and dynamism.
+
+### Use Cases
+
+The Storm Software logo can be used in a variety of contexts, including:
+
+- **Website**: The logo can be prominently displayed on the homepage, as well as in the header and footer of the site.
+- **Documentation**: The logo can be used in the documentation to create a consistent brand identity and make it easily recognizable to users.
+- **Marketing Materials**: The logo can be featured in marketing materials such as brochures, flyers, and social media posts to promote the brand and its offerings.
+
+### Variations
+
+The following variations of the Storm Software logo are available for use:
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icon-light.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-dark.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-light.svg) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-dark.svg) |
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
+
+## Stormie
+
+The Stormie mascot is a friendly and approachable character that embodies the spirit of Storm Software. It is designed to be a fun and engaging representation of the brand, often depicted with a cheerful expression and dynamic pose. Stormie serves as a symbol of the company's commitment to making software development more accessible and enjoyable for everyone.
+
+### Use Cases
+
+The Stormie mascot can be used in various contexts, including:
+
+- **Automation Logos**: Stormie can be featured in automation logos to add a playful and relatable element to the brand's visual identity.
+- **Documentation**: The mascot can be used in documentation to create a more engaging and friendly atmosphere for users, making technical content more approachable.
+- **Marketing Materials**: Stormie can be included in marketing materials to enhance brand recognition and create a memorable impression on the audience.
+
+### Variations
+
+The following variations of the Stormie mascot are available for use:
+
+| Transparent                                                                                                                                 | Background                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/stormie/transparent.svg)                                                                                    | ![](https://public.storm-cdn.com/stormie/background.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/stormie/transparent.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/transparent.svg) | [**⬇ PNG**](https://public.storm-cdn.com/stormie/background.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/background.svg) |
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
+
+## Badges
 
 Custom **Storm Software badges** were created for use in your projects, perfect
 for your readme or website.
@@ -88,42 +146,8 @@ for your readme or website.
 </a>
 ```
 
-<br> <br>
-
-# Brand
-
-ℹ️ These _guidelines_ will help you to correctly use the **Storm Software
-brand**.
-
-## Logo
-
-<br>
-
-### Dark Version
-
-| Glitched (Normal)                                                                                                                                 | Un-glitched                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://public.storm-cdn.com/storm-software/icon-dark.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.svg)                                                                                               |
-| ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-dark.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-dark.svg) | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-unglitched-dark.svg) |
-
-### Light Version
-
-| Glitched (Normal)                                                                                                                                   | Un-glitched                                                                                                                                                               |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://public.storm-cdn.com/storm-software/icon-light.svg)                                                                                     | ![](https://public.storm-cdn.com/storm-software/icon-unglitched-light.svg)                                                                                                |
-| ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-light.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-light.svg) | ⬇️ [**PNG**](https://public.storm-cdn.com/storm-software/icon-unglitched-light.png) • ⬇️ [**SVG**](https://public.storm-cdn.com/storm-software/icon-unglitched-light.svg) |
-
-<br><br>
-
-✉️ If you have any **questions** or want to use these assets for your *project*
-or *website*, please [**reach out to us**](contact@stormsoftware.com).
-
-<br>
-
-Please **do not alter the Storm Software logo** or use it to _imply sponsorship_
-or *association with Storm Software* without our explicit permission.
-
-<br><br>
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
 
 ## Typography
 
@@ -136,6 +160,12 @@ or *association with Storm Software* without our explicit permission.
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
+
+✉️ If you have any **questions** or want to use these assets for your _project_
+or _website_, please [**reach out to us**](contact@stormsoftware.com).
+
+Please **do not alter the Storm Software logo** or use it to _imply sponsorship_
+or _association with Storm Software_ without our explicit permission.
 
 <hr />
 <br />
@@ -159,7 +189,7 @@ or *association with Storm Software* without our explicit permission.
 <br />
 
 Storm Software is an open source software development organization and creator
-of Acidic, StormStack and StormCloud.
+of Powerlines, Shell Shock and Earthquake.
 
 Our mission is to make software development more accessible. Our ideal future is
 one where anyone can create software without years of prior development
@@ -179,8 +209,8 @@ channel!
 
 <div align="center"><a href="https://stormsoftware.com" target="_blank"><img src="https://public.storm-cdn.com/storm-software/icon-circle-fill-dark.png" alt="Storm Software" width="200px"/></a></div>
 <br />
-<div align="center"><a href="https://stormsoftware.com" target="_blank"><img src="https://public.storm-cdn.com/visit-us-text.svg" alt="Visit us at stormsoftware.com" height="90px"/></a></div>
 
+<div align="center"><a href="https://stormsoftware.com" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://public.storm-cdn.com/misc/text/visit-us-dark.png"><source media="(prefers-color-scheme: light)" srcset="https://public.storm-cdn.com/misc/text/visit-us-light.png"><img src="https://public.storm-cdn.com/misc/text/visit-us-dark.png" height="90px" alt="Visit us at stormsoftware.com" /></picture></a></div>
 <br />
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
