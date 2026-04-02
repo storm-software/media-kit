@@ -40,10 +40,20 @@ brand guidelines needed to represent Storm Software in external projects/product
   - [Logo](#logo)
     - [Use Cases](#use-cases)
     - [Variations](#variations)
-  - [Stormie](#stormie)
+      - [Normal (Black and White)](#normal-black-and-white)
+      - [Colored](#colored)
+      - [Filled](#filled)
+  - [Banner](#banner)
     - [Use Cases](#use-cases-1)
     - [Variations](#variations-1)
+      - [Normal (1280x640)](#normal-1280x640)
+      - [Thin (1280x320)](#thin-1280x320)
+  - [Stormie](#stormie)
+    - [Use Cases](#use-cases-2)
+    - [Variations](#variations-2)
   - [Badges](#badges)
+    - [Use Cases](#use-cases-3)
+    - [Variations](#variations-3)
   - [Typography](#typography)
 
 <!-- END doctoc -->
@@ -83,10 +93,79 @@ The Storm Software logo can be used in a variety of contexts, including:
 
 The following variations of the Storm Software logo are available for use:
 
+#### Normal (Black and White)
+
+The normal Storm Software logo is a high-resolution graphic that features the Storm Software lightning bolt design in both light and dark color schemes. This logo should be used in contexts where a simple and recognizable representation of the brand is needed, such as on the company's website, in documentation, or in marketing materials. The light version of the logo is designed to be used on dark backgrounds, while the dark version is intended for use on light backgrounds, ensuring optimal visibility and contrast in various settings.
+
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+> [!NOTE] 
+> When in doubt, the normal Storm Software logo should be used in its original form without any alterations to ensure brand consistency and recognition. Please do not modify the logo in any way, including changing colors, adding effects, or altering the design, as this can dilute the brand's identity and impact its visual presence.
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
 | Light                                                                                                                                 | Dark                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://public.storm-cdn.com/storm-software/icon-light.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-dark.svg)                                                                                               |
-| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-light.svg) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-dark.svg) |
+| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-light.webp) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-dark.webp) |
+
+#### Colored
+
+The colored Storm Software logo is a high-resolution graphic that features the Storm Software lightning bolt design in its original color scheme. This logo should be used in contexts where a vibrant and eye-catching representation of the brand is desired, such as in marketing materials, social media posts, or on the company's website. The colored version of the logo is designed to stand out and create a strong visual impact, making it ideal for promotional purposes and situations where brand recognition is a priority.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icon-colored-light.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-colored-dark.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-colored-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-colored-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-colored-light.webp) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-colored-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-colored-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-colored-dark.webp) |
+
+#### Filled
+
+The filled Storm Software logo is a high-resolution graphic that features the Storm Software lightning bolt design with a solid fill, creating a bold and impactful visual representation of the brand. This logo should be used in contexts where a strong and assertive representation of the brand is desired, such as in marketing materials, social media posts, or on the company's website. The filled version of the logo is designed to make a powerful statement and enhance brand recognition, making it ideal for promotional purposes and situations where a commanding visual presence is needed.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icon-fill-light.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icon-fill-dark.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-fill-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-fill-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-fill-light.webp) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icon-fill-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icon-fill-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icon-fill-dark.webp) |
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
+
+## Banner
+
+The Storm Software banner is a visually striking graphic that features the Storm Software logo along with a dynamic background. The banner is designed to capture attention and convey the energy and innovation that Storm Software represents. It can be used in various contexts, such as on the company's website, in marketing materials, or as a header for documentation.
+
+### Use Cases
+
+The Storm Software banner can be used in a variety of contexts, including:
+
+- **Readme Files**: The banner can be included in the readme files of your projects to create a strong visual identity and make it easily recognizable to users.
+- **Website**: The banner can be prominently displayed on the homepage, as well as in the header and footer of the site.
+- **Documentation**: The banner can be used in the documentation to create a consistent brand identity and make it easily recognizable to users.
+- **Marketing Materials**: The banner can be featured in marketing materials such as brochures, flyers, and social media posts to promote the brand and its offerings.
+
+### Variations
+
+The following variations of the Storm Software banner are available for use:
+
+#### Normal (1280x640)
+
+The normal banner is a high-resolution graphic that features the Storm Software logo along with a dynamic background. It is designed to capture attention and convey the energy and innovation that Storm Software represents. This banner can be used in various contexts, such as on the company's website, in marketing materials, or as a header for documentation.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/banner-1280x640-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.gif)                                                                                               |
+| [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.webp) |
+
+#### Thin (1280x320)
+
+The thin banner is a shorter version of the normal banner, designed to fit in narrower spaces while still maintaining the visual identity of Storm Software. It features the Storm Software logo along with a dynamic background, and can be used in contexts where space is limited, such as in email signatures or as a header for documentation.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/banner-1280x320-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.gif)                                                                                               |
+| [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x320-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x320-dark.webp) |
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
@@ -110,7 +189,7 @@ The following variations of the Stormie mascot are available for use:
 | Transparent                                                                                                                                 | Background                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://public.storm-cdn.com/stormie/transparent.svg)                                                                                    | ![](https://public.storm-cdn.com/stormie/background.svg)                                                                                               |
-| [**⬇ PNG**](https://public.storm-cdn.com/stormie/transparent.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/transparent.svg) | [**⬇ PNG**](https://public.storm-cdn.com/stormie/background.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/background.svg) |
+| [**⬇ PNG**](https://public.storm-cdn.com/stormie/transparent.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/transparent.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/stormie/transparent.webp) | [**⬇ PNG**](https://public.storm-cdn.com/stormie/background.png)  • [**⬇ SVG**](https://public.storm-cdn.com/stormie/background.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/stormie/background.webp) |
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
@@ -120,35 +199,62 @@ The following variations of the Stormie mascot are available for use:
 Custom **Storm Software badges** were created for use in your projects, perfect
 for your readme or website.
 
-[![Made by Storm](https://public.storm-cdn.com/storm-software/badge-dark.svg)](https://stormsoftware.com)
+<a href="https://stormsoftware.com">
+  <img
+    height="20"
+    src="https://public.storm-cdn.com/badges/badge-dark.svg"
+    alt="Made by Storm" />
+</a>
 
 ```md
-[![Made by Storm](https://public.storm-cdn.com/storm-software/badge-dark.svg)](https://stormsoftware.com)
+[![Made by Storm](https://public.storm-cdn.com/badges/badge-dark.svg)](https://stormsoftware.com)
 ```
 
 ```html
 <a href="https://stormsoftware.com">
   <img
     height="20"
-    src="https://public.storm-cdn.com/storm-software/badge-dark.svg"
+    src="https://public.storm-cdn.com/badges/badge-dark.svg"
     alt="Made by Storm" />
 </a>
 ```
 
-[![Made by Storm](https://public.storm-cdn.com/storm-software/badge-light.svg)](https://stormsoftware.com)
+<a href="https://stormsoftware.com">
+  <img
+    height="20"
+    src="https://public.storm-cdn.com/badges/badge-light.svg"
+    alt="Made by Storm" />
+</a>
 
 ```md
-[![Made by Storm](https://public.storm-cdn.com/storm-software/badge-light.svg)](https://stormsoftware.com)
+[![Made by Storm](https://public.storm-cdn.com/badges/badge-light.svg)](https://stormsoftware.com)
 ```
 
 ```html
 <a href="https://stormsoftware.com">
   <img
     height="20"
-    src="https://public.storm-cdn.com/storm-software/badge-light.svg"
+    src="https://public.storm-cdn.com/badges/badge-light.svg"
     alt="Made by Storm" />
 </a>
 ```
+
+### Use Cases
+
+The Storm Software badge can be used in various contexts, including:
+
+- **Readme Files**: The badge can be included in the readme files of your projects to indicate that they were made using Storm Software's products or services.
+- **Websites**: The badge can be displayed on your website to show that you are utilizing Storm Software's offerings, which can help build credibility and trust with your audience.
+- **Documentation**: The badge can be used in documentation to highlight sections that are relevant to Storm Software's products or to indicate that the documentation was created using Storm Software's tools.
+
+### Variations
+
+The following variations of the Storm Software badge are available for use:
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/badges/badge-light.svg)                                                                                    | ![](https://public.storm-cdn.com/badges/badge-dark.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/badges/badge-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/badges/badge-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/badges/badge-light.webp) | [**⬇ PNG**](https://public.storm-cdn.com/badges/badge-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/badges/badge-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/badges/badge-dark.webp) |
 
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
