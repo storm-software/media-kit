@@ -17,22 +17,13 @@
 </div>
 <br />
 
-Storm Software's **Media Kit** monorepo contains all of the assets, logos, and
-brand guidelines you need to represent Storm Software in your projects.
+Storm Software's **Media Kit** monorepo contains assets, logos, and
+brand guidelines needed to represent Storm Software in external projects/products.
 
 <h3 align="center">💻 Visit <a href="https://stormsoftware.com" target="_blank">stormsoftware.com</a> to stay up to date with this developer</h3>
 <br />
 
-[![github](https://img.shields.io/github/package-json/v/storm-software/media-kit?style=for-the-badge&color=1fb2a6)](https://github.com/storm-software/media-kit)&nbsp;[![Nx](https://img.shields.io/badge/Nx-22.6.0-lightgrey?style=for-the-badge&logo=nx&logoWidth=20&&color=1fb2a6)](http://nx.dev/)&nbsp;[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge&logo=commitlint&color=1fb2a6)](http://commitizen.github.io/cz-cli/)&nbsp;![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge&color=1fb2a6)&nbsp;![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/storm-software/media-kit/release.yml?style=for-the-badge&logo=github-actions&color=1fb2a6)
-
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-> [!IMPORTANT] 
-> This repository, and the apps, libraries, and tools contained within, is still in it's initial development phase. As a result, bugs and issues are expected with it's usage. When the main development phase completes, a proper release will be performed, the packages will be available through NPM (and other distributions), and this message will be removed. However, in the meantime, please feel free to report any issues you may come across.
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge&logo=commitlint&color=1fb2a6)](http://commitizen.github.io/cz-cli/)&nbsp;![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge&color=1fb2a6)&nbsp;![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/storm-software/media-kit/release.yml?style=for-the-badge&logo=github-actions&color=1fb2a6)
 
 <div align="center">
 <a href="https://github.com/storm-software/media-kit" target="_blank">
@@ -45,6 +36,7 @@ brand guidelines you need to represent Storm Software in your projects.
 ## Table of Contents
 
 - [Brand Guidelines](#brand-guidelines)
+  - [Who is this for?](#who-is-this-for)
   - [Logo](#logo)
     - [Use Cases](#use-cases)
     - [Variations](#variations)
@@ -60,8 +52,20 @@ brand guidelines you need to represent Storm Software in your projects.
 
 # Brand Guidelines
 
-ℹ️ These _guidelines_ will help you to use the **Storm Software
-brand** assets in your projects so that it remains in accordance with the brand's identity and values. Please read through them carefully to ensure that you are using the assets in a way that is consistent with the brand's identity and values.
+These _guidelines_ should assist you in using **Storm Software** brand assets in your projects, while ensuring to remain in accordance with Storm Software's identity and values. Please read through them carefully to ensure that you are using the assets in a way that is consistent with the brand's standards.
+
+## Who is this for?
+
+This media kit is intended for anyone who wishes to use Storm Software's brand assets in their projects, including but not limited to:
+
+- **Developers**: If you are a developer who is using Storm Software's products or services, you may want to use the brand assets in your documentation, website, or marketing materials.
+- **Designers**: If you are a designer who is creating materials for Storm Software, you may want to use the brand assets to create a consistent visual identity for the company.
+- **Marketers**: If you are a marketer who is promoting Storm Software's products or services, you may want to use the brand assets in your campaigns to create a strong and recognizable brand presence.
+- **Community Members**: If you are a member of the Storm Software community, you may want to use the brand assets to show your support for the company and its mission.
+- **Anyone else**: If you are anyone else who is interested in using Storm Software's brand assets, please feel free to do so, but be sure to follow the guidelines outlined in this media kit to ensure that you are using the assets in a way that is consistent with the brand's standards.
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
 
 ## Logo
 
@@ -161,11 +165,17 @@ for your readme or website.
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
 
-✉️ If you have any **questions** or want to use these assets for your _project_
+🖂  If you have any **questions** while using these assets for your _project_
 or _website_, please [**reach out to us**](contact@stormsoftware.com).
 
-Please **do not alter the Storm Software logo** or use it to _imply sponsorship_
-or _association with Storm Software_ without our explicit permission.
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+> [!IMPORTANT] 
+> Please do not alter any Storm Software assets or use them to _imply sponsorship_ or _association with Storm Software_ without explicit permission from the Storm Software administration team.
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
 <hr />
 <br />
