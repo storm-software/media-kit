@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.0) (04/15/2026)
+
+### Features
+
+- **video-assets:** Added `earthquake` video assets ([4f6328c](https://github.com/storm-software/media-kit/commit/4f6328c))
+
 ## [0.7.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.7.1) (03/31/2026)
 
 ### Miscellaneous
