@@ -131,7 +131,7 @@ overrides:
   parse-url: '>=9.2.0'
   path-to-regexp: '>=0.1.12'
   shell-quote: '>=1.8.2'
-  simple-git: '>=3.27.0'
+  simple-git: '>=3.36.0'
 
 shamefullyHoist: true
 
