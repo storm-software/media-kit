@@ -52,7 +52,7 @@ catalog:
   animejs: ^4.3.6
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
-  defu: ^6.1.4
+  defu: ^6.1.5
   esbuild: ^0.24.2
   eslint: ^9.39.4
   eslint-flat-config-utils: ^2.1.4
