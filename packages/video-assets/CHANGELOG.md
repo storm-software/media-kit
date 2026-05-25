@@ -2,6 +2,19 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.1) (05/25/2026)
+
+### Miscellaneous
+
+- **monorepo:** Update workspace packages' dependencies ([7db02ee](https://github.com/storm-software/media-kit/commit/7db02ee))
+- **video-assets:** Minor styling changes to banner ([f8187d8](https://github.com/storm-software/media-kit/commit/f8187d8))
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue with `copyfile` command ([7490dbc](https://github.com/storm-software/media-kit/commit/7490dbc))
+- **video-assets:** Resolve issue with `project.json` config ([ad0be9f](https://github.com/storm-software/media-kit/commit/ad0be9f))
+- **video-assets:** Resolve issue with missing `dist` directory files ([3a6641d](https://github.com/storm-software/media-kit/commit/3a6641d))
+
 ## [0.8.0](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.0) (04/15/2026)
 
 ### Features
