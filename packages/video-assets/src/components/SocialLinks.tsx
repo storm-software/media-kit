@@ -53,7 +53,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
           }}
           className={`align-middle text-${
             theme === "light"
-              ? "text-zinc-900 font-black"
+              ? "text-black font-black"
               : "text-zinc-100 font-semibold"
           } text-2xl mt-1`}>
           stormsoftware.com
@@ -69,7 +69,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
           }}
           className={`align-middle text-${
             theme === "light"
-              ? "text-zinc-900 font-black"
+              ? "text-black font-black"
               : "text-zinc-100 font-semibold"
           } text-2xl`}>
           discord.gg/MQ6YVzakM5
@@ -84,7 +84,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
           }}
           className={`align-middle text-${
             theme === "light"
-              ? "text-zinc-900 font-black"
+              ? "text-black font-black"
               : "text-zinc-100 font-semibold"
           } text-2xl`}>
           @StormSoftwareHQ
@@ -98,7 +98,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = (
             color: theme === "light" ? "#18181b" : "#f4f4f5"
           }}
           className={`align-middle text-${
-            theme === "light" ? "text-zinc-900" : "text-zinc-100"
+            theme === "light" ? "text-black" : "text-zinc-100"
           } font-normal text-2xl`}>
           medium.com/storm-software
         </h3>

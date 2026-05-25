@@ -46,13 +46,13 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
       )}>
       <Img
         src={`https://public.storm-cdn.com/storm-software/icon-colored-${theme}.svg`}
-        className={size === "lg" ? "h-56" : size === "md" ? "h-42" : "h-24"}
+        className={size === "lg" ? "h-60" : size === "md" ? "h-42" : "h-24"}
       />
       <h1
         style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
         className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
           size === "lg"
-            ? "text-[14rem] mt-2"
+            ? "text-[15rem]"
             : size === "md"
               ? "text-[10rem]"
               : "text-[6rem]"

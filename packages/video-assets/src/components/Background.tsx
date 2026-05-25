@@ -27,8 +27,8 @@ const LINE_GROUP_2_COUNT = 10;
 const LINE_GROUP_1_SCALE = 10;
 const LINE_GROUP_2_SCALE = 20;
 
-const LINE_GROUP_1_SPEED = 5;
-const LINE_GROUP_2_SPEED = 8;
+const LINE_GROUP_1_SPEED = 2;
+const LINE_GROUP_2_SPEED = 4;
 
 export interface BackgroundProps extends ThemeProps {
   type?: "thin" | "normal";
@@ -45,7 +45,7 @@ export const Background: React.FC<BackgroundProps> = ({
   return (
     <AbsoluteFill
       className={twMerge(
-        theme === "light" ? "bg-zinc-200" : "bg-zinc-950",
+        theme === "light" ? "bg-mist-200" : "bg-black",
         className,
         "z-0"
       )}>
@@ -81,19 +81,22 @@ export const Background: React.FC<BackgroundProps> = ({
                 c2y +
                 Math.sin(normalizedFrame * Math.PI * 2 + i) *
                   LINE_GROUP_1_SPEED;
+              const opacity =
+                (theme === "light" ? 0.35 : 0.25) +
+                0.025 * Math.sin(normalizedFrame * Math.PI * 2 + i);
 
               return (
                 <path
                   key={i}
                   className={twMerge(
-                    theme === "light" ? "stroke-[#1d1e22]" : "stroke-zinc-200",
+                    theme === "light" ? "stroke-mist-950" : "stroke-mist-50",
                     className,
-                    "fill-none stroke-3"
+                    "fill-none stroke-4"
                   )}
                   d={`M ${s1x},${s1y} C ${c1xAdjusted},${c1yAdjusted} ${
                     c2xAdjusted
                   },${c2yAdjusted} ${ex},${ey}`}
-                  opacity={0.25}
+                  opacity={opacity}
                 />
               );
             })}
@@ -115,7 +118,7 @@ export const Background: React.FC<BackgroundProps> = ({
                 LINE_GROUP_2_SCALE * LINE_GROUP_2_COUNT -
                 i * LINE_GROUP_2_SCALE * 2;
               const ex = width + i * LINE_GROUP_2_SCALE * 2;
-              const ey = height / 2 + LINE_GROUP_2_SCALE * i;
+              const ey = height / 1.5 + LINE_GROUP_2_SCALE * i;
 
               const normalizedFrame =
                 (frame % durationInFrames) / durationInFrames;
@@ -135,19 +138,22 @@ export const Background: React.FC<BackgroundProps> = ({
                 c2y +
                 Math.sin(normalizedFrame * Math.PI * 2 + i) *
                   LINE_GROUP_2_SPEED;
+              const opacity =
+                (theme === "light" ? 0.4 : 0.25) +
+                0.04 * Math.sin(normalizedFrame * Math.PI * 2 + i);
 
               return (
                 <path
                   key={i}
                   className={twMerge(
-                    theme === "light" ? "stroke-[#1d1e22]" : "stroke-zinc-200",
+                    theme === "light" ? "stroke-mist-950" : "stroke-mist-50",
                     className,
-                    "fill-none stroke-3"
+                    "fill-none stroke-4"
                   )}
                   d={`M ${s1x},${s1y} C ${c1xAdjusted},${c1yAdjusted} ${
                     c2xAdjusted
                   },${c2yAdjusted} ${ex},${ey}`}
-                  opacity={0.25}
+                  opacity={opacity}
                 />
               );
             })}
