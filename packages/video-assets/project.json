@@ -124,11 +124,13 @@
         "build-shell-shock",
         "build-earthquake"
       ],
-      "commands": [
-        "pnpm copyfiles LICENSE dist/packages/video-assets",
-        "pnpm copyfiles --up=3 ./packages/video-assets/*.md ./packages/video-assets/package.json dist/packages/video-assets",
-        "pnpm copyfiles --up=4 \"./packages/video-assets/dist/optimized/*/*\" ./dist/packages/video-assets"
-      ]
+      "options": {
+        "commands": [
+          "pnpm copyfiles LICENSE dist/packages/video-assets",
+          "pnpm copyfiles --up=3 ./packages/video-assets/*.md ./packages/video-assets/package.json dist/packages/video-assets",
+          "pnpm copyfiles --up=4 \"./packages/video-assets/dist/optimized/*/*\" ./dist/packages/video-assets"
+        ]
+      }
     },
     "nx-release-publish": {
       "executor": "@storm-software/cloudflare-tools:r2-upload-publish",
