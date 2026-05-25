@@ -12,16 +12,16 @@ catalog:
   '@nx/js': 22.7.2
   '@nx/plugin': 22.7.2
   '@nx/workspace': 22.7.2
-  '@remotion/animation-utils': ^4.0.465
-  '@remotion/cli': ^4.0.465
-  '@remotion/eslint-config': ^4.0.465
-  '@remotion/fonts': ^4.0.465
-  '@remotion/google-fonts': ^4.0.465
-  '@remotion/media-utils': ^4.0.465
-  '@remotion/noise': ^4.0.465
-  '@remotion/paths': ^4.0.465
-  '@remotion/shapes': ^4.0.465
-  '@remotion/tailwind-v4': ^4.0.465
+  '@remotion/animation-utils': ^4.0.466
+  '@remotion/cli': ^4.0.466
+  '@remotion/eslint-config': ^4.0.466
+  '@remotion/fonts': ^4.0.466
+  '@remotion/google-fonts': ^4.0.466
+  '@remotion/media-utils': ^4.0.466
+  '@remotion/noise': ^4.0.466
+  '@remotion/paths': ^4.0.466
+  '@remotion/shapes': ^4.0.466
+  '@remotion/tailwind-v4': ^4.0.466
   '@storm-software/build-tools': ^0.158.189
   '@storm-software/cloudflare-tools': ^0.71.168
   '@storm-software/config': ^1.137.61
@@ -58,10 +58,10 @@ catalog:
   eslint-flat-config-utils: ^2.1.4
   imagemin: ^9.0.1
   imagemin-gifsicle: ^7.0.0
-  jest: 30.2.0
-  jest-environment-jsdom: 30.2.0
+  jest: ^30.4.2
+  jest-environment-jsdom: ^30.4.1
   jest-environment-node: ^30.4.1
-  jest-util: 30.2.0
+  jest-util: ^30.4.1
   jiti: ^2.4.2
   lefthook: ^2.1.8
   loader-utils: ^3.3.1
@@ -72,7 +72,7 @@ catalog:
   react: ^19.2.6
   react-dom: ^19.2.6
   react-native: ^0.77.0
-  remotion: ^4.0.465
+  remotion: ^4.0.466
   rimraf: ^6.1.3
   sharp: ^0.34.5
   sherif: ^1.11.1
