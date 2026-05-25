@@ -1,1 +1,1 @@
-/nix/store/2ck0kaqk844wcfm33rl9bspk69npgkpb-claude-agents-devops-specialist.md
+/nix/store/4xh7cvfjk8gznmf3q96zmaixilhq7979-claude-agents-devops-specialist.md
