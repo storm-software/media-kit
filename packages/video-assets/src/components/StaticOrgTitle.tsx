@@ -45,7 +45,7 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
         className
       )}>
       <Img
-        src={`https://public.storm-cdn.com/storm-software/icon-colored-${theme}.svg`}
+        src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
         className={size === "lg" ? "h-60" : size === "md" ? "h-42" : "h-24"}
       />
       <h1

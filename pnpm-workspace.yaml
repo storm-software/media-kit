@@ -12,33 +12,33 @@ catalog:
   '@nx/js': 22.7.2
   '@nx/plugin': 22.7.2
   '@nx/workspace': 22.7.2
-  '@remotion/animation-utils': ^4.0.466
-  '@remotion/cli': ^4.0.466
-  '@remotion/eslint-config': ^4.0.466
-  '@remotion/fonts': ^4.0.466
-  '@remotion/google-fonts': ^4.0.466
-  '@remotion/media-utils': ^4.0.466
-  '@remotion/noise': ^4.0.466
-  '@remotion/paths': ^4.0.466
-  '@remotion/shapes': ^4.0.466
-  '@remotion/tailwind-v4': ^4.0.466
-  '@storm-software/build-tools': ^0.158.189
-  '@storm-software/cloudflare-tools': ^0.71.168
-  '@storm-software/config': ^1.137.61
-  '@storm-software/config-tools': ^1.190.29
-  '@storm-software/cspell': ^0.46.97
-  '@storm-software/esbuild': ^0.53.190
-  '@storm-software/eslint': ^0.170.50
-  '@storm-software/git-tools': ^2.131.35
-  '@storm-software/linting-tools': ^1.133.59
-  '@storm-software/markdownlint': ^0.30.185
-  '@storm-software/pnpm-tools': ^0.7.39
-  '@storm-software/prettier': ^0.59.81
-  '@storm-software/testing-tools': ^1.119.182
-  '@storm-software/tsconfig': ^0.48.96
-  '@storm-software/tsdoc': ^0.13.182
-  '@storm-software/untyped': ^0.24.171
-  '@storm-software/workspace-tools': ^1.296.6
+  '@remotion/animation-utils': ^4.0.467
+  '@remotion/cli': ^4.0.467
+  '@remotion/eslint-config': ^4.0.467
+  '@remotion/fonts': ^4.0.467
+  '@remotion/google-fonts': ^4.0.467
+  '@remotion/media-utils': ^4.0.467
+  '@remotion/noise': ^4.0.467
+  '@remotion/paths': ^4.0.467
+  '@remotion/shapes': ^4.0.467
+  '@remotion/tailwind-v4': ^4.0.467
+  '@storm-software/build-tools': ^0.158.190
+  '@storm-software/cloudflare-tools': ^0.71.169
+  '@storm-software/config': ^1.137.62
+  '@storm-software/config-tools': ^1.190.30
+  '@storm-software/cspell': ^0.46.98
+  '@storm-software/esbuild': ^0.53.191
+  '@storm-software/eslint': ^0.170.51
+  '@storm-software/git-tools': ^2.131.36
+  '@storm-software/linting-tools': ^1.133.60
+  '@storm-software/markdownlint': ^0.30.186
+  '@storm-software/pnpm-tools': ^0.7.40
+  '@storm-software/prettier': ^0.59.82
+  '@storm-software/testing-tools': ^1.119.183
+  '@storm-software/tsconfig': ^0.48.97
+  '@storm-software/tsdoc': ^0.13.183
+  '@storm-software/untyped': ^0.24.172
+  '@storm-software/workspace-tools': ^1.296.7
   '@swc-node/register': 1.11.1
   '@swc/core': 1.15.8
   '@swc/helpers': 0.5.19
@@ -72,7 +72,7 @@ catalog:
   react: ^19.2.6
   react-dom: ^19.2.6
   react-native: ^0.77.0
-  remotion: ^4.0.466
+  remotion: ^4.0.467
   rimraf: ^6.1.3
   sharp: ^0.34.5
   sherif: ^1.11.1
