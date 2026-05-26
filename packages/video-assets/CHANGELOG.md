@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.2) (05/26/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update banners to be black and white ([d16ca6e](https://github.com/storm-software/media-kit/commit/d16ca6e))
+
 ## [0.8.1](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.1) (05/25/2026)
 
 ### Miscellaneous
