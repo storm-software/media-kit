@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.3) (05/26/2026)
+
+### Miscellaneous
+
+- **video-assets:** Added `colored` prop to org logo component ([75b8ae1](https://github.com/storm-software/media-kit/commit/75b8ae1))
+
 ## [0.8.2](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.2) (05/26/2026)
 
 ### Miscellaneous
