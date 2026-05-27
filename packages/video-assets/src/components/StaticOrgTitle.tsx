@@ -26,11 +26,13 @@ const { fontFamily } = loadFont();
 export interface OrgTitleProps extends ThemeProps {
   className?: string;
   size?: "lg" | "md" | "sm" | "xs";
+  colored?: boolean;
   style?: React.CSSProperties;
 }
 
 export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
   size = "md",
+  colored = false,
   theme,
   className,
   style
@@ -45,7 +47,9 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
         className
       )}>
       <Img
-        src={`https://public.storm-cdn.com/storm-software/icon-${theme}.svg`}
+        src={`https://public.storm-cdn.com/storm-software/icon${
+          colored ? "-colored" : ""
+        }-${theme}.svg`}
         className={size === "lg" ? "h-60" : size === "md" ? "h-42" : "h-24"}
       />
       <h1
