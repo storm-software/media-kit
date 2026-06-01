@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.4) (06/01/2026)
+
+### Miscellaneous
+
+- **video-assets:** Minor updates to `video-assets` output ([9a002fe](https://github.com/storm-software/media-kit/commit/9a002fe))
+
 ## [0.8.3](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.3) (05/26/2026)
 
 ### Miscellaneous
