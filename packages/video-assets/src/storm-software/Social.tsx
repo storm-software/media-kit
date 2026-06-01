@@ -29,7 +29,7 @@ export const Social: React.FC<ThemeProps> = ({ theme }) => {
       <Background theme={theme} />
       <AbsoluteFill className="flex flex-col justify-center items-center pt-10">
         <div className="flex-3 w-full flex justify-center items-center">
-          <StaticOrgTitle colored={true} size="lg" theme={theme} />
+          <StaticOrgTitle size="lg" theme={theme} />
         </div>
         <SocialLinks theme={theme} size="lg" className="py-10" />
       </AbsoluteFill>

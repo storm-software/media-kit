@@ -27,8 +27,8 @@ const LINE_GROUP_2_COUNT = 10;
 const LINE_GROUP_1_SCALE = 10;
 const LINE_GROUP_2_SCALE = 20;
 
-const LINE_GROUP_1_SPEED = 2;
-const LINE_GROUP_2_SPEED = 4;
+const LINE_GROUP_1_SPEED = 4;
+const LINE_GROUP_2_SPEED = 6;
 
 export interface BackgroundProps extends ThemeProps {
   type?: "thin" | "normal";
@@ -60,7 +60,7 @@ export const Background: React.FC<BackgroundProps> = ({
               const c1y = height + 50 * i;
               const c2x = height - 50 * i;
               const c2y = Math.min(width / 8, 100) + i * LINE_GROUP_1_SCALE;
-              const ex = width / 1.5 - i * LINE_GROUP_1_SCALE;
+              const ex = width / 1.4 - i * LINE_GROUP_1_SCALE;
               const ey = height + LINE_GROUP_1_SCALE * i;
 
               const normalizedFrame =
@@ -82,8 +82,8 @@ export const Background: React.FC<BackgroundProps> = ({
                 Math.sin(normalizedFrame * Math.PI * 2 + i) *
                   LINE_GROUP_1_SPEED;
               const opacity =
-                (theme === "light" ? 0.35 : 0.25) +
-                0.025 * Math.sin(normalizedFrame * Math.PI * 2 + i);
+                (theme === "light" ? 0.3 : 0.4) +
+                0.02 * Math.sin(normalizedFrame * Math.PI * 2 + i);
 
               return (
                 <path
@@ -91,7 +91,7 @@ export const Background: React.FC<BackgroundProps> = ({
                   className={twMerge(
                     theme === "light" ? "stroke-mist-950" : "stroke-mist-50",
                     className,
-                    "fill-none stroke-4"
+                    "fill-none stroke-3"
                   )}
                   d={`M ${s1x},${s1y} C ${c1xAdjusted},${c1yAdjusted} ${
                     c2xAdjusted
@@ -139,8 +139,8 @@ export const Background: React.FC<BackgroundProps> = ({
                 Math.sin(normalizedFrame * Math.PI * 2 + i) *
                   LINE_GROUP_2_SPEED;
               const opacity =
-                (theme === "light" ? 0.4 : 0.25) +
-                0.04 * Math.sin(normalizedFrame * Math.PI * 2 + i);
+                (theme === "light" ? 0.3 : 0.4) +
+                0.01 * Math.sin(normalizedFrame * Math.PI * 2 + i);
 
               return (
                 <path
@@ -148,7 +148,7 @@ export const Background: React.FC<BackgroundProps> = ({
                   className={twMerge(
                     theme === "light" ? "stroke-mist-950" : "stroke-mist-50",
                     className,
-                    "fill-none stroke-4"
+                    "fill-none stroke-3"
                   )}
                   d={`M ${s1x},${s1y} C ${c1xAdjusted},${c1yAdjusted} ${
                     c2xAdjusted

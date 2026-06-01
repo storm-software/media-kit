@@ -32,7 +32,7 @@ export interface OrgTitleProps extends ThemeProps {
 
 export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
   size = "md",
-  colored = false,
+  colored = true,
   theme,
   className,
   style

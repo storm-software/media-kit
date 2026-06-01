@@ -32,11 +32,7 @@ export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
       <Background theme={theme} type={type} />
       <AbsoluteFill className="z-20">
         <AbsoluteFill className="flex flex-col justify-center items-center">
-          <StaticOrgTitle
-            colored={true}
-            size={type === "thin" ? "md" : "lg"}
-            theme={theme}
-          />
+          <StaticOrgTitle size={type === "thin" ? "md" : "lg"} theme={theme} />
         </AbsoluteFill>
       </AbsoluteFill>
     </>
