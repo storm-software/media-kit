@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.8](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.8) (06/14/2026)
+
+### Features
+
+- **video-assets:** Move video assets into a separate `media` directory on upload ([0fd53f7](https://github.com/storm-software/media-kit/commit/0fd53f7))
+
 ## [0.8.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.7) (06/14/2026)
 
 ### Bug Fixes
