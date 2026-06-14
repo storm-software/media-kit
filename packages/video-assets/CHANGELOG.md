@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.6) (06/14/2026)
+
+### Features
+
+- **video-assets:** Added video assets for the `cyclone-ui` project ([c1607e1](https://github.com/storm-software/media-kit/commit/c1607e1))
+
 ## [0.8.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.5) (06/14/2026)
 
 ### Features
