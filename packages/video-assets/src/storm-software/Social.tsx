@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -21,18 +21,40 @@ import { AbsoluteFill } from "remotion";
 import { Background } from "../components/Background";
 import { SocialLinks } from "../components/SocialLinks";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
-import type { ThemeProps } from "../types/themes";
+import type { VideoAssetProps } from "../types/video-asset";
 
-export const Social: React.FC<ThemeProps> = ({ theme }) => {
+export const Social: React.FC<VideoAssetProps> = ({ theme, size, orgIcon }) => {
   return (
     <>
-      <Background theme={theme} />
+      <Background theme={theme} size={size} />
       <AbsoluteFill className="flex flex-col justify-center items-center pt-10">
         <div className="flex-3 w-full flex justify-center items-center">
-          <StaticOrgTitle size="lg" theme={theme} />
+          <StaticOrgTitle
+            size={size === "thin" ? "md" : "lg"}
+            theme={theme}
+            orgIcon={orgIcon}
+          />
         </div>
-        <SocialLinks theme={theme} size="lg" className="py-10" />
+        <SocialLinks
+          theme={theme}
+          size={size === "thin" ? "md" : "lg"}
+          className={size === "thin" ? "pb-4" : "py-10"}
+        />
       </AbsoluteFill>
     </>
   );
+};
+
+export const ColoredSocial: React.FC<Omit<VideoAssetProps, "orgIcon">> = ({
+  size = "normal",
+  theme
+}) => {
+  return <Social size={size} theme={theme} orgIcon="colored" />;
+};
+
+export const MonochromeSocial: React.FC<Omit<VideoAssetProps, "orgIcon">> = ({
+  size = "normal",
+  theme
+}) => {
+  return <Social size={size} theme={theme} orgIcon="monochrome" />;
 };

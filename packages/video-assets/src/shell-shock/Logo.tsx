@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -25,7 +25,7 @@ import type { ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
 
-export const Logo: React.FC<ThemeProps> = ({ theme }) => {
+export const Logo: React.FC<ThemeProps> = ({ theme, orgIcon }) => {
   return (
     <>
       <Background theme={theme} />
@@ -54,7 +54,12 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
             </h1>
           </div>
         </div>
-        <StaticOrgTitle className="mr-8" size="sm" theme={theme} />
+        <StaticOrgTitle
+          className="mr-8"
+          size="sm"
+          theme={theme}
+          orgIcon={orgIcon}
+        />
       </AbsoluteFill>
     </>
   );

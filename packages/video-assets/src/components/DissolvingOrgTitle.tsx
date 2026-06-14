@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -16,9 +16,8 @@
 
  ------------------------------------------------------------------- */
 
-import type { Timeline } from "animejs";
 import { createTimeline, stagger, steps } from "animejs";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { twMerge } from "tailwind-merge";
 import type { OrgTitleProps } from "./StaticOrgTitle";
@@ -32,44 +31,42 @@ export const DissolvingOrgTitle: React.FC<OrgTitleProps> = ({
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
-  const [animation, setAnimation] = useState<Timeline | null>(null);
-
-  useEffect(() => {
-    setAnimation(() => {
-      return createTimeline()
-        .add(
-          ".org",
-          {
-            opacity: 0,
-            ease: steps(1),
-            loop: false,
-            autoplay: false
-          },
-          stagger(30, {
-            grid: [20, 10],
-            from: "random"
-          })
-        )
-        .add(
-          ".org",
-          {
-            opacity: 1,
-            ease: steps(1),
-            loop: false,
-            autoplay: false
-          },
-          stagger(30, {
-            grid: [20, 10],
-            from: "random"
-          })
-        );
-    });
+  const animation = useMemo(() => {
+    return createTimeline()
+      .add(
+        ".org",
+        {
+          opacity: 0,
+          ease: steps(1),
+          loop: false,
+          autoplay: false
+        },
+        stagger(30, {
+          grid: [20, 10],
+          from: "random"
+        })
+      )
+      .add(
+        ".org",
+        {
+          opacity: 1,
+          ease: steps(1),
+          loop: false,
+          autoplay: false
+        },
+        stagger(30, {
+          grid: [20, 10],
+          from: "random"
+        })
+      );
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line ts/no-misused-promises
     if (!animation) {
       return;
     }
+
     animation.seek((frame / fps) * 2000);
   }, [animation, durationInFrames, fps, frame]);
 

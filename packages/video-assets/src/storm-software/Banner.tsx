@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -20,21 +20,39 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
-import type { ThemeProps } from "../types/themes";
+import type { VideoAssetProps } from "../types/video-asset";
 
-export interface BannerProps extends ThemeProps {
-  type?: "thin" | "normal";
-}
-
-export const Banner: React.FC<BannerProps> = ({ type = "normal", theme }) => {
+export const Banner: React.FC<VideoAssetProps> = ({
+  size = "normal",
+  theme,
+  orgIcon
+}) => {
   return (
     <>
-      <Background theme={theme} type={type} />
+      <Background theme={theme} size={size} />
       <AbsoluteFill className="z-20">
         <AbsoluteFill className="flex flex-col justify-center items-center">
-          <StaticOrgTitle size={type === "thin" ? "md" : "lg"} theme={theme} />
+          <StaticOrgTitle
+            size={size === "thin" ? "md" : "lg"}
+            theme={theme}
+            orgIcon={orgIcon}
+          />
         </AbsoluteFill>
       </AbsoluteFill>
     </>
   );
+};
+
+export const ColoredBanner: React.FC<Omit<VideoAssetProps, "orgIcon">> = ({
+  size = "normal",
+  theme
+}) => {
+  return <Banner size={size} theme={theme} orgIcon="colored" />;
+};
+
+export const MonochromeBanner: React.FC<Omit<VideoAssetProps, "orgIcon">> = ({
+  size = "normal",
+  theme
+}) => {
+  return <Banner size={size} theme={theme} orgIcon="monochrome" />;
 };

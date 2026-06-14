@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is

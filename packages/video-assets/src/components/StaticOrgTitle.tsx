@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -19,20 +19,20 @@
 import { loadFont } from "@remotion/google-fonts/Orbitron";
 import { Img } from "remotion";
 import { twMerge } from "tailwind-merge";
-import type { ThemeProps } from "../types/themes";
+import type { OrgIcon, ThemeProps } from "../types/themes";
 
 const { fontFamily } = loadFont();
 
 export interface OrgTitleProps extends ThemeProps {
   className?: string;
   size?: "lg" | "md" | "sm" | "xs";
-  colored?: boolean;
+  orgIcon?: OrgIcon;
   style?: React.CSSProperties;
 }
 
 export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
   size = "md",
-  colored = true,
+  orgIcon = "colored",
   theme,
   className,
   style
@@ -48,7 +48,7 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
       )}>
       <Img
         src={`https://public.storm-cdn.com/storm-software/icon${
-          colored ? "-colored" : ""
+          orgIcon === "colored" ? "-colored" : ""
         }-${theme}.svg`}
         className={size === "lg" ? "h-60" : size === "md" ? "h-42" : "h-24"}
       />

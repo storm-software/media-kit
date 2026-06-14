@@ -97,7 +97,7 @@
   "prettier.enableDebugLogs": false,
   "prettier.enable": true,
   "markdownlint.configFile": "./node_modules/@storm-software/markdownlint/config/recommended.markdownlint-cli2.jsonc",
-  "eslint.debug": false,
+  "eslint.debug": true,
   "eslint.codeAction.disableRuleComment": {
     "enable": true,
     "location": "separateLine"
@@ -140,7 +140,7 @@
   },
   "[typescript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit",
       "quickfix.biome": "explicit",

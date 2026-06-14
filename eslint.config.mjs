@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------
 
-                    ⚡ Storm Software - Media Kit
+                    🗲 Storm Software - Media Kit
 
  This code was released as part of the Media Kit project. Media Kit
  is maintained by Storm Software under the Apache-2.0 license, and is
@@ -16,11 +16,12 @@
 
  ------------------------------------------------------------------- */
 
-import { getStormConfig } from "@storm-software/eslint";
+import defineConfig from "@storm-software/eslint-config-react";
 
 Error.stackTraceLimit = Number.POSITIVE_INFINITY;
 
 /** @type {import('eslint').Linter.Config[]} */
-export default getStormConfig({
-  name: "media-kit"
+export default defineConfig({
+  name: "media-kit",
+  "react-native": false
 });

@@ -16,10 +16,19 @@
 
  ------------------------------------------------------------------- */
 
-export * from "./bootstrap.mjs";
-export * from "./build.mjs";
-export * from "./format.mjs";
-export * from "./lint.mjs";
-export * from "./nuke.mjs";
-export * from "./release.mjs";
-export * from "./update-storm.mjs";
+import type { VideoAssetSizePreset } from "../types/video-asset";
+
+/**
+ * Utility function to get the dimensions for a given video asset size preset.
+ *
+ * @param size - The size preset of the video asset ("thin" or "normal"). Defaults to "normal".
+ * @returns An object containing the width and height for the specified video asset size preset.
+ */
+export function getDimensions(size: VideoAssetSizePreset = "normal") {
+  switch (size) {
+    case "thin":
+      return { width: 1280, height: 320 };
+    case "normal":
+      return { width: 1280, height: 640 };
+  }
+}
