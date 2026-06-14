@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.5](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.5) (06/14/2026)
+
+### Features
+
+- **video-assets:** Updated color scheme and combined shared functionality into base components ([4d389bf](https://github.com/storm-software/media-kit/commit/4d389bf))
+
 ## [0.8.4](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.4) (06/01/2026)
 
 ### Miscellaneous
