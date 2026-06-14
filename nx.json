@@ -9,12 +9,7 @@
     }
   },
   "plugins": [
-    {
-      "name": "@storm-software/workspace-tools/plugins/typescript",
-      "options": {
-        "enableEslint": false
-      }
-    },
+    "@storm-software/workspace-tools/plugins/typescript",
     "@storm-software/workspace-tools/plugins/typescript/untyped",
     "@storm-software/workspace-tools/plugins/typescript/tsup"
   ],
