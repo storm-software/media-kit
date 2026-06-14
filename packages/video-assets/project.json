@@ -147,7 +147,7 @@
         "commands": [
           "pnpm copyfiles LICENSE dist/packages/video-assets",
           "pnpm copyfiles --up=2 ./packages/video-assets/*.md ./packages/video-assets/package.json dist/packages/video-assets",
-          "pnpm copyfiles --up=4 \"./packages/video-assets/dist/optimized/*/*\" ./dist/packages/video-assets"
+          "pnpm copyfiles --up=4 \"./packages/video-assets/dist/optimized/*/media/*\" ./dist/packages/video-assets"
         ]
       }
     },

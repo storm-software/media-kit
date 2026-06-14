@@ -61,8 +61,8 @@ async function renderAssets(project: string) {
         await mkdir(`dist/generated/${project}`, { recursive: true });
       }
 
-      if (!existsSync(`dist/optimized/${project}`)) {
-        await mkdir(`dist/optimized/${project}`, { recursive: true });
+      if (!existsSync(`dist/optimized/${project}/media`)) {
+        await mkdir(`dist/optimized/${project}/media`, { recursive: true });
       }
 
       const outputLocation = `dist/generated/${project}/${composition.id.replace(
@@ -87,7 +87,7 @@ async function renderAssets(project: string) {
         .toFile(
           outputLocation.replace(
             `dist/generated/${project}/`,
-            `dist/optimized/${project}/`
+            `dist/optimized/${project}/media/`
           )
         );
 
@@ -114,7 +114,7 @@ async function renderAssets(project: string) {
             .toFile(
               output.replace(
                 `dist/generated/${project}/`,
-                `dist/optimized/${project}/`
+                `dist/optimized/${project}/media/`
               )
             );
 
@@ -144,7 +144,7 @@ async function renderAssets(project: string) {
             .toFile(
               output.replace(
                 `dist/generated/${project}/`,
-                `dist/optimized/${project}/`
+                `dist/optimized/${project}/media/`
               )
             );
 
@@ -174,7 +174,7 @@ async function renderAssets(project: string) {
             .toFile(
               output.replace(
                 `dist/generated/${project}/`,
-                `dist/optimized/${project}/`
+                `dist/optimized/${project}/media/`
               )
             );
 

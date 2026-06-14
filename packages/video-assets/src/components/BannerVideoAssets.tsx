@@ -44,7 +44,6 @@ export const BannerVideoAssets: React.FC<BannerVideoAssetsProps> = ({
       <Folder name={asset}>
         {colored && (
           <Folder name="colored">
-            <BannerComposition {...rest} asset={asset} component={colored} />
             <BannerComposition
               {...rest}
               asset={asset}
@@ -56,12 +55,6 @@ export const BannerVideoAssets: React.FC<BannerVideoAssetsProps> = ({
               asset={asset}
               component={colored}
               theme="light"
-            />
-            <BannerComposition
-              {...rest}
-              asset={asset}
-              component={colored}
-              size="thin"
             />
             <BannerComposition
               {...rest}

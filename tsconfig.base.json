@@ -1,16 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@storm-software/tsconfig/recommended.json",
-  "display": "Storm Software - TypeScript Monorepo",
+  "display": "Storm Software - Media Kit Monorepo",
   "compilerOptions": {
-    "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@storm-software/tools-config/*": ["tools/config/*"],
-      "@storm-software/tools-scripts": ["tools/scripts/src/index.ts"],
-      "@storm-software/tools-scripts/*": ["tools/scripts/src/*"],
-      "@storm-software/video-assets": ["packages/video-assets/src/index.ts"],
-      "@storm-software/video-assets/*": ["packages/video-assets/src/*"]
+      "@storm-software/tools-config/*": ["./tools/config/*"],
+      "@storm-software/tools-scripts": ["./tools/scripts/src/index.ts"],
+      "@storm-software/tools-scripts/*": ["./tools/scripts/src/*"],
+      "@storm-software/video-assets": ["./packages/video-assets/src/index.ts"],
+      "@storm-software/video-assets/*": ["./packages/video-assets/src/*"]
     }
   }
 }
