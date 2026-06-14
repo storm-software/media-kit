@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.7](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.7) (06/14/2026)
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue with missing `video-assets` project task ([366c7a6](https://github.com/storm-software/media-kit/commit/366c7a6))
+
 ## [0.8.6](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.6) (06/14/2026)
 
 ### Features
