@@ -42,7 +42,13 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
       style={style}
       className={twMerge(
         `flex justify-center flex-row items-center w-full ${
-          size === "lg" ? "gap-10" : size === "xs" ? "gap-4" : "gap-6"
+          size === "lg"
+            ? "gap-10"
+            : size === "xs"
+              ? "gap-2"
+              : size === "sm"
+                ? "gap-2.5"
+                : "gap-6"
         } `,
         className
       )}>

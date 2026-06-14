@@ -35,6 +35,7 @@ const require = createRequire(import.meta.url);
 const PROJECT_LIST = [
   "storm-software",
   "powerlines",
+  "cyclone-ui",
   "acidic",
   "shell-shock",
   "earthquake"
