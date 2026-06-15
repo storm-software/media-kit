@@ -75,7 +75,7 @@ async function renderAssets(project: string) {
         composition,
         serveUrl: bundled,
         outputLocation,
-        timeoutInMilliseconds: 120_000
+        timeoutInMilliseconds: 3_000_000
       });
 
       console.log(
@@ -83,7 +83,7 @@ async function renderAssets(project: string) {
       );
 
       await sharp(outputLocation, { animated: true })
-        .gif({ interFrameMaxError: 8 })
+        .gif({ interFrameMaxError: 10, effort: 10 })
         .toFile(
           outputLocation.replace(
             `dist/generated/${project}/`,
