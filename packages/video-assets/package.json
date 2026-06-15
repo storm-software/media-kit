@@ -64,6 +64,7 @@
     "eslint-flat-config-utils": "catalog:",
     "execa": "catalog:",
     "gifsicle": "catalog:",
+    "node-addon-api": "catalog:",
     "postcss": "catalog:",
     "sharp": "catalog:",
     "tailwind-merge": "catalog:",

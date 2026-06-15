@@ -68,6 +68,7 @@ catalog:
   lefthook: ^2.1.9
   loader-utils: ^3.3.1
   log4brains: ^1.1.0
+  node-addon-api: ^8.8.0
   nx: 22.7.2
   postcss: ^8.5.15
   prettier: ^3.8.4
