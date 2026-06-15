@@ -13,9 +13,9 @@
   env.DEFAULT_LOCALE = "en_US";
   env.DEFAULT_TIMEZONE = "America/New_York";
 
-  packages = with pkgs; [
-    vips
-    imagemagick
-    graphicsmagick
-  ];
+  #   packages = with pkgs; [
+  #     vips
+  #     imagemagick
+  #     graphicsmagick
+  #   ];
 }
