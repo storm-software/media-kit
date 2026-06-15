@@ -1,3 +1,13 @@
+![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/media/banner-1280x320.gif)
+
+# Changelog for Media Kit - Video Assets
+
+## [0.8.9](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.9) (06/15/2026)
+
+### Bug Fixes
+
+- **video-assets:** Attempt to increase the compression size during upload ([b0b53e2](https://github.com/storm-software/media-kit/commit/b0b53e2))
+
 ![Storm Software's logo banner](https://public.storm-cdn.com/storm-software/banner-1280x320.gif)
 
 # Changelog for Media Kit - Video Assets
