@@ -2,6 +2,18 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.10](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.10) (06/15/2026)
+
+### Miscellaneous
+
+- **video-assets:** Use gifsicle to reduce gif size by up to 75% ([bbb257b](https://github.com/storm-software/media-kit/commit/bbb257b))
+
+### Bug Fixes
+
+- **monorepo:** Remove local libvips package from config ([69467fa](https://github.com/storm-software/media-kit/commit/69467fa))
+- **video-assets:** Added missing `node-gyp` dependency ([963b694](https://github.com/storm-software/media-kit/commit/963b694))
+- **video-assets:** Added missing `node-addon-api` dependency ([bd541c1](https://github.com/storm-software/media-kit/commit/bd541c1))
+
 ## [0.8.9](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.9) (06/15/2026)
 
 ### Bug Fixes
