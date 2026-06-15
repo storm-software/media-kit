@@ -24,9 +24,12 @@ import {
   renderStill
 } from "@remotion/renderer";
 import { enableTailwind } from "@remotion/tailwind-v4";
+import { titleCase } from "@stryke/string-format/title-case";
 import chalkTemplate from "chalk-template";
+import { execa } from "execa";
+import gifsicle from "gifsicle";
 import { existsSync } from "node:fs";
-import { mkdir } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import sharp from "sharp";
 
@@ -65,7 +68,7 @@ async function renderAssets(project: string) {
         await mkdir(`dist/optimized/${project}/media`, { recursive: true });
       }
 
-      const outputLocation = `dist/generated/${project}/${composition.id.replace(
+      const generatedPath = `dist/generated/${project}/${composition.id.replace(
         `${project}-`,
         ""
       )}.gif`;
@@ -74,22 +77,49 @@ async function renderAssets(project: string) {
         codec: "gif",
         composition,
         serveUrl: bundled,
-        outputLocation,
+        outputLocation: generatedPath,
+        everyNthFrame: 3,
+        metadata: {
+          title: `${project} - ${titleCase(
+            composition.id
+              .replace(`${project}-`, "")
+              .replace(/-/g, " ")
+              .replace(/dark$/, "(Dark)")
+              .replace(/light$/, "(Light)")
+          )}`,
+          album: "Storm Software Media Kit",
+          artist: "Storm Software",
+          description: `A branded video asset for ${titleCase(
+            project
+          )} project in the Storm Software Media Kit.`,
+          keywords: `storm-software, ${project}`
+        },
         timeoutInMilliseconds: 3_000_000
       });
 
       console.log(
-        chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${outputLocation}! }`
+        chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${generatedPath}! }`
       );
 
-      await sharp(outputLocation, { animated: true })
-        .gif({ interFrameMaxError: 10, effort: 10 })
-        .toFile(
-          outputLocation.replace(
-            `dist/generated/${project}/`,
-            `dist/optimized/${project}/media/`
-          )
-        );
+      // eslint-disable-next-line ts/no-unsafe-call
+      const { stdout } = await execa(
+        gifsicle,
+        ["--no-warnings", "--no-app-extensions", "--optimize=3", "--lossy=80"],
+        {
+          encoding: "buffer",
+          maxBuffer: Number.POSITIVE_INFINITY,
+          input: await sharp(generatedPath, { animated: true })
+            .gif({ interFrameMaxError: 10, effort: 10 })
+            .toBuffer()
+        }
+      );
+      await writeFile(
+        generatedPath.replace(
+          `dist/generated/${project}/`,
+          `dist/optimized/${project}/media/`
+        ),
+        stdout
+      );
 
       await Promise.all([
         (async () => {

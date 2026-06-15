@@ -1,18 +1,23 @@
 {
   "name": "@storm-software/video-assets",
   "version": "0.8.9",
-  "type": "module",
+  "private": false,
   "description": "Storm Software branded video assets to be used in other projects.",
-  "repository": {
-    "type": "github",
-    "url": "https://github.com/storm-software/media-kit.git",
-    "directory": "packages/video-assets"
-  },
   "homepage": "https://stormsoftware.com",
   "bugs": {
     "url": "https://stormsoftware.com/support",
     "email": "support@stormsoftware.com"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/storm-software/media-kit.git",
+    "directory": "packages/video-assets"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/storm-software"
+  },
+  "license": "Apache-2.0",
   "author": {
     "name": "Storm Software",
     "email": "contact@stormsoftware.com",
@@ -32,12 +37,8 @@
       "url": "https://stormsoftware.com"
     }
   ],
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/storm-software"
-  },
-  "license": "Apache-2.0",
-  "private": false,
+  "sideEffects": ["*.css"],
+  "type": "module",
   "dependencies": {
     "@remotion/animation-utils": "catalog:",
     "@remotion/fonts": "catalog:",
@@ -55,16 +56,19 @@
   "devDependencies": {
     "@remotion/cli": "catalog:",
     "@remotion/eslint-config": "catalog:",
+    "@stryke/string-format": "catalog:",
+    "@types/execa": "catalog:",
     "@types/react": "catalog:",
     "@types/web": "catalog:",
     "chalk-template": "catalog:",
     "eslint-flat-config-utils": "catalog:",
+    "execa": "catalog:",
+    "gifsicle": "catalog:",
     "postcss": "catalog:",
     "sharp": "catalog:",
     "tailwind-merge": "catalog:",
     "tailwindcss": "catalog:",
     "tsx": "catalog:",
     "typescript": "^6.0.3"
-  },
-  "sideEffects": ["*.css"]
+  }
 }

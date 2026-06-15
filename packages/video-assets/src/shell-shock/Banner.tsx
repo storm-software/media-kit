@@ -65,7 +65,6 @@ export const Banner: React.FC<VideoAssetProps> = ({
               className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-normal text-[130px]`}>
               Shock
             </h1>
-
             <div
               className={twMerge(
                 "h-22 w-12 mt-5 ml-1",
