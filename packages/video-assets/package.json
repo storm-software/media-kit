@@ -65,6 +65,7 @@
     "execa": "catalog:",
     "gifsicle": "catalog:",
     "node-addon-api": "catalog:",
+    "node-gyp": "catalog:",
     "postcss": "catalog:",
     "sharp": "catalog:",
     "tailwind-merge": "catalog:",
