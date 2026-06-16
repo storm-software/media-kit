@@ -38,6 +38,7 @@ const require = createRequire(import.meta.url);
 const PROJECT_LIST = [
   "storm-software",
   "powerlines",
+  "power-plant",
   "cyclone-ui",
   "acidic",
   "shell-shock",
@@ -101,7 +102,6 @@ async function renderAssets(project: string) {
         chalkTemplate`{green  ${project}: }{greenBright  ✔ Completed rendering ${generatedPath}! }`
       );
 
-      // eslint-disable-next-line ts/no-unsafe-call
       const { stdout } = await execa(
         gifsicle,
         ["--no-warnings", "--no-app-extensions", "--optimize=3", "--lossy=80"],
