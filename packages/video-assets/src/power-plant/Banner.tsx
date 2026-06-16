@@ -50,7 +50,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
                 fontFamily,
                 color: theme === "light" ? "#ca8a04" : "#ffdc64"
               }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-normal text-[180px]`}>
+              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
               Power
             </h1>
             <h1
@@ -58,7 +58,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
                 fontFamily,
                 color: theme === "light" ? "#ca8a04" : "#ffdc64"
               }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-normal text-[180px]`}>
+              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
               Plant
             </h1>
           </div>
