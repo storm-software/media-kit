@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.12](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.12) (06/16/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update font weight of power-plant title ([3f822a4](https://github.com/storm-software/media-kit/commit/3f822a4))
+
 ## [0.8.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.11) (06/16/2026)
 
 ### Features
