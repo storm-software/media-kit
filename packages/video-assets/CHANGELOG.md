@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.11](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.11) (06/16/2026)
+
+### Features
+
+- **video-assets:** Added `power-plant` video assets ([66c7ab0](https://github.com/storm-software/media-kit/commit/66c7ab0))
+
 ## [0.8.10](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.10) (06/15/2026)
 
 ### Miscellaneous
