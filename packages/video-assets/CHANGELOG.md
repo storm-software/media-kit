@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.14](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.14) (06/16/2026)
+
+### Miscellaneous
+
+- **video-assets:** Added logic to rotate the power-plant logo ([4ffd185](https://github.com/storm-software/media-kit/commit/4ffd185))
+
 ## [0.8.12](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.12) (06/16/2026)
 
 ### Miscellaneous
