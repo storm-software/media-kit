@@ -18,7 +18,14 @@
 
 import { loadFont } from "@remotion/google-fonts/ProtestRevolution";
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
+import {
+  AbsoluteFill,
+  Img,
+  interpolate,
+  spring,
+  useCurrentFrame,
+  useVideoConfig
+} from "remotion";
 import { twMerge } from "tailwind-merge";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
@@ -31,6 +38,19 @@ export const Banner: React.FC<VideoAssetProps> = ({
   orgIcon,
   theme
 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const rotation = interpolate(
+    spring({
+      fps,
+      frame,
+      config: { damping: 400 }
+    }),
+    [0, 1],
+    [0, 120]
+  );
+
   return (
     <>
       <Background theme={theme} size={size} />
@@ -43,6 +63,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
           <Img
             src={`https://public.storm-cdn.com/power-plant/icons/${theme}.svg`}
             className="max-w-60"
+            style={{ transform: `rotate(${rotation}deg)` }}
           />
           <div className="flex flex-1 flex-row gap-2 items-center">
             <h1
