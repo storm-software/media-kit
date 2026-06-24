@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.15](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.15) (06/24/2026)
+
+### Miscellaneous
+
+- **monorepo:** Updates from linting processing ([c55dfd2](https://github.com/storm-software/media-kit/commit/c55dfd2))
+- **video-assets:** Added the `stryke` video assets ([e0c82d2](https://github.com/storm-software/media-kit/commit/e0c82d2))
+
 ## [0.8.14](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.14) (06/16/2026)
 
 ### Miscellaneous
