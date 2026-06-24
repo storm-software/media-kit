@@ -16,16 +16,9 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/ProtestRevolution";
+import { loadFont } from "@remotion/google-fonts/Mina";
 import React from "react";
-import {
-  AbsoluteFill,
-  Img,
-  interpolate,
-  spring,
-  useCurrentFrame,
-  useVideoConfig
-} from "remotion";
+import { AbsoluteFill, Img } from "remotion";
 import { twMerge } from "tailwind-merge";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
@@ -38,49 +31,27 @@ export const Banner: React.FC<VideoAssetProps> = ({
   orgIcon,
   theme
 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const rotation = interpolate(
-    spring({
-      fps,
-      frame,
-      config: { damping: 400 }
-    }),
-    [0, 1],
-    [0, 120]
-  );
-
   return (
     <>
       <Background theme={theme} size={size} />
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
         <div
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-8 max-h-75",
             size === "thin" ? "" : "mt-15"
           )}>
           <Img
-            src={`https://public.storm-cdn.com/power-plant/icons/${theme}.svg`}
-            className="max-w-50"
-            style={{ transform: `rotate(${rotation}deg)` }}
+            src={`https://public.storm-cdn.com/stryke/icons/${theme}.svg`}
+            className="max-w-34"
           />
           <div className="flex flex-1 flex-row gap-2 items-center">
             <h1
               style={{
                 fontFamily,
-                color: theme === "light" ? "#ca8a04" : "#ffdc64"
+                color: theme === "light" ? "#eb6132" : "#f37a48"
               }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
-              Power
-            </h1>
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#ca8a04" : "#ffdc64"
-              }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
-              Plant
+              className={`text-${theme === "light" ? "[#eb6132]" : "[#f37a48]"} font-bold text-[220px]`}>
+              stryke
             </h1>
           </div>
         </div>

@@ -24,6 +24,7 @@ import { RemotionVideo as PowerPlantVideo } from "./power-plant/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
+import { RemotionVideo as StrykeVideo } from "./stryke/Video";
 
 export const RemotionVideo: React.FC = () => {
   return (
@@ -48,6 +49,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="shell-shock">
         <ShellShockVideo />
+      </Folder>
+      <Folder name="stryke">
+        <StrykeVideo />
       </Folder>
     </>
   );

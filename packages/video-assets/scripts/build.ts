@@ -42,7 +42,8 @@ const PROJECT_LIST = [
   "cyclone-ui",
   "acidic",
   "shell-shock",
-  "earthquake"
+  "earthquake",
+  "stryke"
 ] as const;
 
 async function renderAssets(project: string) {

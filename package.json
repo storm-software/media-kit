@@ -68,6 +68,7 @@
     "@storm-software/cspell": "catalog:",
     "@storm-software/esbuild": "catalog:",
     "@storm-software/eslint-config-react": "catalog:",
+    "@storm-software/eslint-plugin-tsdoc": "catalog:",
     "@storm-software/git-tools": "catalog:",
     "@storm-software/linting-tools": "catalog:",
     "@storm-software/markdownlint": "catalog:",
