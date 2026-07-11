@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.16](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.16) (07/11/2026)
+
+### Features
+
+- **video-assets:** Added the `telepathic` video assets ([f2e529e](https://github.com/storm-software/media-kit/commit/f2e529e))
+
 ## [0.8.15](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.15) (06/24/2026)
 
 ### Miscellaneous
