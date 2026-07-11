@@ -197,7 +197,8 @@
         "build-acidic",
         "build-shell-shock",
         "build-earthquake",
-        "build-stryke"
+        "build-stryke",
+        "build-telepathic"
       ],
       "options": {
         "commands": [
