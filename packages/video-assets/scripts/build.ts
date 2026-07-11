@@ -43,7 +43,8 @@ const PROJECT_LIST = [
   "acidic",
   "shell-shock",
   "earthquake",
-  "stryke"
+  "stryke",
+  "telepathic"
 ] as const;
 
 async function renderAssets(project: string) {

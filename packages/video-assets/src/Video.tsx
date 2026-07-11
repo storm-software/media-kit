@@ -25,6 +25,7 @@ import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
 import { RemotionVideo as StrykeVideo } from "./stryke/Video";
+import { RemotionVideo as TelepathicVideo } from "./telepathic/Video";
 
 export const RemotionVideo: React.FC = () => {
   return (
@@ -37,6 +38,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="cyclone-ui">
         <CycloneUIVideo />
+      </Folder>
+      <Folder name="telepathic">
+        <TelepathicVideo />
       </Folder>
       <Folder name="earthquake">
         <EarthquakeVideo />
