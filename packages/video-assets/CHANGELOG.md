@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.18](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.18) (07/17/2026)
+
+### Features
+
+- **video-assets:** Added assets for `windie` project ([a6b2c13](https://github.com/storm-software/media-kit/commit/a6b2c13))
+
 ## [0.8.17](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.17) (07/11/2026)
 
 ### Miscellaneous
