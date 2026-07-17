@@ -37,7 +37,9 @@
       "url": "https://stormsoftware.com"
     }
   ],
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "type": "module",
   "dependencies": {
     "@remotion/animation-utils": "catalog:",
@@ -51,7 +53,8 @@
     "animejs": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "remotion": "catalog:"
+    "remotion": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@remotion/cli": "catalog:",

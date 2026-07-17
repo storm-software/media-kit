@@ -16,7 +16,7 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
+import { loadFont } from "@remotion/google-fonts/ProtestRiot";
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { twMerge } from "tailwind-merge";
@@ -38,18 +38,18 @@ export const Banner: React.FC<VideoAssetProps> = ({
       <AbsoluteFill className="flex flex-col justify-center items-center w-full gap-14">
         <div
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-12 max-h-75",
             size === "thin" ? "" : "mt-15"
           )}>
-          <Logo className="max-w-50" theme={theme} />
+          <Logo theme={theme} />
           <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
             <h1
               style={{
                 fontFamily,
-                color: theme === "light" ? "#083344" : "#a5f3fc"
+                color: theme === "light" ? "#0891b2" : "#22d3ee"
               }}
-              className={`text-${theme === "light" ? "[#083344]" : "[#a5f3fc]"} font-normal text-[220px]`}>
-              cyclone
+              className={`text-${theme === "light" ? "[#0891b2]" : "[#22d3ee]"} font-thin text-[220px]`}>
+              windie
             </h1>
           </div>
         </div>

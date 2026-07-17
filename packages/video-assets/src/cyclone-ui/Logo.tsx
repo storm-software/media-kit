@@ -28,7 +28,7 @@ export function Logo({ className, theme = "dark" }: LogoProps) {
     <svg
       className={twMerge(
         className,
-        theme === "light" ? "fill-[#1d1e22]" : "fill-white"
+        theme === "light" ? "fill-[#083344]" : "fill-[#a5f3fc]"
       )}
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
