@@ -216,7 +216,8 @@
         "build-shell-shock",
         "build-earthquake",
         "build-stryke",
-        "build-telepathic"
+        "build-telepathic",
+        "build-windie"
       ],
       "options": {
         "commands": [
