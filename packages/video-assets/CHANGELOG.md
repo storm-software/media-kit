@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.20](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.20) (07/21/2026)
+
+### Features
+
+- **video-assets:** Added the May I project's video assets ([3034610](https://github.com/storm-software/media-kit/commit/3034610))
+
 ## [0.8.19](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.19) (07/17/2026)
 
 ### Miscellaneous
