@@ -12,16 +12,16 @@ catalog:
   '@nx/js': 23.0.0
   '@nx/plugin': 23.0.0
   '@nx/workspace': 23.0.0
-  '@remotion/animation-utils': ^4.0.490
-  '@remotion/cli': ^4.0.490
-  '@remotion/eslint-config': ^4.0.490
-  '@remotion/fonts': ^4.0.490
-  '@remotion/google-fonts': ^4.0.490
-  '@remotion/media-utils': ^4.0.490
-  '@remotion/noise': ^4.0.490
-  '@remotion/paths': ^4.0.490
-  '@remotion/shapes': ^4.0.490
-  '@remotion/tailwind-v4': ^4.0.490
+  '@remotion/animation-utils': ^4.0.495
+  '@remotion/cli': ^4.0.495
+  '@remotion/eslint-config': ^4.0.495
+  '@remotion/fonts': ^4.0.495
+  '@remotion/google-fonts': ^4.0.495
+  '@remotion/media-utils': ^4.0.495
+  '@remotion/noise': ^4.0.495
+  '@remotion/paths': ^4.0.495
+  '@remotion/shapes': ^4.0.495
+  '@remotion/tailwind-v4': ^4.0.495
   '@storm-software/build-tools': ^0.158.267
   '@storm-software/cloudflare-tools': ^0.71.250
   '@storm-software/config': ^1.138.44
@@ -38,7 +38,7 @@ catalog:
   '@storm-software/tsconfig': ^0.48.174
   '@storm-software/untyped': ^0.24.249
   '@storm-software/workspace-tools': ^1.296.87
-  '@stryke/string-format': ^0.17.37
+  '@stryke/string-format': ^0.17.38
   '@swc-node/register': 1.11.1
   '@swc/core': 1.15.8
   '@swc/helpers': 0.5.19
@@ -70,12 +70,12 @@ catalog:
   node-addon-api: ^8.8.0
   node-gyp: ^13.0.0
   nx: 23.0.0
-  postcss: ^8.5.19
+  postcss: ^8.5.20
   prettier: ^3.9.5
   react: ^19.2.7
   react-dom: ^19.2.7
   react-native: ^0.77.0
-  remotion: ^4.0.490
+  remotion: ^4.0.495
   rimraf: ^6.1.3
   sharp: ^0.34.5
   sherif: ^1.13.0

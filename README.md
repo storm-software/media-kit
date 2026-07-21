@@ -147,6 +147,18 @@ The filled Storm Software logo is a high-resolution graphic that features the St
 <div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
 <br />
 
+#### Circular
+
+The circular Storm Software logo is a high-resolution graphic that features the Storm Software lightning bolt design in a circular shape. This logo should be used in contexts where a modern and sleek representation of the brand is desired, such as in marketing materials, social media posts, or on the company's website. The circular version of the logo is designed to create a clean and minimalist visual impact, making it ideal for promotional purposes and situations where a refined and sophisticated brand presence is needed.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/icons/circle-light.svg)                                                                                    | ![](https://public.storm-cdn.com/storm-software/icons/circle-dark.svg)                                                                                               |
+| [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icons/circle-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icons/circle-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icons/circle-light.webp) | [**⬇ PNG**](https://public.storm-cdn.com/storm-software/icons/circle-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/icons/circle-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/icons/circle-dark.webp) |
+
+<div align="right">[ <a href="#table-of-contents">Back to top ▲</a> ]</div>
+<br />
+
 ## Banner
 
 The Storm Software banner is a visually striking graphic that features the Storm Software logo along with a dynamic background. The banner is designed to capture attention and convey the energy and innovation that Storm Software represents. It can be used in various contexts, such as on the company's website, in marketing materials, or as a header for documentation.

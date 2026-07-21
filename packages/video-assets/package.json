@@ -37,7 +37,9 @@
       "url": "https://stormsoftware.com"
     }
   ],
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "type": "module",
   "dependencies": {
     "@remotion/animation-utils": "catalog:",

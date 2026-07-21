@@ -44,6 +44,7 @@ const PROJECT_LIST = [
   "shell-shock",
   "earthquake",
   "stryke",
+  "may-i",
   "telepathic",
   "windie"
 ] as const;

@@ -20,6 +20,7 @@ import { Folder } from "remotion";
 import { RemotionVideo as AcidicVideo } from "./acidic/Video";
 import { RemotionVideo as CycloneUIVideo } from "./cyclone-ui/Video";
 import { RemotionVideo as EarthquakeVideo } from "./earthquake/Video";
+import { RemotionVideo as MayIBannerVideo } from "./may-i/Video";
 import { RemotionVideo as PowerPlantVideo } from "./power-plant/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
@@ -57,6 +58,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="stryke">
         <StrykeVideo />
+      </Folder>
+      <Folder name="may-i">
+        <MayIBannerVideo />
       </Folder>
       <Folder name="windie">
         <WindieVideo />
