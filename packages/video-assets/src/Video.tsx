@@ -23,11 +23,11 @@ import { RemotionVideo as EarthquakeVideo } from "./earthquake/Video";
 import { RemotionVideo as MayIBannerVideo } from "./may-i/Video";
 import { RemotionVideo as PowerPlantVideo } from "./power-plant/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
+import { RemotionVideo as RazorwindVideo } from "./razorwind/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
 import { RemotionVideo as StrykeVideo } from "./stryke/Video";
 import { RemotionVideo as TelepathicVideo } from "./telepathic/Video";
-import { RemotionVideo as WindieVideo } from "./windie/Video";
 
 export const RemotionVideo: React.FC = () => {
   return (
@@ -62,8 +62,8 @@ export const RemotionVideo: React.FC = () => {
       <Folder name="may-i">
         <MayIBannerVideo />
       </Folder>
-      <Folder name="windie">
-        <WindieVideo />
+      <Folder name="razorwind">
+        <RazorwindVideo />
       </Folder>
     </>
   );

@@ -23,7 +23,7 @@ import { ColoredBanner, MonochromeBanner } from "./Banner";
 export const RemotionVideo: React.FC = () => {
   return (
     <BannerVideoAssets
-      projectId="windie"
+      projectId="razorwind"
       monochrome={MonochromeBanner}
       colored={ColoredBanner}
     />

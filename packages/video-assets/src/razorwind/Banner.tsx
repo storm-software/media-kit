@@ -38,7 +38,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
       <AbsoluteFill className="flex flex-col justify-center items-center w-full gap-14">
         <div
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-12 max-h-75",
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-4 max-h-75",
             size === "thin" ? "" : "mt-15"
           )}>
           <Logo theme={theme} />
@@ -48,8 +48,8 @@ export const Banner: React.FC<VideoAssetProps> = ({
                 fontFamily,
                 color: theme === "light" ? "#0891b2" : "#22d3ee"
               }}
-              className={`text-${theme === "light" ? "[#0891b2]" : "[#22d3ee]"} font-thin text-[220px]`}>
-              windie
+              className={`text-${theme === "light" ? "[#0891b2]" : "[#22d3ee]"} font-thin text-[190px]`}>
+              Razorwind
             </h1>
           </div>
         </div>

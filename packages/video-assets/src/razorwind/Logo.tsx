@@ -25,8 +25,8 @@ export interface LogoProps {
 export function Logo({ theme = "dark" }: LogoProps) {
   return (
     <Img
-      src={`https://public.storm-cdn.com/windie/icons/${theme}.svg`}
-      className="max-w-80"
+      src={`https://public.storm-cdn.com/razorwind/icons/${theme}.svg`}
+      className="max-w-75"
     />
   );
 }
