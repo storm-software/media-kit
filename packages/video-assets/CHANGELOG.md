@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.21](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.21) (07/22/2026)
+
+### Miscellaneous
+
+- **video-assets:** Renamed Windie assets to Razorwind ([392d4ba](https://github.com/storm-software/media-kit/commit/392d4ba))
+
 ## [0.8.20](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.20) (07/21/2026)
 
 ### Features
