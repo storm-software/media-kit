@@ -57,7 +57,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
         <div
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-95",
             size === "thin" ? "" : "mt-15"
           )}>
           <Img

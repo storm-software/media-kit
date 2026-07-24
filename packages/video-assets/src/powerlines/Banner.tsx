@@ -17,10 +17,11 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
+import { AbsoluteFill } from "remotion";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { VideoAssetProps } from "../types/video-asset";
+import { Logo } from "./Logo";
 
 export const Banner: React.FC<VideoAssetProps> = ({
   size = "normal",
@@ -31,10 +32,9 @@ export const Banner: React.FC<VideoAssetProps> = ({
     <>
       <Background theme={theme} size={size} />
       <AbsoluteFill className="flex flex-col justify-center items-center gap-18">
-        <Img
-          src={`https://public.storm-cdn.com/powerlines/logo-${theme}.webp`}
-          className={size === "thin" ? "w-[70%]" : "w-[85%] mt-10"}
-        />
+        <div className="w-full h-95 flex justify-center items-center">
+          <Logo theme={theme} />
+        </div>
         {size !== "thin" && (
           <StaticOrgTitle
             className="mr-8"

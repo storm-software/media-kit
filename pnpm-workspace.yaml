@@ -12,32 +12,32 @@ catalog:
   '@nx/js': 23.0.0
   '@nx/plugin': 23.0.0
   '@nx/workspace': 23.0.0
-  '@remotion/animation-utils': ^4.0.496
-  '@remotion/cli': ^4.0.496
-  '@remotion/eslint-config': ^4.0.496
-  '@remotion/fonts': ^4.0.496
-  '@remotion/google-fonts': ^4.0.496
-  '@remotion/media-utils': ^4.0.496
-  '@remotion/noise': ^4.0.496
-  '@remotion/paths': ^4.0.496
-  '@remotion/shapes': ^4.0.496
-  '@remotion/tailwind-v4': ^4.0.496
-  '@storm-software/build-tools': ^0.158.267
-  '@storm-software/cloudflare-tools': ^0.71.250
-  '@storm-software/config': ^1.138.44
-  '@storm-software/config-tools': ^1.190.107
-  '@storm-software/cspell': ^0.46.175
-  '@storm-software/eslint': ^0.170.141
-  '@storm-software/eslint-config-react': ^0.0.63
-  '@storm-software/eslint-plugin-tsdoc': ^0.0.70
-  '@storm-software/git-tools': ^2.131.115
-  '@storm-software/linting-tools': ^1.134.37
-  '@storm-software/markdownlint': ^0.30.263
-  '@storm-software/pnpm-tools': ^0.7.118
-  '@storm-software/prettier': ^0.59.160
-  '@storm-software/tsconfig': ^0.48.174
-  '@storm-software/untyped': ^0.24.249
-  '@storm-software/workspace-tools': ^1.296.87
+  '@remotion/animation-utils': ^4.0.498
+  '@remotion/cli': ^4.0.498
+  '@remotion/eslint-config': ^4.0.498
+  '@remotion/fonts': ^4.0.498
+  '@remotion/google-fonts': ^4.0.498
+  '@remotion/media-utils': ^4.0.498
+  '@remotion/noise': ^4.0.498
+  '@remotion/paths': ^4.0.498
+  '@remotion/shapes': ^4.0.498
+  '@remotion/tailwind-v4': ^4.0.498
+  '@storm-software/build-tools': ^0.158.269
+  '@storm-software/cloudflare-tools': ^0.71.252
+  '@storm-software/config': ^1.138.46
+  '@storm-software/config-tools': ^1.190.109
+  '@storm-software/cspell': ^0.46.177
+  '@storm-software/eslint': ^0.170.143
+  '@storm-software/eslint-config-react': ^0.0.65
+  '@storm-software/eslint-plugin-tsdoc': ^0.0.72
+  '@storm-software/git-tools': ^2.131.117
+  '@storm-software/linting-tools': ^1.134.39
+  '@storm-software/markdownlint': ^0.30.265
+  '@storm-software/pnpm-tools': ^0.7.120
+  '@storm-software/prettier': ^0.59.162
+  '@storm-software/tsconfig': ^0.48.176
+  '@storm-software/untyped': ^0.24.251
+  '@storm-software/workspace-tools': ^1.296.89
   '@stryke/string-format': ^0.17.38
   '@swc-node/register': 1.11.1
   '@swc/core': 1.15.8
@@ -75,7 +75,7 @@ catalog:
   react: ^19.2.8
   react-dom: ^19.2.8
   react-native: ^0.77.0
-  remotion: ^4.0.496
+  remotion: ^4.0.498
   rimraf: ^6.1.3
   sharp: ^0.34.5
   sherif: ^1.13.0
