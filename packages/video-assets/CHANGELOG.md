@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.23](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.23) (07/24/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update the Powerlines assets' animation ([9b2947d](https://github.com/storm-software/media-kit/commit/9b2947d))
+
 ## [0.8.22](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.22) (07/24/2026)
 
 ### Miscellaneous
