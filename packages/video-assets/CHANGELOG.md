@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.22](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.22) (07/24/2026)
+
+### Miscellaneous
+
+- **video-assets:** Clean up the Powerlines video assets ([4fe9ca7](https://github.com/storm-software/media-kit/commit/4fe9ca7))
+
 ## [0.8.21](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.21) (07/22/2026)
 
 ### Miscellaneous
