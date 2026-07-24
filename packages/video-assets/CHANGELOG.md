@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.24](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.24) (07/24/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update the colors used in Shell Shock banner asset ([8a00a9a](https://github.com/storm-software/media-kit/commit/8a00a9a))
+
 ## [0.8.23](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.23) (07/24/2026)
 
 ### Miscellaneous
