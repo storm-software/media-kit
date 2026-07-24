@@ -23,6 +23,7 @@ import { twMerge } from "tailwind-merge";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { VideoAssetProps } from "../types/video-asset";
+import { getColor } from "./utils";
 
 const { fontFamily } = loadFont();
 
@@ -41,39 +42,35 @@ export const Banner: React.FC<VideoAssetProps> = ({
       <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
         <div
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
+            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 h-90",
             size === "thin" ? "" : "mt-15"
           )}>
           <Img
-            src={`https://public.storm-cdn.com/shell-shock/logo-${theme}.svg`}
-            className={size === "thin" ? "max-w-20" : "max-w-15"}
+            src={`https://public.storm-cdn.com/shell-shock/icons/${theme}.svg`}
+            className="max-w-15"
           />
           <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
             <h1
               style={{
                 fontFamily,
-                color: theme === "light" ? "#1d1e22" : "white"
+                color: getColor(theme)
               }}
-              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-normal text-[130px]`}>
+              className="font-normal text-[130px]">
               Shell
             </h1>
             <h1
               style={{
                 fontFamily,
-                color: theme === "light" ? "#1d1e22" : "white"
+                color: getColor(theme)
               }}
-              className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-normal text-[130px]`}>
+              className="font-normal text-[130px]">
               Shock
             </h1>
             <div
-              className={twMerge(
-                "h-22 w-12 mt-5 ml-1",
-                !showCursor
-                  ? ""
-                  : theme === "light"
-                    ? "bg-[#1d1e22]"
-                    : "bg-white"
-              )}
+              style={{
+                backgroundColor: !showCursor ? "transparent  " : getColor(theme)
+              }}
+              className={twMerge("h-22 w-12 mt-5 ml-1")}
             />
           </div>
         </div>
