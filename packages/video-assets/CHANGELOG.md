@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.25](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.25) (08/01/2026)
+
+### Miscellaneous
+
+- **monorepo:** Update workflow action version SHAs ([1dd2423](https://github.com/storm-software/media-kit/commit/1dd2423))
+- **video-assets:** Update Banner videos to use template component for alignment consistency ([4bcc25b](https://github.com/storm-software/media-kit/commit/4bcc25b))
+
 ## [0.8.24](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.24) (07/24/2026)
 
 ### Miscellaneous
