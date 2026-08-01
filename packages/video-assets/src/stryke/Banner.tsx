@@ -18,10 +18,8 @@
 
 import { loadFont } from "@remotion/google-fonts/Mina";
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
-import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { Img } from "remotion";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 
 const { fontFamily } = loadFont();
@@ -32,39 +30,22 @@ export const Banner: React.FC<VideoAssetProps> = ({
   theme
 }) => {
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div
-          className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-8 max-h-75",
-            size === "thin" ? "" : "mt-15"
-          )}>
-          <Img
-            src={`https://public.storm-cdn.com/stryke/icons/${theme}.svg`}
-            className="max-w-34"
-          />
-          <div className="flex flex-1 flex-row gap-2 items-center">
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#eb6132" : "#f37a48"
-              }}
-              className={`text-${theme === "light" ? "[#eb6132]" : "[#f37a48]"} font-bold text-[220px]`}>
-              stryke
-            </h1>
-          </div>
-        </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-8">
+        <Img
+          src={`https://public.storm-cdn.com/stryke/icons/${theme}.svg`}
+          className="max-w-34"
+        />
+        <h1
+          style={{
+            fontFamily,
+            color: theme === "light" ? "#eb6132" : "#f37a48"
+          }}
+          className="font-bold text-[220px]">
+          stryke
+        </h1>
+      </div>
+    </BannerTemplate>
   );
 };
 

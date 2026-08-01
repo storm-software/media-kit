@@ -19,16 +19,13 @@
 import { loadFont } from "@remotion/google-fonts/ProtestRevolution";
 import React from "react";
 import {
-  AbsoluteFill,
   Img,
   interpolate,
   spring,
   useCurrentFrame,
   useVideoConfig
 } from "remotion";
-import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 
 const { fontFamily } = loadFont();
@@ -52,48 +49,33 @@ export const Banner: React.FC<VideoAssetProps> = ({
   );
 
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div
-          className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-95",
-            size === "thin" ? "" : "mt-15"
-          )}>
-          <Img
-            src={`https://public.storm-cdn.com/power-plant/icons/${theme}.svg`}
-            className="max-w-50"
-            style={{ transform: `rotate(${rotation}deg)` }}
-          />
-          <div className="flex flex-1 flex-row gap-2 items-center">
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#ca8a04" : "#ffdc64"
-              }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
-              Power
-            </h1>
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#ca8a04" : "#ffdc64"
-              }}
-              className={`text-${theme === "light" ? "[#ca8a04]" : "[#ffdc64]"} font-bold text-[180px]`}>
-              Plant
-            </h1>
-          </div>
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-6">
+        <Img
+          src={`https://public.storm-cdn.com/power-plant/icons/${theme}.svg`}
+          className="max-w-50"
+          style={{ transform: `rotate(${rotation}deg)` }}
+        />
+        <div className="flex flex-row gap-2 items-center">
+          <h1
+            style={{
+              fontFamily,
+              color: theme === "light" ? "#ca8a04" : "#ffdc64"
+            }}
+            className="font-bold text-[180px]">
+            Power
+          </h1>
+          <h1
+            style={{
+              fontFamily,
+              color: theme === "light" ? "#ca8a04" : "#ffdc64"
+            }}
+            className="font-bold text-[180px]">
+            Plant
+          </h1>
         </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+      </div>
+    </BannerTemplate>
   );
 };
 

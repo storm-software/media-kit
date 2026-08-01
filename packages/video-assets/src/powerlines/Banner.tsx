@@ -17,9 +17,7 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { Logo } from "./Logo";
 
@@ -29,22 +27,9 @@ export const Banner: React.FC<VideoAssetProps> = ({
   theme
 }) => {
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center gap-18">
-        <div className="w-full h-95 flex justify-center items-center">
-          <Logo theme={theme} />
-        </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <Logo theme={theme} />
+    </BannerTemplate>
   );
 };
 

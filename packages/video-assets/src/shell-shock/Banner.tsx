@@ -18,10 +18,9 @@
 
 import { loadFont } from "@remotion/google-fonts/Silkscreen";
 import React from "react";
-import { AbsoluteFill, Img, useCurrentFrame } from "remotion";
+import { Img, useCurrentFrame } from "remotion";
 import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { getColor } from "./utils";
 
@@ -37,53 +36,38 @@ export const Banner: React.FC<VideoAssetProps> = ({
   const showCursor = frame % 60 > 30;
 
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div
-          className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 h-90",
-            size === "thin" ? "" : "mt-15"
-          )}>
-          <Img
-            src={`https://public.storm-cdn.com/shell-shock/icons/${theme}.svg`}
-            className="max-w-15"
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-6">
+        <Img
+          src={`https://public.storm-cdn.com/shell-shock/icons/${theme}.svg`}
+          className="max-w-18 mt-5"
+        />
+        <div className="flex flex-row gap-2 items-center">
+          <h1
+            style={{
+              fontFamily,
+              color: getColor(theme)
+            }}
+            className="font-normal text-[145px]">
+            Shell
+          </h1>
+          <h1
+            style={{
+              fontFamily,
+              color: getColor(theme)
+            }}
+            className="font-normal text-[145px]">
+            Shock
+          </h1>
+          <div
+            style={{
+              backgroundColor: !showCursor ? "transparent" : getColor(theme)
+            }}
+            className={twMerge("h-24 w-12 mt-5 ml-1")}
           />
-          <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
-            <h1
-              style={{
-                fontFamily,
-                color: getColor(theme)
-              }}
-              className="font-normal text-[130px]">
-              Shell
-            </h1>
-            <h1
-              style={{
-                fontFamily,
-                color: getColor(theme)
-              }}
-              className="font-normal text-[130px]">
-              Shock
-            </h1>
-            <div
-              style={{
-                backgroundColor: !showCursor ? "transparent  " : getColor(theme)
-              }}
-              className={twMerge("h-22 w-12 mt-5 ml-1")}
-            />
-          </div>
         </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+      </div>
+    </BannerTemplate>
   );
 };
 

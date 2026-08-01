@@ -47,7 +47,7 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 -20 560 474"
-      className="h-4/5">
+      className="h-4/5 w-75">
       {/*  Colors  */}
       <defs>
         <clipPath id="arm-clip">

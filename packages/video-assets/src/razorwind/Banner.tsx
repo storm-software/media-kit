@@ -18,10 +18,7 @@
 
 import { loadFont } from "@remotion/google-fonts/ProtestRiot";
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { Logo } from "./Logo";
 
@@ -33,36 +30,19 @@ export const Banner: React.FC<VideoAssetProps> = ({
   theme
 }) => {
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full gap-14">
-        <div
-          className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-4 max-h-75",
-            size === "thin" ? "" : "mt-15"
-          )}>
-          <Logo theme={theme} />
-          <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#0891b2" : "#22d3ee"
-              }}
-              className={`text-${theme === "light" ? "[#0891b2]" : "[#22d3ee]"} font-thin text-[190px]`}>
-              Razorwind
-            </h1>
-          </div>
-        </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-4">
+        <Logo theme={theme} />
+        <h1
+          style={{
+            fontFamily,
+            color: theme === "light" ? "#0891b2" : "#22d3ee"
+          }}
+          className="font-thin text-[190px]">
+          Razorwind
+        </h1>
+      </div>
+    </BannerTemplate>
   );
 };
 

@@ -18,10 +18,8 @@
 
 import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
 import React from "react";
-import { AbsoluteFill } from "remotion";
 import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { Logo } from "./Logo";
 
@@ -33,36 +31,22 @@ export const Banner: React.FC<VideoAssetProps> = ({
   theme
 }) => {
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full gap-14">
-        <div
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-2">
+        <Logo className="h-68 w-72" theme={theme} />
+        <h1
+          style={{
+            fontFamily,
+            color: theme === "light" ? "#083344" : "#a5f3fc"
+          }}
           className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[4/5] gap-6 max-h-75",
-            size === "thin" ? "" : "mt-15"
+            "text-[220px]",
+            size === "normal" ? "font-bold" : "font-normal"
           )}>
-          <Logo className="max-w-50" theme={theme} />
-          <div className="flex flex-1 flex-row gap-2 mb-5 items-center">
-            <h1
-              style={{
-                fontFamily,
-                color: theme === "light" ? "#083344" : "#a5f3fc"
-              }}
-              className={`text-${theme === "light" ? "[#083344]" : "[#a5f3fc]"} font-normal text-[220px]`}>
-              cyclone
-            </h1>
-          </div>
-        </div>
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+          Cyclone
+        </h1>
+      </div>
+    </BannerTemplate>
   );
 };
 

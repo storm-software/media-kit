@@ -18,10 +18,7 @@
 
 import { loadFont } from "@remotion/google-fonts/PermanentMarker";
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { twMerge } from "tailwind-merge";
-import { Background } from "../components/Background";
-import { StaticOrgTitle } from "../components/StaticOrgTitle";
+import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { Logo } from "./Logo";
 
@@ -33,34 +30,19 @@ export const Banner: React.FC<VideoAssetProps> = ({
   theme
 }) => {
   return (
-    <>
-      <Background theme={theme} size={size} />
-      <AbsoluteFill className="flex flex-col justify-center items-center w-full py-10">
-        <div
-          className={twMerge(
-            "flex flex-1 flex-row justify-center items-center w-[2/5] gap-0  max-h-90"
-          )}>
-          <Logo theme={theme} />
-          <h1
-            style={{
-              fontFamily,
-              color: theme === "light" ? "#be123c" : "#f43f5e"
-            }}
-            className={`text-${theme === "light" ? "[#be123c]" : "[#f43f5e]"} font-normal text-[180px] mt-2`}>
-            May I?
-          </h1>
-        </div>
-
-        {size !== "thin" && (
-          <StaticOrgTitle
-            className="mr-8"
-            size="sm"
-            theme={theme}
-            orgIcon={orgIcon}
-          />
-        )}
-      </AbsoluteFill>
-    </>
+    <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
+      <div className="flex flex-row justify-center items-center gap-0">
+        <Logo theme={theme} />
+        <h1
+          style={{
+            fontFamily,
+            color: theme === "light" ? "#be123c" : "#f43f5e"
+          }}
+          className="font-normal text-[180px] mt-2">
+          May I?
+        </h1>
+      </div>
+    </BannerTemplate>
   );
 };
 
