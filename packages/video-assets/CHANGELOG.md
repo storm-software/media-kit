@@ -2,6 +2,17 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.26](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.26) (08/09/2026)
+
+### Miscellaneous
+
+- **monorepo:** Added Orca ADE setup configuration ([90a1e2a](https://github.com/storm-software/media-kit/commit/90a1e2a))
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue with missing `remotion` dependencies ([1bc85a5](https://github.com/storm-software/media-kit/commit/1bc85a5))
+- **video-assets:** Resolve issue with missing dev dependency ([5adfea8](https://github.com/storm-software/media-kit/commit/5adfea8))
+
 ## [0.8.25](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.25) (08/01/2026)
 
 ### Miscellaneous
