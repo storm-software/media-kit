@@ -272,7 +272,7 @@ importers:
         version: 0.46.199(cspell@10.0.1)
       '@storm-software/eslint-config-react':
         specifier: 'catalog:'
-        version: 0.0.89(13468d23a8b7433ea6ac2ed8a19ede07)
+        version: 0.0.89(3ff9353035f3ee4852d0a02e5621d3ca)
       '@storm-software/eslint-plugin-pnpm':
         specifier: 'catalog:'
         version: 0.0.95(@storm-software/tsdoc@0.13.228(@microsoft/api-extractor@7.58.12(@types/node@25.9.5)))(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3)
@@ -5649,6 +5649,9 @@ packages:
 
   '@types/responselike@1.0.0':
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
+
+  '@types/responselike@1.0.3':
+    resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
 
   '@types/scheduler@0.26.0':
     resolution: {integrity: sha512-WFHp9YUJQ6CKshqoC37iOlHnQSmxNc795UhB26CyBBttrN9svdIrUjl/NjnNmfcwtncN0h/0PPAFWv9ovP8mLA==}
@@ -19949,11 +19952,11 @@ snapshots:
       - zod
     optional: true
 
-  '@storm-software/eslint-config-react@0.0.89(13468d23a8b7433ea6ac2ed8a19ede07)':
+  '@storm-software/eslint-config-react@0.0.89(3ff9353035f3ee4852d0a02e5621d3ca)':
     dependencies:
       '@eslint-react/eslint-plugin': 5.18.3(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3)
       '@next/eslint-plugin-next': 15.5.23
-      '@storm-software/eslint': 0.170.167(84ef513ad6f1622e7b389248eddc2718)
+      '@storm-software/eslint': 0.170.167(7bff279d0edc181639a134f6efda5bbd)
       '@unocss/eslint-plugin': 65.5.0(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3)
       astro-eslint-parser: 1.4.0
       eslint: 10.8.1(jiti@2.7.0)(supports-color@11.0.0)
@@ -20059,7 +20062,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@storm-software/eslint@0.170.167(84ef513ad6f1622e7b389248eddc2718)':
+  '@storm-software/eslint@0.170.167(7bff279d0edc181639a134f6efda5bbd)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.10.1
@@ -20107,7 +20110,7 @@ snapshots:
       eslint-plugin-unicorn: 57.0.0(eslint@10.8.1(jiti@2.7.0))
       eslint-plugin-unused-imports: 4.4.1(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@2.7.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))
       eslint-plugin-yml: 1.19.1(eslint@10.8.1(jiti@2.7.0))(supports-color@11.0.0)
-      fdir: 6.5.0(picomatch@4.0.4)
+      fdir: 6.5.0(picomatch@4.0.5)
       find-up-simple: 1.0.1
       globals: 16.5.0
       jsonc-eslint-parser: 2.4.2
@@ -21014,6 +21017,10 @@ snapshots:
   '@types/responselike@1.0.0':
     dependencies:
       '@types/node': 25.9.5
+
+  '@types/responselike@1.0.3':
+    dependencies:
+      '@types/node': 26.2.0
 
   '@types/scheduler@0.26.0': {}
 
@@ -25249,7 +25256,7 @@ snapshots:
   got@7.1.0:
     dependencies:
       '@types/keyv': 3.1.4
-      '@types/responselike': 1.0.0
+      '@types/responselike': 1.0.3
       decompress-response: 3.3.0
       duplexer3: 0.1.5
       get-stream: 3.0.0
@@ -25269,7 +25276,7 @@ snapshots:
     dependencies:
       '@sindresorhus/is': 0.7.0
       '@types/keyv': 3.1.4
-      '@types/responselike': 1.0.0
+      '@types/responselike': 1.0.3
       cacheable-request: 2.1.4
       decompress-response: 3.3.0
       duplexer3: 0.1.5
