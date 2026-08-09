@@ -37,7 +37,9 @@
       "url": "https://stormsoftware.com"
     }
   ],
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "type": "module",
   "dependencies": {
     "@remotion/animation-utils": "catalog:",
@@ -55,6 +57,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
+    "@remotion/bundler": "catalog:",
     "@remotion/cli": "catalog:",
     "@remotion/eslint-config": "catalog:",
     "@stryke/string-format": "catalog:",

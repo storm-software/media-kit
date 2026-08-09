@@ -12,6 +12,7 @@ catalog:
   '@nx/plugin': 23.0.0
   '@nx/workspace': 23.0.0
   '@remotion/animation-utils': ^4.0.507
+  '@remotion/bundler': ^4.0.507
   '@remotion/cli': ^4.0.507
   '@remotion/eslint-config': ^4.0.507
   '@remotion/fonts': ^4.0.507
