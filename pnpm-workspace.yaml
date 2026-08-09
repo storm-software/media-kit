@@ -20,8 +20,9 @@ catalog:
   '@remotion/media-utils': ^4.0.507
   '@remotion/noise': ^4.0.507
   '@remotion/paths': ^4.0.507
+  '@remotion/renderer': ^4.0.507
   '@remotion/shapes': ^4.0.507
-  '@remotion/tailwind-v4': ^4.0.507
+  '@remotion/tailwind-v4': 4.0.507
   '@storm-software/cloudflare-tools': ^0.71.280
   '@storm-software/config': ^1.138.68
   '@storm-software/config-tools': ^1.190.132
@@ -37,7 +38,7 @@ catalog:
   '@storm-software/tsconfig': ^0.48.198
   '@storm-software/untyped': ^0.24.274
   '@storm-software/workspace-tools': ^1.297.1
-  '@stryke/string-format': ^0.17.50
+  '@stryke/string-format': 0.17.50
   '@swc-node/register': 1.11.1
   '@swc/core': 1.15.8
   '@swc/helpers': 0.5.19
