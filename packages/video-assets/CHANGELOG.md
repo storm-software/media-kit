@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.27](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.27) (08/10/2026)
+
+### Features
+
+- **video-assets:** Added the Quest Giver video assets ([c90a75c](https://github.com/storm-software/media-kit/commit/c90a75c))
+
 ## [0.8.26](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.26) (08/09/2026)
 
 ### Miscellaneous
