@@ -23,6 +23,7 @@ import { RemotionVideo as EarthquakeVideo } from "./earthquake/Video";
 import { RemotionVideo as MayIBannerVideo } from "./may-i/Video";
 import { RemotionVideo as PowerPlantVideo } from "./power-plant/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
+import { RemotionVideo as QuestgiverVideo } from "./questgiver/Video";
 import { RemotionVideo as RazorwindVideo } from "./razorwind/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
@@ -64,6 +65,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="razorwind">
         <RazorwindVideo />
+      </Folder>
+      <Folder name="questgiver">
+        <QuestgiverVideo />
       </Folder>
     </>
   );

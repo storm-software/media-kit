@@ -46,7 +46,8 @@ const PROJECT_LIST = [
   "stryke",
   "may-i",
   "telepathic",
-  "razorwind"
+  "razorwind",
+  "questgiver"
 ] as const;
 
 async function renderAssets(project: string) {
