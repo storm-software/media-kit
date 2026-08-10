@@ -21,3 +21,7 @@
 - The `nx-generate` skill handles generator discovery internally - don't call nx_docs just to look up generator syntax
 
 <!-- nx configuration end-->
+
+# Video Assets
+
+- When adding a new project to `packages/video-assets`, ALWAYS invoke the `/add-video-assets` skill FIRST before creating folders, updating `src/Video.tsx`, `project.json`, or `scripts/build.ts`
