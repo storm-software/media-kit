@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.28](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.28) (08/21/2026)
+
+### Features
+
+- **video-assets:** Added sourcebook video assets ([5c4e2d0](https://github.com/storm-software/media-kit/commit/5c4e2d0))
+
 ## [0.8.27](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.27) (08/10/2026)
 
 ### Features
