@@ -206,7 +206,7 @@ async function renderAssets(project: string) {
             imageFormat: "webp"
           });
           await sharp(output)
-            .webp({ quality: 95 })
+            .webp({ quality: 90 })
             .toFile(
               output.replace(
                 `dist/generated/${project}/`,

@@ -33,7 +33,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
   return (
     <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
       <div className="flex flex-row justify-center items-center gap-6">
-        <Logo />
+        <Logo theme={theme} />
         <h1
           style={{
             fontFamily,

@@ -41,7 +41,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
           }}
           className={twMerge(
             "text-[220px]",
-            size === "normal" ? "font-bold" : "font-normal"
+            size === "normal" ? "font-bold" : "font-bold"
           )}>
           Cyclone
         </h1>
