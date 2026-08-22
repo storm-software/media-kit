@@ -42,6 +42,7 @@ const PROJECT_LIST = [
   "cyclone-ui",
   "acidic",
   "shell-shock",
+  "sourcebook",
   "earthquake",
   "stryke",
   "may-i",

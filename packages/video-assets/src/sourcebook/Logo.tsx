@@ -16,6 +16,17 @@
 
  ------------------------------------------------------------------- */
 
-export const getColor = (theme?: string) => {
-  return theme === "light" ? "#4d7c0f" : "#a3e635";
-};
+import { Img } from "remotion";
+
+export interface LogoProps {
+  theme?: "light" | "dark";
+}
+
+export function Logo({ theme = "dark" }: LogoProps) {
+  return (
+    <Img
+      src={`https://public.storm-cdn.com/sourcebook/icons/${theme}.svg`}
+      className="max-w-65"
+    />
+  );
+}

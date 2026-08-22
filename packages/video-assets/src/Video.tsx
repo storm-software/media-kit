@@ -26,6 +26,7 @@ import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
 import { RemotionVideo as QuestgiverVideo } from "./questgiver/Video";
 import { RemotionVideo as RazorwindVideo } from "./razorwind/Video";
 import { RemotionVideo as ShellShockVideo } from "./shell-shock/Video";
+import { RemotionVideo as SourcebookVideo } from "./sourcebook/Video";
 import { RemotionVideo as StormSoftwareVideo } from "./storm-software/Video";
 import { RemotionVideo as StrykeVideo } from "./stryke/Video";
 import { RemotionVideo as TelepathicVideo } from "./telepathic/Video";
@@ -53,6 +54,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="power-plant">
         <PowerPlantVideo />
+      </Folder>
+      <Folder name="sourcebook">
+        <SourcebookVideo />
       </Folder>
       <Folder name="shell-shock">
         <ShellShockVideo />

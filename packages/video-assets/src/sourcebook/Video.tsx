@@ -16,6 +16,16 @@
 
  ------------------------------------------------------------------- */
 
-export const getColor = (theme?: string) => {
-  return theme === "light" ? "#4d7c0f" : "#a3e635";
+import { BannerVideoAssets } from "../components/BannerVideoAssets";
+import "../style.css";
+import { ColoredBanner, MonochromeBanner } from "./Banner";
+
+export const RemotionVideo: React.FC = () => {
+  return (
+    <BannerVideoAssets
+      projectId="sourcebook"
+      monochrome={MonochromeBanner}
+      colored={ColoredBanner}
+    />
+  );
 };

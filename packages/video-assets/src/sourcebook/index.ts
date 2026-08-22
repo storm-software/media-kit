@@ -16,6 +16,7 @@
 
  ------------------------------------------------------------------- */
 
-export const getColor = (theme?: string) => {
-  return theme === "light" ? "#4d7c0f" : "#a3e635";
-};
+import { registerRoot } from "remotion";
+import { RemotionVideo } from "./Video";
+
+registerRoot(RemotionVideo);
