@@ -2,6 +2,16 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.29](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.29) (08/21/2026)
+
+### Miscellaneous
+
+- **video-assets:** Update icons to use wide variants ([0be1e78](https://github.com/storm-software/media-kit/commit/0be1e78))
+
+### Features
+
+- **video-assets:** Added sourcebook video assets ([5c4e2d0](https://github.com/storm-software/media-kit/commit/5c4e2d0))
+
 ## [0.8.28](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.28) (08/21/2026)
 
 ### Features
