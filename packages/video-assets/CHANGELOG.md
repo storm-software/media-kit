@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.31](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.31) (08/22/2026)
+
+### Miscellaneous
+
+- **video-assets:** Resolve issue with png compression ([0f07257](https://github.com/storm-software/media-kit/commit/0f07257))
+
 ## [0.8.30](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.30) (08/22/2026)
 
 ### Bug Fixes
