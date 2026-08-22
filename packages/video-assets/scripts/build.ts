@@ -146,7 +146,7 @@ async function renderAssets(project: string) {
             imageFormat: "png"
           });
           await sharp(output)
-            .png({ palette: true })
+            .png({ palette: true, quality: 90, effort: 10 })
             .toFile(
               output.replace(
                 `dist/generated/${project}/`,
