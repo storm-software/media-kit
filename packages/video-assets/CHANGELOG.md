@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.30](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.30) (08/22/2026)
+
+### Bug Fixes
+
+- **video-assets:** Resolve issue with missing build dependency ([0641b2e](https://github.com/storm-software/media-kit/commit/0641b2e))
+
 ## [0.8.29](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.29) (08/21/2026)
 
 ### Miscellaneous
