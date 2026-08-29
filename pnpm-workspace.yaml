@@ -50,7 +50,7 @@ catalog:
   animejs: ^4.5.0
   chalk-template: ^1.1.2
   copyfiles: ^2.4.1
-  esbuild: ^0.24.2
+  esbuild: ^0.25.0
   eslint: ^10.9.0
   eslint-flat-config-utils: ^2.1.4
   execa: ^9.6.1
