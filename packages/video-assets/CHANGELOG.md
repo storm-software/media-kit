@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.33](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.33) (09/13/2026)
+
+### Features
+
+- **video-assets:** Added a 3rd banner size variant ([68ba36b](https://github.com/storm-software/media-kit/commit/68ba36b))
+
 ## [0.8.32](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.32) (09/13/2026)
 
 ### Features
