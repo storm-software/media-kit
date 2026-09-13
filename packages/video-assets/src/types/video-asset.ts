@@ -18,18 +18,19 @@
 
 import type { ThemeProps } from "./themes";
 
-export type VideoAssetSizePreset = "thin" | "normal";
+export type VideoAssetSizePreset = "thin" | "normal" | "large";
 
 export interface VideoAssetProps extends ThemeProps {
   /**
-   * The size of video asset to render. "thin" video assets are optimized for shorter aspect ratios (e.g. 16:9), while "normal" video assets are optimized for taller aspect ratios (e.g. 4:5).
+   * The size of video asset to render. "thin" video assets are optimized for shorter aspect ratios, while "normal" and "large" video assets use the full banner layout.
    *
    * @remarks
    * The expected video dimensions for each size are as follows:
-   * - "thin": 1280x320 (16:9)
-   * - "normal": 1280x640 (4:5)
+   * - "thin": 1280x320 (4:1)
+   * - "normal": 1280x427 (approximately 3:1)
+   * - "large": 1280x640 (2:1)
    *
-   * If the video asset is rendered in a different aspect ratio, the layout will adjust accordingly, but the "thin" size may be more suitable for wider aspect ratios, while the "normal" size may be more suitable for taller aspect ratios.
+   * If the video asset is rendered in a different aspect ratio, the layout will adjust accordingly, but the "thin" size may be more suitable for wider aspect ratios, while the "large" size may be more suitable for taller aspect ratios.
    *
    * @defaultValue "normal"
    */

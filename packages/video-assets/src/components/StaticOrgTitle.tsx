@@ -43,7 +43,7 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
           size === "lg"
             ? "gap-10"
             : size === "xs"
-              ? "gap-2"
+              ? "gap-5"
               : size === "sm"
                 ? "gap-5"
                 : "gap-10"
@@ -54,13 +54,27 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
         src={`https://public.storm-cdn.com/storm-software/icons/wide-${
           orgIcon === "colored" ? "colored-" : ""
         }${theme}.svg`}
-        className={size === "lg" ? "h-50" : size === "md" ? "h-46" : "h-28"}
+        className={
+          size === "lg"
+            ? "h-50"
+            : size === "md"
+              ? "h-46"
+              : size === "sm"
+                ? "h-28"
+                : "h-20"
+        }
       />
       <h1 className="min-w-0">
         <OrgTitleText
           theme={theme ?? "dark"}
           className={`block w-auto max-w-full ${
-            size === "lg" ? "h-42" : size === "md" ? "h-40" : "h-24"
+            size === "lg"
+              ? "h-42"
+              : size === "md"
+                ? "h-40"
+                : size === "sm"
+                  ? "h-24"
+                  : "h-16"
           }`}
         />
       </h1>

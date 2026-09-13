@@ -67,13 +67,14 @@ export const BannerTemplate: React.FC<BannerTemplateProps> = ({
           "flex flex-col w-full",
           renderOrgTitle ? "" : "justify-center items-center gap-10",
           className,
-          size === "normal" ? "py-8" : "py-0"
+          size !== "thin" ? "py-8" : "py-0"
         )}>
         <div
           className={twMerge(
             "flex flex-3 flex-row justify-center items-center w-full",
             contentClassName
-          )}>
+          )}
+          style={{ zoom: size === "normal" ? 0.75 : undefined }}>
           {children}
         </div>
         {renderOrgTitle && (
@@ -84,7 +85,7 @@ export const BannerTemplate: React.FC<BannerTemplateProps> = ({
             )}>
             <StaticOrgTitle
               className="mr-8"
-              size={orgTitleSize}
+              size={size === "normal" ? "xs" : orgTitleSize}
               theme={theme}
               orgIcon={orgIcon}
             />

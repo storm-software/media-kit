@@ -49,12 +49,28 @@ export const BannerVideoAssets: React.FC<BannerVideoAssetsProps> = ({
               asset={asset}
               component={colored}
               theme="dark"
+              size="large"
             />
             <BannerComposition
               {...rest}
               asset={asset}
               component={colored}
               theme="light"
+              size="large"
+            />
+            <BannerComposition
+              {...rest}
+              asset={asset}
+              component={colored}
+              theme="dark"
+              size="normal"
+            />
+            <BannerComposition
+              {...rest}
+              asset={asset}
+              component={colored}
+              theme="light"
+              size="normal"
             />
             <BannerComposition
               {...rest}
@@ -79,12 +95,28 @@ export const BannerVideoAssets: React.FC<BannerVideoAssetsProps> = ({
               asset={`${asset}-mono`}
               component={monochrome}
               theme="dark"
+              size="large"
             />
             <BannerComposition
               {...rest}
               asset={`${asset}-mono`}
               component={monochrome}
               theme="light"
+              size="large"
+            />
+            <BannerComposition
+              {...rest}
+              asset={`${asset}-mono`}
+              component={monochrome}
+              theme="dark"
+              size="normal"
+            />
+            <BannerComposition
+              {...rest}
+              asset={`${asset}-mono`}
+              component={monochrome}
+              theme="light"
+              size="normal"
             />
             <BannerComposition
               {...rest}

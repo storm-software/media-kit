@@ -47,7 +47,8 @@ brand guidelines needed to represent Storm Software in external projects/product
   - [Banner](#banner)
     - [Use Cases](#use-cases-1)
     - [Variations](#variations-1)
-      - [Normal (1280x640)](#normal-1280x640)
+      - [Large (1280x640)](#large-1280x640)
+      - [Normal (1280x427)](#normal-1280x427)
       - [Thin (1280x320)](#thin-1280x320)
       - [Socials](#socials)
   - [Stormie](#stormie)
@@ -176,14 +177,23 @@ The Storm Software banner can be used in a variety of contexts, including:
 
 The following variations of the Storm Software banner are available for use:
 
-#### Normal (1280x640)
+#### Large (1280x640)
 
-The normal banner is a high-resolution graphic that features the Storm Software logo along with a dynamic background. It is designed to capture attention and convey the energy and innovation that Storm Software represents. This banner can be used in various contexts, such as on the company's website, in marketing materials, or as a header for documentation.
+The large banner is a high-resolution graphic that features the Storm Software logo along with a dynamic background. It is designed to capture attention and convey the energy and innovation that Storm Software represents. This banner can be used in various contexts, such as on the company's website, in marketing materials, or as a header for documentation.
 
 | Light                                                                                                                                 | Dark                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://public.storm-cdn.com/storm-software/banner-1280x640-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.gif)                                                                                               |
 | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x640-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x640-dark.webp) |
+
+#### Normal (1280x427)
+
+The normal banner retains the full banner layout at two-thirds the height of the large banner.
+
+| Light                                                                                                                                 | Dark                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://public.storm-cdn.com/storm-software/banner-1280x427-light.gif)                                                                                    | ![](https://public.storm-cdn.com/storm-software/banner-1280x427-dark.gif)                                                                                               |
+| [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x427-light.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x427-light.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x427-light.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x427-light.webp) | [**⬇ GIF**](https://public.storm-cdn.com/storm-software/banner-1280x427-dark.gif)  • [**⬇ PNG**](https://public.storm-cdn.com/storm-software/banner-1280x427-dark.png)  • [**⬇ SVG**](https://public.storm-cdn.com/storm-software/banner-1280x427-dark.svg)  • [**⬇ Webp**](https://public.storm-cdn.com/storm-software/banner-1280x427-dark.webp) |
 
 #### Thin (1280x320)
 

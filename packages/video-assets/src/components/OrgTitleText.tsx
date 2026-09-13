@@ -31,7 +31,7 @@ export function OrgTitleText({
       viewBox="123 203 1802 244"
       role="img"
       className={className}>
-      <g fill={theme === "light" ? "[#1d1e22]" : "white"}>
+      <g fill={theme === "light" ? "[#1E2124]" : "white"}>
         <path
           d="
       M 440 203
