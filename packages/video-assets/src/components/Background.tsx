@@ -114,7 +114,7 @@ export const Background: React.FC<BackgroundProps> = ({
                   // eslint-disable-next-line react/no-array-index-key
                   key={i}
                   className={twMerge(
-                    theme === "light" ? "stroke-[#1e2124]" : "stroke-mist-50",
+                    theme === "light" ? "stroke-[#1e2124]" : "stroke-mist-400",
                     className,
                     "fill-none stroke-3"
                   )}
@@ -172,7 +172,7 @@ export const Background: React.FC<BackgroundProps> = ({
                   // eslint-disable-next-line react/no-array-index-key
                   key={i}
                   className={twMerge(
-                    theme === "light" ? "stroke-[#1e2124]" : "stroke-mist-50",
+                    theme === "light" ? "stroke-[#1e2124]" : "stroke-mist-400",
                     className,
                     "fill-none stroke-3"
                   )}

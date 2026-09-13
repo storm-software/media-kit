@@ -16,12 +16,10 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/Orbitron";
 import { Img } from "remotion";
 import { twMerge } from "tailwind-merge";
 import type { OrgIcon, ThemeProps } from "../types/themes";
-
-const { fontFamily } = loadFont();
+import { OrgTitleText } from "./OrgTitleText";
 
 export interface OrgTitleProps extends ThemeProps {
   className?: string;
@@ -47,8 +45,8 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
             : size === "xs"
               ? "gap-2"
               : size === "sm"
-                ? "gap-2.5"
-                : "gap-6"
+                ? "gap-5"
+                : "gap-10"
         } `,
         className
       )}>
@@ -56,18 +54,15 @@ export const StaticOrgTitle: React.FC<OrgTitleProps> = ({
         src={`https://public.storm-cdn.com/storm-software/icons/wide-${
           orgIcon === "colored" ? "colored-" : ""
         }${theme}.svg`}
-        className={size === "lg" ? "h-60" : size === "md" ? "h-42" : "h-24"}
+        className={size === "lg" ? "h-50" : size === "md" ? "h-46" : "h-28"}
       />
-      <h1
-        style={{ fontFamily, color: theme === "light" ? "#1d1e22" : "white" }}
-        className={`text-${theme === "light" ? "[#1d1e22]" : "white"} align-middle font-black font-orbitron ${
-          size === "lg"
-            ? "text-[15rem]"
-            : size === "md"
-              ? "text-[10rem]"
-              : "text-[6rem]"
-        }`}>
-        Storm
+      <h1 className="min-w-0">
+        <OrgTitleText
+          theme={theme ?? "dark"}
+          className={`block w-auto max-w-full ${
+            size === "lg" ? "h-42" : size === "md" ? "h-40" : "h-24"
+          }`}
+        />
       </h1>
     </div>
   );
