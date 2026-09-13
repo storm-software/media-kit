@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.32](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.32) (09/13/2026)
+
+### Features
+
+- **video-assets:** Update video-assets to use new "storm" svg text ([70ca5ab](https://github.com/storm-software/media-kit/commit/70ca5ab))
+
 ## [0.8.31](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.31) (08/22/2026)
 
 ### Miscellaneous
