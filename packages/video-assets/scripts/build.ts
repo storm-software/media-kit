@@ -47,6 +47,7 @@ const PROJECT_LIST = [
   "stryke",
   "may-i",
   "telepathic",
+  "mindctl",
   "razorwind",
   "questgiver"
 ] as const;

@@ -21,6 +21,7 @@ import { RemotionVideo as AcidicVideo } from "./acidic/Video";
 import { RemotionVideo as CycloneUIVideo } from "./cyclone-ui/Video";
 import { RemotionVideo as EarthquakeVideo } from "./earthquake/Video";
 import { RemotionVideo as MayIBannerVideo } from "./may-i/Video";
+import { RemotionVideo as MindctlVideo } from "./mindctl/Video";
 import { RemotionVideo as PowerPlantVideo } from "./power-plant/Video";
 import { RemotionVideo as PowerlinesVideo } from "./powerlines/Video";
 import { RemotionVideo as QuestgiverVideo } from "./questgiver/Video";
@@ -45,6 +46,9 @@ export const RemotionVideo: React.FC = () => {
       </Folder>
       <Folder name="telepathic">
         <TelepathicVideo />
+      </Folder>
+      <Folder name="mindctl">
+        <MindctlVideo />
       </Folder>
       <Folder name="earthquake">
         <EarthquakeVideo />
