@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.34](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.34) (09/22/2026)
+
+### Features
+
+- **video-assets:** Added Mindctl video assets ([f79272b](https://github.com/storm-software/media-kit/commit/f79272b))
+
 ## [0.8.33](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.33) (09/13/2026)
 
 ### Features
