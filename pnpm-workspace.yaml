@@ -118,6 +118,6 @@ overrides:
   '@storm-software/tools-scripts': workspace:*
   '@storm-software/video-assets': workspace:*
   ip: '>=2.0.1'
-  markdown-it: '>=14.1.0'
+  markdown-it: '>=14.3.3'
 
 trustPolicy: off
