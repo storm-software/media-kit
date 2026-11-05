@@ -26,7 +26,8 @@ const DARK_YELLOW = "#facc15";
 const DARK_YELLOW_BRIGHT = "#fde047";
 
 const LIGHT_YELLOW = "#f59e0b";
-const LIGHT_YELLOW_BRIGHT = "#fbbf24";
+
+// const LIGHT_YELLOW_BRIGHT = "#fbbf24";
 
 export interface LogoProps extends ThemeProps {
   size?: VideoAssetSizePreset;

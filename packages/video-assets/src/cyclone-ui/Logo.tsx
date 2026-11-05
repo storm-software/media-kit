@@ -26,9 +26,8 @@ export interface LogoProps {
 
 export function Logo({ className, theme = "dark" }: LogoProps) {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
 
-  // One full turn per loop at constant speed, pivoting on the center dot
+  const { durationInFrames } = useVideoConfig();
   const rotation = ((frame % durationInFrames) / durationInFrames) * -1 * 360;
 
   return (
