@@ -31,6 +31,7 @@ import gifsicle from "gifsicle";
 import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const require = createRequire(import.meta.url);
@@ -58,6 +59,7 @@ async function renderAssets(project: string) {
 
     const bundled = await bundle({
       entryPoint: require.resolve(`../src/${project}/index.ts`),
+      publicDir: fileURLToPath(new URL("../public", import.meta.url)),
       webpackOverride: config => enableTailwind(config)
     });
     for (const composition of await getCompositions(bundled)) {

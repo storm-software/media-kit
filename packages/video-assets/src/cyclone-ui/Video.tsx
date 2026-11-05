@@ -26,6 +26,7 @@ export const RemotionVideo: React.FC = () => {
       projectId="cyclone-ui"
       monochrome={MonochromeBanner}
       colored={ColoredBanner}
+      durationInFrames={120}
     />
   );
 };

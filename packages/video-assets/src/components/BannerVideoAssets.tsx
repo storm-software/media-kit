@@ -27,6 +27,7 @@ export type BannerVideoAssetsProps = Pick<
 > & {
   monochrome: BannerCompositionProps["component"];
   colored: BannerCompositionProps["component"];
+  durationInFrames?: BannerCompositionProps["durationInFrames"];
 };
 
 export const BannerVideoAssets: React.FC<BannerVideoAssetsProps> = ({

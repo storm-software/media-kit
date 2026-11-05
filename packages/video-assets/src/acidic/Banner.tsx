@@ -16,14 +16,12 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
 import React from "react";
 import { Img } from "remotion";
 import { twMerge } from "tailwind-merge";
 import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
-
-const { fontFamily } = loadFont();
+import { stormSansFontFamily } from "../utilities/storm-sans";
 
 export const Banner: React.FC<VideoAssetProps> = ({
   size = "normal",
@@ -43,11 +41,11 @@ export const Banner: React.FC<VideoAssetProps> = ({
         />
         <h1
           style={{
-            fontFamily,
+            fontFamily: stormSansFontFamily,
             color: theme === "light" ? "#1d1e22" : "white"
           }}
           className={twMerge(
-            "font-extrabold font-space-grotesk",
+            "font-bold",
             size === "thin" ? "text-[175px]" : "text-[220px]"
           )}>
           Acidic

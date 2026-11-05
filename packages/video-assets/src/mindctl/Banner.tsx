@@ -21,7 +21,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
-import { Logo } from "./Logo";
+import { LogoGlow } from "./LogoGlow";
 
 const { fontFamily } = loadFont();
 
@@ -32,15 +32,15 @@ export const Banner: React.FC<VideoAssetProps> = ({
 }) => {
   return (
     <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
-      <div className="flex flex-row justify-center items-center gap-6">
-        <Logo size={size} theme={theme} />
+      <div className="isolate flex flex-row justify-center items-center gap-6">
+        <LogoGlow size={size} theme={theme} />
         <h1
           style={{
             fontFamily,
             color: theme === "light" ? "#D946EF" : "#e99cf6"
           }}
           className={twMerge(
-            "font-black",
+            "relative font-black",
             size === "thin"
               ? "text-[140px]"
               : size === "large"

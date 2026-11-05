@@ -16,14 +16,12 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
 import React from "react";
 import { AbsoluteFill, Img } from "remotion";
 import { Background } from "../components/Background";
 import { StaticOrgTitle } from "../components/StaticOrgTitle";
 import type { ThemeProps } from "../types/themes";
-
-const { fontFamily } = loadFont();
+import { stormSansFontFamily } from "../utilities/storm-sans";
 
 export const Logo: React.FC<ThemeProps> = ({ theme }) => {
   return (
@@ -37,10 +35,10 @@ export const Logo: React.FC<ThemeProps> = ({ theme }) => {
           />
           <h1
             style={{
-              fontFamily,
+              fontFamily: stormSansFontFamily,
               color: theme === "light" ? "#1d1e22" : "white"
             }}
-            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-extrabold font-space-grotesk text-[300px] mt-14`}>
+            className={`text-${theme === "light" ? "[#1d1e22]" : "white"} font-bold text-[300px] mt-14`}>
             Acidic
           </h1>
         </div>

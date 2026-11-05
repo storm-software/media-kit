@@ -78,6 +78,7 @@ export function BannerComposition<
     orgIcon,
     defaultProps,
     component,
+    durationInFrames = DURATION_IN_FRAMES,
     ...rest
   } = props;
 
@@ -93,7 +94,7 @@ export function BannerComposition<
           theme ? `-${theme}` : ""
         }${orgIcon ? `-${orgIcon}` : ""}`
       )}
-      durationInFrames={DURATION_IN_FRAMES}
+      durationInFrames={durationInFrames}
       fps={FPS}
       width={dimensions.width}
       height={dimensions.height}

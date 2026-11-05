@@ -16,14 +16,12 @@
 
  ------------------------------------------------------------------- */
 
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
+import { stormSansFontFamily } from "../utilities/storm-sans";
 import { Logo } from "./Logo";
-
-const { fontFamily } = loadFont();
 
 export const Banner: React.FC<VideoAssetProps> = ({
   size = "normal",
@@ -36,8 +34,8 @@ export const Banner: React.FC<VideoAssetProps> = ({
         <Logo className="h-68 w-72" theme={theme} />
         <h1
           style={{
-            fontFamily,
-            color: theme === "light" ? "#083344" : "#a5f3fc"
+            fontFamily: stormSansFontFamily,
+            color: theme === "light" ? "#6ebbc4" : "#a5f3fc"
           }}
           className={twMerge(
             "text-[220px]",
