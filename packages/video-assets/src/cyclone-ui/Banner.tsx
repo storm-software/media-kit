@@ -17,7 +17,6 @@
  ------------------------------------------------------------------- */
 
 import React from "react";
-import { twMerge } from "tailwind-merge";
 import { BannerTemplate } from "../components/BannerTemplate";
 import type { VideoAssetProps } from "../types/video-asset";
 import { stormSansFontFamily } from "../utilities/storm-sans";
@@ -37,10 +36,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
             fontFamily: stormSansFontFamily,
             color: theme === "light" ? "#6ebbc4" : "#a5f3fc"
           }}
-          className={twMerge(
-            "text-[220px]",
-            size === "normal" ? "font-bold" : "font-bold"
-          )}>
+          className="text-[220px] font-bold">
           Cyclone
         </h1>
       </div>

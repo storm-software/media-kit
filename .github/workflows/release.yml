@@ -72,6 +72,9 @@ jobs:
           gpg-passphrase: ${{ secrets.STORM_BOT_GPG_PASSPHRASE }}
           storm-bot-github-token: ${{ secrets.STORM_BOT_GITHUB_TOKEN }}
 
+      - name: Fetch video asset fonts from Git LFS
+        run: git lfs pull
+
       - name: Release repository updates
         uses: storm-software/action-release@main
         with:

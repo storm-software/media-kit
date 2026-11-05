@@ -231,6 +231,8 @@ async function renderAssets(project: string) {
     console.error(
       chalkTemplate`{red  ${project}: }{redBright  An error occurred while rendering ${project} assets: } \n${err}`
     );
+
+    throw err;
   }
 }
 
