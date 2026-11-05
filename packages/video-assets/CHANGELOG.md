@@ -2,6 +2,13 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.36](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.36) (11/05/2026)
+
+### Bug Fixes
+
+- **monorepo:** Re-enable `lefthook` git hooks ([784e7ce](https://github.com/storm-software/media-kit/commit/784e7ce))
+- **monorepo:** Resolve issue with error reporting in `release` workflow ([f53cde3](https://github.com/storm-software/media-kit/commit/f53cde3))
+
 ## [0.8.35](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.35) (11/05/2026)
 
 ### Bug Fixes
