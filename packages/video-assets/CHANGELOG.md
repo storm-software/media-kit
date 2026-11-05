@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.35](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.35) (11/05/2026)
+
+### Bug Fixes
+
+- **video-assets:** Added animations to Cyclone, Razorwind, and Mindctl banners ([23a8ab0](https://github.com/storm-software/media-kit/commit/23a8ab0))
+
 ## [0.8.34](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.34) (09/22/2026)
 
 ### Features
