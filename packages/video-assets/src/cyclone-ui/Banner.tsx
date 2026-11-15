@@ -34,7 +34,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
         <h1
           style={{
             fontFamily: stormSansFontFamily,
-            color: theme === "light" ? "#6ebbc4" : "#a5f3fc"
+            color:
+              theme === "light"
+                ? "oklch(70.4% 0.14 182.503)"
+                : "oklch(85.5% 0.138 181.071)"
           }}
           className="text-[220px] font-bold">
           Cyclone

@@ -39,7 +39,7 @@ export const Banner: React.FC<VideoAssetProps> = ({
     <BannerTemplate size={size} theme={theme} orgIcon={orgIcon}>
       <div className="flex flex-row justify-center items-center gap-6">
         <Img
-          src={`https://public.storm-cdn.com/shell-shock/icons/${theme}.svg`}
+          src={`https://public.storm-cdn.com/shell-shock/assets/icons/${theme}.svg`}
           className="max-w-18 mt-5"
         />
         <div className="flex flex-row gap-2 items-center">

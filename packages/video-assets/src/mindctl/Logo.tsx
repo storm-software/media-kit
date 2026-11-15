@@ -39,23 +39,12 @@ export function Logo({
       viewBox="0 0 636 649"
       width="636"
       height="649">
-      <defs>
-        <radialGradient id="frontLight" cx="50%" cy="50%" r="70%">
-          <stop
-            offset="0%"
-            stop-color={theme === "dark" ? "#f7c6ff" : "#E274F3"}
-          />
-          <stop
-            offset="62%"
-            stop-color={theme === "dark" ? "#f0abfc" : "#DE5DF1"}
-          />
-          <stop
-            offset="100%"
-            stop-color={theme === "dark" ? "#e99cf6" : "#D946EF"}
-          />
-        </radialGradient>
-      </defs>
-      <g fill="url(#frontLight)">
+      <g
+        fill={
+          theme === "light"
+            ? "oklch(0.659 0.1476 321.61)"
+            : "oklch(0.799 0.1476 321.61)"
+        }>
         <path d="M 216 244 L 336 453 L 458 245 Z" />
         <path d="M 470 252 L 350 461 L 579 459 Z" />
         <path d="M 204 252 L 94 459 L 324 461 Z" />

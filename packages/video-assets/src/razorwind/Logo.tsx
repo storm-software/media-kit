@@ -60,7 +60,11 @@ export function Logo({ theme = "dark" }: LogoProps) {
       style={{ transform: `translateX(${translateX}px)` }}>
       <g
         fill="none"
-        stroke={theme === "light" ? "#0891b2" : "#22d3ee"}
+        stroke={
+          theme === "light"
+            ? "oklch(0.7467 0.0772 205.04)"
+            : "oklch(0.9167 0.0772 205.04)"
+        }
         strokeWidth="28"
         strokeLinecap="round"
         strokeLinejoin="round">

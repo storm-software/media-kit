@@ -17,5 +17,7 @@
  ------------------------------------------------------------------- */
 
 export const getColor = (theme?: string) => {
-  return theme === "light" ? "#4d7c0f" : "#a3e635";
+  return theme === "light"
+    ? "oklch(0.7841 0.205 128.81)"
+    : "oklch(0.8441 0.205 128.81)";
 };

@@ -37,7 +37,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
         <h1
           style={{
             fontFamily,
-            color: theme === "light" ? "#D946EF" : "#e99cf6"
+            color:
+              theme === "light"
+                ? "oklch(0.659 0.1476 321.61)"
+                : "oklch(0.799 0.1476 321.61)"
           }}
           className={twMerge(
             "relative font-black",

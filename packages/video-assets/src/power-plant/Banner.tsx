@@ -60,7 +60,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
           <h1
             style={{
               fontFamily,
-              color: theme === "light" ? "#ca8a04" : "#ffdc64"
+              color:
+                theme === "light"
+                  ? "oklch(0.7403 0.135938 80)"
+                  : "oklch(0.9016 0.1428 93.06)"
             }}
             className="font-bold text-[180px]">
             Power
@@ -68,7 +71,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
           <h1
             style={{
               fontFamily,
-              color: theme === "light" ? "#ca8a04" : "#ffdc64"
+              color:
+                theme === "light"
+                  ? "oklch(0.7403 0.135938 80)"
+                  : "oklch(0.9016 0.1428 93.06)"
             }}
             className="font-bold text-[180px]">
             Plant

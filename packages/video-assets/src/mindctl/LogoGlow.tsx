@@ -26,7 +26,8 @@ export function LogoGlow({ size, theme = "dark" }: LogoProps) {
   const { durationInFrames } = useVideoConfig();
   const progress = (frame % durationInFrames) / durationInFrames;
   const pulse = (1 - Math.cos(progress * Math.PI * 2)) / 2;
-  const color = theme === "light" ? "162, 28, 175" : "233, 156, 246";
+  const color =
+    theme === "light" ? "0.659 0.1476 321.61" : "0.799 0.1476 321.61";
   const strength = (theme === "light" ? 0.65 * 1.3 ** 2 : 1) * 0.85;
 
   return (
@@ -39,7 +40,7 @@ export function LogoGlow({ size, theme = "dark" }: LogoProps) {
           height: "500%",
           opacity: (0.24 + pulse * 0.18) * strength,
           transform: `scale(${0.94 + pulse * 0.12})`,
-          background: `radial-gradient(ellipse at center, rgba(${color}, 0.6) 0%, rgba(${color}, 0.22) 18%, rgba(${color}, 0.06) 38%, transparent 65%)`
+          background: `radial-gradient(ellipse at center, oklch(${color} / 0.6) 0%, oklch(${color} / 0.22) 18%, oklch(${color} / 0.06) 38%, transparent 65%)`
         }}
       />
       {[0, 1, 2].map(index => {
@@ -53,8 +54,8 @@ export function LogoGlow({ size, theme = "dark" }: LogoProps) {
             style={{
               width: "100%",
               height: "100%",
-              border: `1px solid rgba(${color}, 0.35)`,
-              boxShadow: `0 0 18px rgba(${color}, 0.12)`,
+              border: `1px solid oklch(${color} / 0.35)`,
+              boxShadow: `0 0 18px oklch(${color} / 0.12)`,
               opacity: Math.sin(travel * Math.PI) ** 2 * 0.22 * strength,
               transform: `scale(${0.75 + travel * 3.5})`
             }}
@@ -64,7 +65,7 @@ export function LogoGlow({ size, theme = "dark" }: LogoProps) {
       <div
         className="relative"
         style={{
-          filter: `drop-shadow(0 0 ${10 + pulse * 12}px rgba(${color}, ${(0.2 + pulse * 0.18) * strength}))`
+          filter: `drop-shadow(0 0 ${10 + pulse * 12}px oklch(${color} / ${(0.2 + pulse * 0.18) * strength}))`
         }}>
         <Logo size={size} theme={theme} />
       </div>

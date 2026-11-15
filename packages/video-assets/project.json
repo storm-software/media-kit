@@ -284,16 +284,12 @@
         "build-cyclone-ui",
         "build-powerlines",
         "build-power-plant",
-        "build-acidic",
         "build-shell-shock",
         "build-sourcebook",
-        "build-earthquake",
         "build-stryke",
-        "build-may-i",
         "build-telepathic",
         "build-mindctl",
-        "build-razorwind",
-        "build-questgiver"
+        "build-razorwind"
       ],
       "options": {
         "commands": [

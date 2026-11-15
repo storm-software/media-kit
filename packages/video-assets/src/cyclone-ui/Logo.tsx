@@ -32,11 +32,12 @@ export function Logo({ className, theme = "dark" }: LogoProps) {
 
   return (
     <svg
-      className={twMerge(
-        className,
-        "overflow-visible",
-        theme === "light" ? "fill-[#6ebbc4]" : "fill-[#a5f3fc]"
-      )}
+      className={twMerge(className, "overflow-visible")}
+      fill={
+        theme === "light"
+          ? "oklch(70.4% 0.14 182.503)"
+          : "oklch(85.5% 0.138 181.071)"
+      }
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 614.479 604.816"
       preserveAspectRatio="xMidYMid meet">

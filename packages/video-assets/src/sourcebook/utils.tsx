@@ -19,5 +19,5 @@
 export const getColor = (theme?: string) => {
   return theme === "light"
     ? "oklch(54.6% 0.245 262.881)"
-    : "oklch(62.3% 0.214 259.815)";
+    : "oklch(0.6076 0.184 259.81)";
 };

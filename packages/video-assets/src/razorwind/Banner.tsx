@@ -36,7 +36,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
         <h1
           style={{
             fontFamily,
-            color: theme === "light" ? "#0891b2" : "#22d3ee"
+            color:
+              theme === "light"
+                ? "oklch(0.7467 0.0772 205.04)"
+                : "oklch(0.9167 0.0772 205.04)"
           }}
           className="font-thin text-[190px]">
           Razorwind

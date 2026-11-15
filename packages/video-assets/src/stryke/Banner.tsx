@@ -39,7 +39,10 @@ export const Banner: React.FC<VideoAssetProps> = ({
         <h1
           style={{
             fontFamily,
-            color: theme === "light" ? "#eb6132" : "#f37a48"
+            color:
+              theme === "light"
+                ? "oklch(0.6602 0.1622 42.06)"
+                : "oklch(0.7102 0.1622 42.06)"
           }}
           className="font-bold text-[220px]">
           stryke
