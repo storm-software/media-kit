@@ -2,6 +2,12 @@
 
 # Changelog for Media Kit - Video Assets
 
+## [0.8.37](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.37) (11/15/2026)
+
+### Features
+
+- **video-assets:** Added sourcebook logo animation and updated colors to match project registry json ([2ce27cb](https://github.com/storm-software/media-kit/commit/2ce27cb))
+
 ## [0.8.36](https://github.com/storm-software/media-kit/releases/tag/video-assets%400.8.36) (11/05/2026)
 
 ### Bug Fixes
